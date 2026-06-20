@@ -1,0 +1,5 @@
+1 heater
+2 heater 
+3 ground
+4 +thermo
+5 -thermo
