@@ -3591,7 +3591,7 @@
 		)
 		(uuid "fe13f20b-8943-4862-a97e-bde79292ef22")
 	)
-	(global_label "SDA"
+	(global_label "dat"
 		(shape input)
 		(at 274.32 40.64 0)
 		(fields_autoplaced yes)
@@ -3603,7 +3603,7 @@
 		)
 		(uuid "1944e211-d292-4f81-b001-1d5cc1e3ab07")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 280.8733 40.64 0)
+			(at 280.3289 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,28 +3626,6 @@
 		(uuid "2a7c9bb8-8a68-479e-af9d-eec749410810")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 195.58 105.3277 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SDA"
-		(shape input)
-		(at 232.41 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "31fab700-bf0e-4795-bc10-034605a6ee5f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.9633 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3767,6 +3745,28 @@
 			)
 		)
 	)
+	(global_label "clk"
+		(shape input)
+		(at 232.41 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "59891625-05db-4295-b24b-79657b47d3b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.1771 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "T+"
 		(shape input)
 		(at 107.95 116.84 180)
@@ -3851,28 +3851,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCl"
-		(shape input)
-		(at 232.41 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8a44ea96-c455-4bcc-9cb9-0ce6fed6f804")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.5399 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3965,7 +3943,7 @@
 			)
 		)
 	)
-	(global_label "SCl"
+	(global_label "clk"
 		(shape input)
 		(at 274.32 43.18 0)
 		(fields_autoplaced yes)
@@ -3977,7 +3955,7 @@
 		)
 		(uuid "e2fdf701-55c9-405a-a81a-b728cecc4e16")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 280.4499 43.18 0)
+			(at 280.0871 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4022,6 +4000,28 @@
 		(uuid "e6580aa8-aad5-41a0-878d-940de18b22fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 204.47 21.1448 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "dat"
+		(shape input)
+		(at 232.41 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f37becf8-7ff5-4a8c-bac2-e3c0e76958ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.4189 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4700,7 +4700,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 35.56 90)
+		(at 274.32 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4709,7 +4709,7 @@
 		(fields_autoplaced yes)
 		(uuid "491c9f75-38b1-4bd1-a53d-df7b87db2a9a")
 		(property "Reference" "#PWR019"
-			(at 280.67 35.56 0)
+			(at 280.67 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4718,7 +4718,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 278.13 35.5599 90)
+			(at 278.13 38.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4727,7 +4727,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 35.56 0)
+			(at 274.32 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4736,7 +4736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 35.56 0)
+			(at 274.32 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4745,7 +4745,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 274.32 35.56 0)
+			(at 274.32 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4987,6 +4987,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -6831,7 +6832,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 274.32 38.1 270)
+		(at 274.32 35.56 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6840,7 +6841,7 @@
 		(fields_autoplaced yes)
 		(uuid "dd7eac30-f253-4844-8a66-1134f4eed51a")
 		(property "Reference" "#PWR018"
-			(at 270.51 38.1 0)
+			(at 270.51 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6849,7 +6850,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 278.13 38.0999 90)
+			(at 278.13 35.5599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6858,7 +6859,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 38.1 0)
+			(at 274.32 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6867,7 +6868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 38.1 0)
+			(at 274.32 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6876,7 +6877,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 274.32 38.1 0)
+			(at 274.32 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
