@@ -41,3 +41,4 @@
 #include "uart.h"
 #include "adc.h"
 #include "pwm.h"
+#include "pid.h"
