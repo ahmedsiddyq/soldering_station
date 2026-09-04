@@ -1,0 +1,314 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15223 ]
+[d frameptr 6 ]
+"2 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+[v _pins pins `(v  1 e 1 0 ]
+"5 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"19
+[v _ADC_Read ADC_Read `(us  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"9 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+"20
+[v _PWM_SetDuty PWM_SetDuty `(v  1 e 1 0 ]
+"5 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"22
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+[s S22 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"562 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h
+[u S29 . 1 `S22 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES29  1 e 1 @18 ]
+[s S39 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"612
+[u S46 . 1 `S39 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES46  1 e 1 @20 ]
+"787
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"807
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+[s S351 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS 1 0 :6:2 
+]
+"848
+[s S355 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 ADCHS 1 0 :6:2 
+]
+[s S359 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+]
+[u S362 . 1 `S351 1 . 1 0 `S355 1 . 1 0 `S359 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES362  1 e 1 @157 ]
+[s S327 . 1 `uc 1 PREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 CS 1 0 :3:4 
+`uc 1 FM 1 0 :1:7 
+]
+"907
+[s S332 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS 1 0 :3:4 
+`uc 1 ADFM 1 0 :1:7 
+]
+[u S337 . 1 `S327 1 . 1 0 `S332 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES337  1 e 1 @158 ]
+"1036
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"1056
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"1083
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"1103
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+[s S216 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1140
+[u S225 . 1 `S216 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES225  1 e 1 @285 ]
+[s S193 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1202
+[u S202 . 1 `S193 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES202  1 e 1 @286 ]
+[s S172 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"1264
+[u S181 . 1 `S172 1 . 1 0 ]
+[v _BAUD1CONbits BAUD1CONbits `VES181  1 e 1 @287 ]
+"3148
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+[s S431 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"3238
+[s S435 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S443 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S447 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S456 . 1 `S431 1 . 1 0 `S435 1 . 1 0 `S443 1 . 1 0 `S447 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES456  1 e 1 @654 ]
+[s S397 . 1 `uc 1 CS 1 0 :4:0 
+]
+"3501
+[s S399 . 1 `uc 1 CS0 1 0 :1:0 
+`uc 1 CS1 1 0 :1:1 
+`uc 1 CS2 1 0 :1:2 
+`uc 1 CS3 1 0 :1:3 
+]
+[s S404 . 1 `uc 1 T2CS 1 0 :4:0 
+]
+[s S406 . 1 `uc 1 T2CS0 1 0 :1:0 
+`uc 1 T2CS1 1 0 :1:1 
+`uc 1 T2CS2 1 0 :1:2 
+`uc 1 T2CS3 1 0 :1:3 
+]
+[u S411 . 1 `S397 1 . 1 0 `S399 1 . 1 0 `S404 1 . 1 0 `S406 1 . 1 0 ]
+[v _T2CLKCONbits T2CLKCONbits `VES411  1 e 1 @656 ]
+"4096
+[v _PWM3DC PWM3DC `VEus  1 e 2 @788 ]
+"4144
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @790 ]
+[s S488 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 POL 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"4165
+[s S494 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 PWM3POL 1 0 :1:4 
+`uc 1 PWM3OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PWM3EN 1 0 :1:7 
+]
+[u S500 . 1 `S488 1 . 1 0 `S494 1 . 1 0 ]
+[v _PWM3CONbits PWM3CONbits `VES500  1 e 1 @790 ]
+[s S237 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 SSP1IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 TX1IF 1 0 :1:3 
+`uc 1 RC1IF 1 0 :1:4 
+`uc 1 TMR1IF 1 0 :1:5 
+`uc 1 TMR2IF 1 0 :1:6 
+`uc 1 CCP1IF 1 0 :1:7 
+]
+"4986
+[u S246 . 1 `S237 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES246  1 e 1 @1805 ]
+[s S303 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"5797
+[s S308 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+]
+[u S313 . 1 `S303 1 . 1 0 `S308 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES313  1 e 1 @2316 ]
+"5837
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @7823 ]
+[s S91 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"5847
+[u S93 . 1 `S91 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES93  1 e 1 @7823 ]
+"6580
+[v _RXPPS RXPPS `VEuc  1 e 1 @7883 ]
+"7361
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @7970 ]
+"7535
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @7973 ]
+[s S73 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"7608
+[u S80 . 1 `S73 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES80  1 e 1 @7992 ]
+[s S56 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+]
+"7993
+[u S63 . 1 `S56 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES63  1 e 1 @8014 ]
+"7 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+[v _v v `uc  1 e 1 0 ]
+"8
+[v _x x `us  1 e 2 0 ]
+"9
+[v _main main `(v  1 e 1 0 ]
+{
+"33
+} 0
+"2 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+[v _pins pins `(v  1 e 1 0 ]
+{
+"62
+} 0
+"22 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 0 ]
+"26
+} 0
+"5
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"11
+[v UART_Init@spbrg spbrg `ul  1 a 4 13 ]
+"5
+[v UART_Init@baud baud `ul  1 p 4 5 ]
+"20
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 0 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 8 ]
+"30
+} 0
+"4 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+{
+"18
+} 0
+"20
+[v _PWM_SetDuty PWM_SetDuty `(v  1 e 1 0 ]
+{
+[v PWM_SetDuty@permille permille `us  1 p 2 0 ]
+"24
+} 0
+"19 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+[v _ADC_Read ADC_Read `(us  1 e 2 0 ]
+{
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+"21
+[v ADC_Read@channel channel `uc  1 a 1 3 ]
+"26
+} 0
+"5
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"17
+} 0
