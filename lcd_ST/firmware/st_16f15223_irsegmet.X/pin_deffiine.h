@@ -29,7 +29,7 @@ ANSELAbits.ANSA2 = 0;
 
     // UART RX1 <- RA2
 
-    RXPPS = 0x02;
+    RXPPS  = 0x02;
     RC5PPS = 0x03;     
     // =========================
     // GPIO pins
