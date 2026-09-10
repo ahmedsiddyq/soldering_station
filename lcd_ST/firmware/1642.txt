@@ -1,5 +1,13 @@
 num
-write 18 bit  to shw singl digit 7+onec
+write 18 bit  to shw singl digit 7+onec            
 active out it 
 shift next digt write 18 bit 
 active out it 
+
+
+void disply (uint16_t num )
+{
+num  
+
+
+}
