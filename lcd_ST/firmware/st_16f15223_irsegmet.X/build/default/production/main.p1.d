@@ -6,5 +6,5 @@ uart.h  \
 adc.h  \
 pwm.h  \
 pid.h  \
-disply.h  \
+display.h  \
 i2c1.h 

@@ -5553,18 +5553,50 @@ void PWM_SetDuty(uint16_t permille);
 int32_t i_PID = 0;
 # 44 "./header.h" 2
 
-# 1 "./disply.h" 1
+# 1 "./display.h" 1
+# 62 "./display.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
+# 62 "./display.h" 2
+
+
+
+
+
+
+extern const uint8_t display_font[16];
+
+
+
+void display_init(void);
+
+
+_Bool display_display_on(_Bool on);
+
+
+_Bool display_set_brightness(uint8_t brightness);
+
+
+_Bool display_write_digit_raw(uint8_t position, uint8_t segments);
+
+
+_Bool display_write_digit_hex(uint8_t position, uint8_t value, _Bool dot);
+
+
+_Bool display_clear_digit(uint8_t position);
+
+
+_Bool display_clear_all(void);
+
+
+
+_Bool display_write_number(uint16_t value);
+
+
+
+_Bool display_read_keys(uint8_t *key_code, _Bool *pressed);
 # 45 "./header.h" 2
 
 # 1 "./i2c1.h" 1
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
-# 7 "./i2c1.h" 2
 # 22 "./i2c1.h"
 void I2C1_Init(void);
 
@@ -5592,8 +5624,10 @@ void main(void)
     pins();
   UART_Init(9600);
   ADC_Init();
-PWM_Init();
+ PWM_Init();
  I2C1_Init();
+ display_init();
+
 
 PWM_SetDuty(350);
 uint16_t raw_temp = ADC_Read(5);
@@ -5609,8 +5643,9 @@ uint16_t raw_current = ADC_Read(19);
         UART_Write(v);
         PWM_SetDuty(x);
 
-        I2C1_WriteByte(10,10);
+
         _delay((unsigned long)((100)*(32000000UL/4000.0)));
+        display_write_number(x);
         x++;
         if(x==999)
         x=0;

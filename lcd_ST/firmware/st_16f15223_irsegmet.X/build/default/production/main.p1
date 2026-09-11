@@ -113,6 +113,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22 ./i2c1.h
 [; ;./i2c1.h: 22: void I2C1_Init(void);
 [v _I2C1_Init `(v ~T0 @X0 0 ef ]
+"72 ./display.h
+[; ;./display.h: 72: void display_init(void);
+[v _display_init `(v ~T0 @X0 0 ef ]
 "8 ./pwm.h
 [; ;./pwm.h: 8: void PWM_SetDuty(uint16_t permille);
 [v _PWM_SetDuty `(v ~T0 @X0 0 ef1`us ]
@@ -122,13 +125,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7 ./uart.h
 [; ;./uart.h: 7: void UART_Write(char data);
 [v _UART_Write `(v ~T0 @X0 0 ef1`uc ]
-"29 ./i2c1.h
-[; ;./i2c1.h: 29: _Bool I2C1_WriteByte(uint8_t addr7, uint8_t data);
-[v _I2C1_WriteByte `(a ~T0 @X0 0 ef2`uc`uc ]
 [v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
+"94 ./display.h
+[; ;./display.h: 94: _Bool display_write_number(uint16_t value);
+[v _display_write_number `(a ~T0 @X0 0 ef1`us ]
 "7 ./header.h
 [p x FEXTOSC  =  OFF     ]
 "8
@@ -801,64 +804,67 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 13:   ADC_Init();
 [e ( _ADC_Init ..  ]
 "14
-[; ;main.c: 14: PWM_Init();
+[; ;main.c: 14:  PWM_Init();
 [e ( _PWM_Init ..  ]
 "15
 [; ;main.c: 15:  I2C1_Init();
 [e ( _I2C1_Init ..  ]
-"17
-[; ;main.c: 17: PWM_SetDuty(350);
+"16
+[; ;main.c: 16:  display_init();
+[e ( _display_init ..  ]
+"19
+[; ;main.c: 19: PWM_SetDuty(350);
 [e ( _PWM_SetDuty (1 -> -> 350 `i `us ]
-"18
-[; ;main.c: 18: uint16_t raw_temp = ADC_Read(5);
+"20
+[; ;main.c: 20: uint16_t raw_temp = ADC_Read(5);
 [v _raw_temp `us ~T0 @X0 1 a ]
 [e = _raw_temp ( _ADC_Read (1 -> -> 5 `i `uc ]
-"19
-[; ;main.c: 19: uint16_t raw_setpt = ADC_Read(4);
+"21
+[; ;main.c: 21: uint16_t raw_setpt = ADC_Read(4);
 [v _raw_setpt `us ~T0 @X0 1 a ]
 [e = _raw_setpt ( _ADC_Read (1 -> -> 4 `i `uc ]
-"20
-[; ;main.c: 20: uint16_t raw_current = ADC_Read(19);
+"22
+[; ;main.c: 22: uint16_t raw_current = ADC_Read(19);
 [v _raw_current `us ~T0 @X0 1 a ]
 [e = _raw_current ( _ADC_Read (1 -> -> 19 `i `uc ]
-"23
-[; ;main.c: 23:     while (1)
+"25
+[; ;main.c: 25:     while (1)
 [e :U 470 ]
-"24
-[; ;main.c: 24:     {
+"26
+[; ;main.c: 26:     {
 {
-"27
-[; ;main.c: 27:         v=(uint8_t)(((((uint32_t)ADC_Read(5)*4096UL) / 1023UL)/100));
-[e = _v -> / / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 4096 `ul -> 1023 `ul -> -> -> 100 `i `l `ul `uc ]
-"28
-[; ;main.c: 28:         UART_Write(v);
-[e ( _UART_Write (1 -> _v `uc ]
 "29
-[; ;main.c: 29:         PWM_SetDuty(x);
-[e ( _PWM_SetDuty (1 _x ]
+[; ;main.c: 29:         v=(uint8_t)(((((uint32_t)ADC_Read(5)*4096UL) / 1023UL)/100));
+[e = _v -> / / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 4096 `ul -> 1023 `ul -> -> -> 100 `i `l `ul `uc ]
+"30
+[; ;main.c: 30:         UART_Write(v);
+[e ( _UART_Write (1 -> _v `uc ]
 "31
-[; ;main.c: 31:         I2C1_WriteByte(10,10);
-[e ( _I2C1_WriteByte (2 , -> -> 10 `i `uc -> -> 10 `i `uc ]
-"32
-[; ;main.c: 32:         _delay((unsigned long)((100)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"33
-[; ;main.c: 33:         x++;
-[e ++ _x -> -> 1 `i `us ]
+[; ;main.c: 31:         PWM_SetDuty(x);
+[e ( _PWM_SetDuty (1 _x ]
 "34
-[; ;main.c: 34:         if(x==999)
-[e $ ! == -> _x `ui -> -> 999 `i `ui 472  ]
+[; ;main.c: 34:         _delay((unsigned long)((100)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
 "35
-[; ;main.c: 35:         x=0;
+[; ;main.c: 35:         display_write_number(x);
+[e ( _display_write_number (1 _x ]
+"36
+[; ;main.c: 36:         x++;
+[e ++ _x -> -> 1 `i `us ]
+"37
+[; ;main.c: 37:         if(x==999)
+[e $ ! == -> _x `ui -> -> 999 `i `ui 472  ]
+"38
+[; ;main.c: 38:         x=0;
 [e = _x -> -> 0 `i `us ]
 [e :U 472 ]
-"36
-[; ;main.c: 36:     }
+"39
+[; ;main.c: 39:     }
 }
 [e :U 469 ]
 [e $U 470  ]
 [e :U 471 ]
-"37
-[; ;main.c: 37: }
+"40
+[; ;main.c: 40: }
 [e :UE 468 ]
 }

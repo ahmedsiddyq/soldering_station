@@ -42,5 +42,5 @@
 #include "adc.h"
 #include "pwm.h"
 #include "pid.h"
-#include "disply.h"
+#include "display.h"
 #include "i2c1.h"
