@@ -1,0 +1,80 @@
+#define DATA_0 0xFC
+#define DATA_1 0x60
+#define DATA_2 0xDA
+#define DATA_3 0xF2
+#define DATA_4 0x66
+#define DATA_5 0xB6
+#define DATA_6 0xBE
+#define DATA_7 0xE0
+#define DATA_8 0xFE
+#define DATA_9 0xF6
+
+#define shift_delay 50
+
+void digi(uint8_t num ,uint8_t dig)
+{ 
+   switch (num)
+    {
+        case 0: number = DATA_0; break;
+        case 1: number = DATA_1; break;
+        case 2: number = DATAd_2; break;
+        case 3: number = DATA_3; break;
+        case 4: number = DATA_4; break;
+        case 5: number = DATA_5; break;
+        case 6: number = DATA_6; break;
+        case 7: number = DATA_7; break;
+        case 8: number = DATA_8; break;
+        case 9: number = DATA_9; break;
+        default: number = 0x00; break;
+    }
+
+   for (uint8_t i = 0; i < 4; i++)
+    {
+	 
+        DATA_PIN = dig & 0x01;  // output bit 0
+ 		shift_plus();
+        dig >>= 1;              // next bit
+    }
+	
+    for (uint8_t i = 0; i < 6; i++)
+    {
+	 
+        DATA_PIN =0;  
+		shift_plus();
+
+     }
+	
+	 for (uint8_t i = 0; i <8; i++)
+    {
+	 
+        DATA_PIN = number & 0x01;  // output bit 0
+		shift_plus();
+        data >>= 1;              // next bit
+    }
+ 
+} 
+ 
+ 
+void display(uint16_t num)
+{
+    uint8_t d[3] = {0};
+
+    for (uint8_t z = 0; z < 3; z++)
+    {
+        d[z] = num % 10;
+        num /= 10;
+    }
+
+    for (uint8_t z = 0; z < 3; z++)
+    {
+        digi(d[z],1<<z);
+    }
+}
+
+void shift_plus(void)
+{
+		ClK_PIN=1;
+		_delay_us(shift_delay);
+		ClK_PIN=0;
+		_delay_us(shift_delay);
+}

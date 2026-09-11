@@ -13,10 +13,22 @@
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"3 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+[v _shift_plus shift_plus `(v  1 e 1 0 ]
+"12
+[v _latch_and_enable latch_and_enable `(v  1 e 1 0 ]
+"31
+[v _digi digi `(v  1 e 1 0 ]
+"73
+[v _display display `(v  1 e 1 0 ]
 "9 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "4 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
@@ -49,37 +61,47 @@
 "612
 [u S46 . 1 `S39 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES46  1 e 1 @20 ]
+[s S538 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"712
+[u S545 . 1 `S538 1 . 1 0 ]
+[v _LATCbits LATCbits `VES545  1 e 1 @26 ]
 "787
 [v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
 "807
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
-[s S352 . 1 `uc 1 ON 1 0 :1:0 
+[s S357 . 1 `uc 1 ON 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS 1 0 :6:2 
 ]
 "848
-[s S356 . 1 `uc 1 ADON 1 0 :1:0 
+[s S361 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 ADCHS 1 0 :6:2 
 ]
-[s S360 . 1 `uc 1 . 1 0 :1:0 
+[s S365 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADGO 1 0 :1:1 
 ]
-[u S363 . 1 `S352 1 . 1 0 `S356 1 . 1 0 `S360 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES363  1 e 1 @157 ]
-[s S328 . 1 `uc 1 PREF 1 0 :2:0 
+[u S368 . 1 `S357 1 . 1 0 `S361 1 . 1 0 `S365 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES368  1 e 1 @157 ]
+[s S333 . 1 `uc 1 PREF 1 0 :2:0 
 `uc 1 . 1 0 :2:2 
 `uc 1 CS 1 0 :3:4 
 `uc 1 FM 1 0 :1:7 
 ]
 "907
-[s S333 . 1 `uc 1 ADPREF 1 0 :2:0 
+[s S338 . 1 `uc 1 ADPREF 1 0 :2:0 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS 1 0 :3:4 
 `uc 1 ADFM 1 0 :1:7 
 ]
-[u S338 . 1 `S328 1 . 1 0 `S333 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES338  1 e 1 @158 ]
+[u S343 . 1 `S333 1 . 1 0 `S338 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES343  1 e 1 @158 ]
 "1036
 [v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
 "1056
@@ -88,7 +110,7 @@
 [v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
 "1103
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
-[s S217 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S222 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -98,9 +120,9 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "1140
-[u S226 . 1 `S217 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES226  1 e 1 @285 ]
-[s S194 . 1 `uc 1 TX9D 1 0 :1:0 
+[u S231 . 1 `S222 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES231  1 e 1 @285 ]
+[s S199 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -110,9 +132,9 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "1202
-[u S203 . 1 `S194 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES203  1 e 1 @286 ]
-[s S173 . 1 `uc 1 ABDEN 1 0 :1:0 
+[u S208 . 1 `S199 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES208  1 e 1 @286 ]
+[s S178 . 1 `uc 1 ABDEN 1 0 :1:0 
 `uc 1 WUE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 BRG16 1 0 :1:3 
@@ -122,16 +144,16 @@
 `uc 1 ABDOVF 1 0 :1:7 
 ]
 "1264
-[u S182 . 1 `S173 1 . 1 0 ]
-[v _BAUD1CONbits BAUD1CONbits `VES182  1 e 1 @287 ]
+[u S187 . 1 `S178 1 . 1 0 ]
+[v _BAUD1CONbits BAUD1CONbits `VES187  1 e 1 @287 ]
 "3148
 [v _T2PR T2PR `VEuc  1 e 1 @653 ]
-[s S432 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S437 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "3238
-[s S436 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S441 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -139,11 +161,11 @@
 `uc 1 CKPS1 1 0 :1:5 
 `uc 1 CKPS2 1 0 :1:6 
 ]
-[s S444 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S449 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
-[s S448 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S453 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -152,45 +174,45 @@
 `uc 1 T2CKPS2 1 0 :1:6 
 `uc 1 TMR2ON 1 0 :1:7 
 ]
-[u S457 . 1 `S432 1 . 1 0 `S436 1 . 1 0 `S444 1 . 1 0 `S448 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES457  1 e 1 @654 ]
-[s S398 . 1 `uc 1 CS 1 0 :4:0 
+[u S462 . 1 `S437 1 . 1 0 `S441 1 . 1 0 `S449 1 . 1 0 `S453 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES462  1 e 1 @654 ]
+[s S403 . 1 `uc 1 CS 1 0 :4:0 
 ]
 "3501
-[s S400 . 1 `uc 1 CS0 1 0 :1:0 
+[s S405 . 1 `uc 1 CS0 1 0 :1:0 
 `uc 1 CS1 1 0 :1:1 
 `uc 1 CS2 1 0 :1:2 
 `uc 1 CS3 1 0 :1:3 
 ]
-[s S405 . 1 `uc 1 T2CS 1 0 :4:0 
+[s S410 . 1 `uc 1 T2CS 1 0 :4:0 
 ]
-[s S407 . 1 `uc 1 T2CS0 1 0 :1:0 
+[s S412 . 1 `uc 1 T2CS0 1 0 :1:0 
 `uc 1 T2CS1 1 0 :1:1 
 `uc 1 T2CS2 1 0 :1:2 
 `uc 1 T2CS3 1 0 :1:3 
 ]
-[u S412 . 1 `S398 1 . 1 0 `S400 1 . 1 0 `S405 1 . 1 0 `S407 1 . 1 0 ]
-[v _T2CLKCONbits T2CLKCONbits `VES412  1 e 1 @656 ]
+[u S417 . 1 `S403 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S412 1 . 1 0 ]
+[v _T2CLKCONbits T2CLKCONbits `VES417  1 e 1 @656 ]
 "4096
 [v _PWM3DC PWM3DC `VEus  1 e 2 @788 ]
 "4144
 [v _PWM3CON PWM3CON `VEuc  1 e 1 @790 ]
-[s S489 . 1 `uc 1 . 1 0 :4:0 
+[s S494 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 POL 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "4165
-[s S495 . 1 `uc 1 . 1 0 :4:0 
+[s S500 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 PWM3POL 1 0 :1:4 
 `uc 1 PWM3OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PWM3EN 1 0 :1:7 
 ]
-[u S501 . 1 `S489 1 . 1 0 `S495 1 . 1 0 ]
-[v _PWM3CONbits PWM3CONbits `VES501  1 e 1 @790 ]
-[s S238 . 1 `uc 1 ADIF 1 0 :1:0 
+[u S506 . 1 `S494 1 . 1 0 `S500 1 . 1 0 ]
+[v _PWM3CONbits PWM3CONbits `VES506  1 e 1 @790 ]
+[s S243 . 1 `uc 1 ADIF 1 0 :1:0 
 `uc 1 SSP1IF 1 0 :1:1 
 `uc 1 BCL1IF 1 0 :1:2 
 `uc 1 TX1IF 1 0 :1:3 
@@ -200,21 +222,21 @@
 `uc 1 CCP1IF 1 0 :1:7 
 ]
 "4986
-[u S247 . 1 `S238 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES247  1 e 1 @1805 ]
-[s S304 . 1 `uc 1 ADFVR 1 0 :2:0 
+[u S252 . 1 `S243 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES252  1 e 1 @1805 ]
+[s S309 . 1 `uc 1 ADFVR 1 0 :2:0 
 `uc 1 . 1 0 :4:2 
 `uc 1 FVRRDY 1 0 :1:6 
 `uc 1 FVREN 1 0 :1:7 
 ]
 "5797
-[s S309 . 1 `uc 1 ADFVR0 1 0 :1:0 
+[s S314 . 1 `uc 1 ADFVR0 1 0 :1:0 
 `uc 1 ADFVR1 1 0 :1:1 
 `uc 1 CDAFVR0 1 0 :1:2 
 `uc 1 CDAFVR1 1 0 :1:3 
 ]
-[u S314 . 1 `S304 1 . 1 0 `S309 1 . 1 0 ]
-[v _FVRCONbits FVRCONbits `VES314  1 e 1 @2316 ]
+[u S319 . 1 `S309 1 . 1 0 `S314 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES319  1 e 1 @2316 ]
 "5837
 [v _PPSLOCK PPSLOCK `VEuc  1 e 1 @7823 ]
 [s S91 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
@@ -255,12 +277,75 @@
 "9
 [v _main main `(v  1 e 1 0 ]
 {
-"33
+"34
 } 0
 "2 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
 [v _pins pins `(v  1 e 1 0 ]
 {
 "62
+} 0
+"73 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+[v _display display `(v  1 e 1 0 ]
+{
+"83
+[v display@z_577 z `uc  1 a 1 4 ]
+"77
+[v display@z z `uc  1 a 1 3 ]
+"75
+[v display@d d `[3]uc  1 a 3 0 ]
+"73
+[v display@num num `us  1 p 2 8 ]
+"87
+} 0
+"31
+[v _digi digi `(v  1 e 1 0 ]
+{
+[v digi@num num `uc  1 a 1 wreg ]
+"63
+[v digi@i_570 i `uc  1 a 1 6 ]
+"57
+[v digi@i_569 i `uc  1 a 1 5 ]
+"50
+[v digi@i i `uc  1 a 1 4 ]
+"33
+[v digi@number number `uc  1 a 1 7 ]
+"31
+[v digi@num num `uc  1 a 1 wreg ]
+[v digi@dig dig `uc  1 p 1 0 ]
+[v digi@num num `uc  1 a 1 3 ]
+"71
+} 0
+"3
+[v _shift_plus shift_plus `(v  1 e 1 0 ]
+{
+"10
+} 0
+"12
+[v _latch_and_enable latch_and_enable `(v  1 e 1 0 ]
+{
+"29
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
 } 0
 "22 C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
 [v _UART_Write UART_Write `(v  1 e 1 0 ]

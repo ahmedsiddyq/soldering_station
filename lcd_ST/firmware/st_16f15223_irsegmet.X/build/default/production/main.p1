@@ -85,6 +85,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7 ./uart.h
 [; ;./uart.h: 7: void UART_Write(char data);
 [v _UART_Write `(v ~T0 @X0 0 ef1`uc ]
+"21 ./disply.h
+[; ;./disply.h: 21: void display(uint16_t num);
+[v _display `(v ~T0 @X0 0 ef1`us ]
 [v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
@@ -770,25 +773,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 27:         PWM_SetDuty(x);
 [e ( _PWM_SetDuty (1 _x ]
 "28
-[; ;main.c: 28:         _delay((unsigned long)((50)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+[; ;main.c: 28:         display(x);
+[e ( _display (1 _x ]
 "29
-[; ;main.c: 29:         x++;
-[e ++ _x -> -> 1 `i `us ]
+[; ;main.c: 29:         _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
 "30
-[; ;main.c: 30:         if(x==999)
-[e $ ! == -> _x `ui -> -> 999 `i `ui 472  ]
+[; ;main.c: 30:         x++;
+[e ++ _x -> -> 1 `i `us ]
 "31
-[; ;main.c: 31:         x=0;
+[; ;main.c: 31:         if(x==999)
+[e $ ! == -> _x `ui -> -> 999 `i `ui 472  ]
+"32
+[; ;main.c: 32:         x=0;
 [e = _x -> -> 0 `i `us ]
 [e :U 472 ]
-"32
-[; ;main.c: 32:     }
+"33
+[; ;main.c: 33:     }
 }
 [e :U 469 ]
 [e $U 470  ]
 [e :U 471 ]
-"33
-[; ;main.c: 33: }
+"34
+[; ;main.c: 34: }
 [e :UE 468 ]
 }

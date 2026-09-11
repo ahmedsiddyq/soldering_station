@@ -1,2 +1,3 @@
 build/default/production/display.p1:  \
-display.c 
+display.c  \
+disply.h 

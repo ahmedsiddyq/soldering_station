@@ -25,7 +25,8 @@ uint16_t raw_current = ADC_Read(ADC_CH_CURRENT);
         v=(uint8_t)(((((uint32_t)ADC_Read(ADC_CH_TEMP)*4096UL) / 1023UL)/100));
         UART_Write(v);
         PWM_SetDuty(x);
-        __delay_ms(50);
+        display(x);
+        __delay_ms(1000);
         x++;
         if(x==999)
         x=0;

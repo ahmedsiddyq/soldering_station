@@ -42,3 +42,4 @@
 #include "adc.h"
 #include "pwm.h"
 #include "pid.h"
+#include "disply.h"
