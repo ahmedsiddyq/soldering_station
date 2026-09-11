@@ -12,6 +12,8 @@ void main(void)
   UART_Init(9600);
   ADC_Init();
 PWM_Init();
+ I2C1_Init();
+
 PWM_SetDuty(350);   // 35.0% duty at a fixed 1 kHz
 uint16_t raw_temp    = ADC_Read(ADC_CH_TEMP);
 uint16_t raw_setpt   = ADC_Read(ADC_CH_TEMP_SET);
@@ -25,9 +27,9 @@ uint16_t raw_current = ADC_Read(ADC_CH_CURRENT);
         v=(uint8_t)(((((uint32_t)ADC_Read(ADC_CH_TEMP)*4096UL) / 1023UL)/100));
         UART_Write(v);
         PWM_SetDuty(x);
-        display(x);
-        __delay_ms(100
-             );
+      //  display(x);
+        I2C1_WriteByte(10,10);
+        __delay_ms(100);
         x++;
         if(x==999)
         x=0;

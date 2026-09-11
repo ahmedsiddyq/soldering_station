@@ -43,3 +43,4 @@
 #include "pwm.h"
 #include "pid.h"
 #include "disply.h"
+#include "i2c1.h"
