@@ -5415,6 +5415,8 @@ void UART_Write(char data);
 void UART_WriteString(const char *str);
 uint8_t UART_DataReady(void);
 char UART_Read(void);
+void UART_Write16(uint16_t value);
+void UART_Write16String(uint16_t value, const char *str);
 # 2 "uart.c" 2
 
 
@@ -5465,4 +5467,28 @@ char UART_Read(void)
 void putch(char c)
 {
     UART_Write(c);
+}
+void UART_Write16(uint16_t value)
+{
+    char buffer[6];
+    uint8_t i = 0;
+
+    if (value == 0) {
+        UART_Write('0');
+        return;
+    }
+
+    while (value > 0) {
+        buffer[i++] = '0' + (value % 10);
+        value /= 10;
+    }
+
+    while (i > 0) {
+        UART_Write(buffer[--i]);
+    }
+}
+void UART_Write16String(uint16_t value, const char *str)
+{
+    UART_Write16(value);
+    UART_WriteString(str);
 }

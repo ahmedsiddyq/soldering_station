@@ -5443,7 +5443,7 @@ int32_t set_now = (int32_t)ADC_Read(4);
 
 int32_t err = set_now - temp_now;
 
-int32_t p = err * 1;
+int32_t p = err * 5;
 
 int32_t iterm_now = (i_PID * 1) / 10;
 int32_t duty_check = iterm_now + p;

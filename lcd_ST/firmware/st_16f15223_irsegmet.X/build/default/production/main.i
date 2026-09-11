@@ -5523,6 +5523,8 @@ void UART_Write(char data);
 void UART_WriteString(const char *str);
 uint8_t UART_DataReady(void);
 char UART_Read(void);
+void UART_Write16(uint16_t value);
+void UART_Write16String(uint16_t value, const char *str);
 # 41 "./header.h" 2
 
 # 1 "./adc.h" 1
@@ -5639,16 +5641,18 @@ void main(void)
 
 PWM_SetDuty(350);
 uint16_t raw_temp = ADC_Read(5);
-uint16_t raw_setpt = ADC_Read(4);
-uint16_t raw_current = ADC_Read(19);
-
+ uint16_t srt_temp = ADC_Read(4);
 
     while (1)
     {
 
-        _delay((unsigned long)((100)*(32000000UL/4000.0)));
-        tempSit();
-        display_write_number(ADC_Read(5));
+    _delay((unsigned long)((100)*(32000000UL/4000.0)));
+    tempSit();
+    raw_temp = (uint16_t)((ADC_Read(5) * 10UL) / 22UL);
+    srt_temp = (uint16_t)((ADC_Read(4) * 10UL) / 22UL);
+    UART_Write16String(raw_temp, " t\r\n");
+    UART_Write16String(srt_temp, " st\r\n");
+    display_write_number(raw_temp);
 
     }
 }

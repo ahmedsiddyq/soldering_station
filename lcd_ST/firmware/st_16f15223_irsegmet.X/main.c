@@ -18,16 +18,18 @@ void main(void)
 
 PWM_SetDuty(350);   // 35.0% duty at a fixed 1 kHz
 uint16_t raw_temp    = ADC_Read(ADC_CH_TEMP);
-uint16_t raw_setpt   = ADC_Read(ADC_CH_TEMP_SET);
-uint16_t raw_current = ADC_Read(ADC_CH_CURRENT);
+ uint16_t srt_temp = set_temp;
 
- 
     while (1)
     {
  
-        __delay_ms(100);
-        tempSit();
-        display_write_number(ADC_Read(ADC_CH_TEMP));
+    __delay_ms(100);
+    tempSit();
+    raw_temp = (uint16_t)((ADC_Read(ADC_CH_TEMP) * 10UL) / 22UL);
+    srt_temp = (uint16_t)((set_temp * 10UL) / 22UL);
+    UART_Write16String(raw_temp, " t\r\n");
+    UART_Write16String(srt_temp, " st\r\n");
+    display_write_number(raw_temp);
  
     }
 }

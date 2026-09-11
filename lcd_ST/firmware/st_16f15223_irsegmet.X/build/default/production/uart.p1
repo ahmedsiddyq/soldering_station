@@ -726,3 +726,100 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;uart.c: 51: }
 [e :UE 482 ]
 }
+"52
+[; ;uart.c: 52: void UART_Write16(uint16_t value)
+[v _UART_Write16 `(v ~T0 @X0 1 ef1`us ]
+"53
+[; ;uart.c: 53: {
+{
+[e :U _UART_Write16 ]
+"52
+[; ;uart.c: 52: void UART_Write16(uint16_t value)
+[v _value `us ~T0 @X0 1 r1 ]
+"53
+[; ;uart.c: 53: {
+[f ]
+"54
+[; ;uart.c: 54:     char buffer[6];
+[v _buffer `uc ~T0 @X0 -> 6 `i a ]
+"55
+[; ;uart.c: 55:     uint8_t i = 0;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+"57
+[; ;uart.c: 57:     if (value == 0) {
+[e $ ! == -> _value `ui -> -> 0 `i `ui 484  ]
+{
+"58
+[; ;uart.c: 58:         UART_Write('0');
+[e ( _UART_Write (1 -> -> 48 `ui `uc ]
+"59
+[; ;uart.c: 59:         return;
+[e $UE 483  ]
+"60
+[; ;uart.c: 60:     }
+}
+[e :U 484 ]
+"62
+[; ;uart.c: 62:     while (value > 0) {
+[e $U 485  ]
+[e :U 486 ]
+{
+"63
+[; ;uart.c: 63:         buffer[i++] = '0' + (value % 10);
+[e = *U + &U _buffer * -> ++ _i -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux -> + -> 48 `ui % -> _value `ui -> -> 10 `i `ui `uc ]
+"64
+[; ;uart.c: 64:         value /= 10;
+[e =/ _value -> -> 10 `i `ui ]
+"65
+[; ;uart.c: 65:     }
+}
+[e :U 485 ]
+"62
+[; ;uart.c: 62:     while (value > 0) {
+[e $ > -> _value `ui -> -> 0 `i `ui 486  ]
+[e :U 487 ]
+"67
+[; ;uart.c: 67:     while (i > 0) {
+[e $U 488  ]
+[e :U 489 ]
+{
+"68
+[; ;uart.c: 68:         UART_Write(buffer[--i]);
+[e ( _UART_Write (1 *U + &U _buffer * -> =- _i -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux ]
+"69
+[; ;uart.c: 69:     }
+}
+[e :U 488 ]
+"67
+[; ;uart.c: 67:     while (i > 0) {
+[e $ > -> _i `i -> 0 `i 489  ]
+[e :U 490 ]
+"70
+[; ;uart.c: 70: }
+[e :UE 483 ]
+}
+"71
+[; ;uart.c: 71: void UART_Write16String(uint16_t value, const char *str)
+[v _UART_Write16String `(v ~T0 @X0 1 ef2`us`*Cuc ]
+"72
+[; ;uart.c: 72: {
+{
+[e :U _UART_Write16String ]
+"71
+[; ;uart.c: 71: void UART_Write16String(uint16_t value, const char *str)
+[v _value `us ~T0 @X0 1 r1 ]
+[v _str `*Cuc ~T0 @X0 1 r2 ]
+"72
+[; ;uart.c: 72: {
+[f ]
+"73
+[; ;uart.c: 73:     UART_Write16(value);
+[e ( _UART_Write16 (1 _value ]
+"74
+[; ;uart.c: 74:     UART_WriteString(str);
+[e ( _UART_WriteString (1 _str ]
+"75
+[; ;uart.c: 75: }
+[e :UE 491 ]
+}

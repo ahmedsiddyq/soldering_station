@@ -525,9 +525,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _err `l ~T0 @X0 1 a ]
 [e = _err - _set_now _temp_now ]
 "8
-[; ;pid.c: 8: int32_t p = err * 1;
+[; ;pid.c: 8: int32_t p = err * 5;
 [v _p `l ~T0 @X0 1 a ]
-[e = _p * _err -> -> 1 `i `l ]
+[e = _p * _err -> -> 5 `i `l ]
 "10
 [; ;pid.c: 10: int32_t iterm_now = (i_PID * 1) / 10;
 [v _iterm_now `l ~T0 @X0 1 a ]
