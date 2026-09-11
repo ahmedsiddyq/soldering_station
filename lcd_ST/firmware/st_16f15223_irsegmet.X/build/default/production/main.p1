@@ -122,13 +122,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13 ./adc.h
 [; ;./adc.h: 13: uint16_t ADC_Read(uint8_t channel);
 [v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
-"7 ./uart.h
-[; ;./uart.h: 7: void UART_Write(char data);
-[v _UART_Write `(v ~T0 @X0 0 ef1`uc ]
 [v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
+"16 ./pid.h
+[; ;./pid.h: 16:  void tempSit();
+[v _tempSit `(v ~T0 @X0 0 e? ]
 "94 ./display.h
 [; ;./display.h: 94: _Bool display_write_number(uint16_t value);
 [v _display_write_number `(a ~T0 @X0 0 ef1`us ]
@@ -833,38 +833,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "26
 [; ;main.c: 26:     {
 {
-"29
-[; ;main.c: 29:         v=(uint8_t)(((((uint32_t)ADC_Read(5)*4096UL) / 1023UL)/100));
-[e = _v -> / / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 4096 `ul -> 1023 `ul -> -> -> 100 `i `l `ul `uc ]
-"30
-[; ;main.c: 30:         UART_Write(v);
-[e ( _UART_Write (1 -> _v `uc ]
-"31
-[; ;main.c: 31:         PWM_SetDuty(x);
-[e ( _PWM_SetDuty (1 _x ]
-"34
-[; ;main.c: 34:         _delay((unsigned long)((100)*(32000000UL/4000.0)));
+"28
+[; ;main.c: 28:         _delay((unsigned long)((100)*(32000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"35
-[; ;main.c: 35:         display_write_number(x);
-[e ( _display_write_number (1 _x ]
-"36
-[; ;main.c: 36:         x++;
-[e ++ _x -> -> 1 `i `us ]
-"37
-[; ;main.c: 37:         if(x==999)
-[e $ ! == -> _x `ui -> -> 999 `i `ui 472  ]
-"38
-[; ;main.c: 38:         x=0;
-[e = _x -> -> 0 `i `us ]
-[e :U 472 ]
-"39
-[; ;main.c: 39:     }
+"29
+[; ;main.c: 29:         tempSit();
+[e ( _tempSit ..  ]
+"30
+[; ;main.c: 30:         display_write_number(ADC_Read(5));
+[e ( _display_write_number (1 ( _ADC_Read (1 -> -> 5 `i `uc ]
+"32
+[; ;main.c: 32:     }
 }
 [e :U 469 ]
 [e $U 470  ]
 [e :U 471 ]
-"40
-[; ;main.c: 40: }
+"33
+[; ;main.c: 33: }
 [e :UE 468 ]
 }

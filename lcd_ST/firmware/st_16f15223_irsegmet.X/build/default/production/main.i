@@ -5551,6 +5551,14 @@ void PWM_SetDuty(uint16_t permille);
 
 
 int32_t i_PID = 0;
+
+
+
+
+
+
+
+ void tempSit();
 # 44 "./header.h" 2
 
 # 1 "./display.h" 1
@@ -5638,16 +5646,9 @@ uint16_t raw_current = ADC_Read(19);
     while (1)
     {
 
-
-        v=(uint8_t)(((((uint32_t)ADC_Read(5)*4096UL) / 1023UL)/100));
-        UART_Write(v);
-        PWM_SetDuty(x);
-
-
         _delay((unsigned long)((100)*(32000000UL/4000.0)));
-        display_write_number(x);
-        x++;
-        if(x==999)
-        x=0;
+        tempSit();
+        display_write_number(ADC_Read(5));
+
     }
 }

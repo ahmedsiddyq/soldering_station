@@ -24,17 +24,10 @@ uint16_t raw_current = ADC_Read(ADC_CH_CURRENT);
  
     while (1)
     {
-        // Blink RC5 every 1 second
-
-        v=(uint8_t)(((((uint32_t)ADC_Read(ADC_CH_TEMP)*4096UL) / 1023UL)/100));
-        UART_Write(v);
-        PWM_SetDuty(x);
-      //  display(x);
-       
+ 
         __delay_ms(100);
-        display_write_number(x);
-        x++;
-        if(x==999)
-        x=0;
+        tempSit();
+        display_write_number(ADC_Read(ADC_CH_TEMP));
+ 
     }
 }

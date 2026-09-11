@@ -13,5 +13,5 @@ int32_t i_PID = 0;
 #define CURRENT  ADC_Read(ADC_CH_CURRENT)
 #define set_temp ADC_Read(ADC_CH_TEMP_SET)
  
- 
+ void tempSit();
 #endif

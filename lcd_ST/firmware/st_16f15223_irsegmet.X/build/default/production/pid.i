@@ -5427,6 +5427,14 @@ void PWM_SetDuty(uint16_t permille);
 # 7 "./pid.h" 2
 
 int32_t i_PID = 0;
+
+
+
+
+
+
+
+ void tempSit();
 # 1 "pid.c" 2
 
 void tempSit(){
