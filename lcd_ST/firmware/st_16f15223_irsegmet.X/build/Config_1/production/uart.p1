@@ -1,10 +1,60 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"13 ./adc.h
-[; ;./adc.h: 13: uint16_t ADC_Read(uint8_t channel);
-[v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
-"8 ./pwm.h
-[; ;./pwm.h: 8: void PWM_SetDuty(uint16_t permille);
-[v _PWM_SetDuty `(v ~T0 @X0 0 ef1`us ]
+"1253 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1253:     struct {
+[s S77 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S77 . ABDEN WUE . BRG16 SCKP . RCIDL ABDOVF ]
+"1252
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1252: typedef union {
+[u S76 `S77 1 ]
+[n S76 . . ]
+"1264
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1264: extern volatile BAUD1CONbits_t BAUD1CONbits __attribute__((address(0x11F)));
+[v _BAUD1CONbits `VS76 ~T0 @X0 0 e@287 ]
+"1191
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1191:     struct {
+[s S75 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S75 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"1190
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1190: typedef union {
+[u S74 `S75 1 ]
+[n S74 . . ]
+"1202
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1202: extern volatile TX1STAbits_t TX1STAbits __attribute__((address(0x11E)));
+[v _TX1STAbits `VS74 ~T0 @X0 0 e@286 ]
+"1083
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1083: extern volatile unsigned char SP1BRGL __attribute__((address(0x11B)));
+[v _SP1BRGL `Vuc ~T0 @X0 0 e@283 ]
+"1103
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1103: extern volatile unsigned char SP1BRGH __attribute__((address(0x11C)));
+[v _SP1BRGH `Vuc ~T0 @X0 0 e@284 ]
+"1129
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1129:     struct {
+[s S73 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S73 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"1128
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1128: typedef union {
+[u S72 `S73 1 ]
+[n S72 . . ]
+"1140
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1140: extern volatile RC1STAbits_t RC1STAbits __attribute__((address(0x11D)));
+[v _RC1STAbits `VS72 ~T0 @X0 0 e@285 ]
+"4975
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 4975:     struct {
+[s S261 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S261 . ADIF SSP1IF BCL1IF TX1IF RC1IF TMR1IF TMR2IF CCP1IF ]
+"4974
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 4974: typedef union {
+[u S260 `S261 1 ]
+[n S260 . . ]
+"4986
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 4986: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x70D)));
+[v _PIR1bits `VS260 ~T0 @X0 0 e@1805 ]
+"1056
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1056: extern volatile unsigned char TX1REG __attribute__((address(0x11A)));
+[v _TX1REG `Vuc ~T0 @X0 0 e@282 ]
+"1036
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1036: extern volatile unsigned char RC1REG __attribute__((address(0x119)));
+[v _RC1REG `Vuc ~T0 @X0 0 e@281 ]
 "111 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 111: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -500,95 +550,276 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8661
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 8661: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"8 ./pid.h
-[; ;./pid.h: 8: int32_t i_PID = 0;
-[v _i_PID `l ~T0 @X0 1 e ]
-[i _i_PID
--> -> 0 `i `l
-]
-"2 pid.c
-[; ;pid.c: 2: void tempSit(){
-[v _tempSit `(v ~T0 @X0 1 ef ]
-{
-[e :U _tempSit ]
-[f ]
-"3
-[; ;pid.c: 3: int32_t temp_now = (int32_t)ADC_Read(5);
-[v _temp_now `l ~T0 @X0 1 a ]
-[e = _temp_now -> ( _ADC_Read (1 -> -> 5 `i `uc `l ]
-"4
-[; ;pid.c: 4: int32_t set_now = (int32_t)ADC_Read(4);
-[v _set_now `l ~T0 @X0 1 a ]
-[e = _set_now -> ( _ADC_Read (1 -> -> 4 `i `uc `l ]
+"5 uart.c
+[; ;uart.c: 5: void UART_Init(uint32_t baud)
+[v _UART_Init `(v ~T0 @X0 1 ef1`ul ]
 "6
-[; ;pid.c: 6: int32_t err = set_now - temp_now;
-[v _err `l ~T0 @X0 1 a ]
-[e = _err - _set_now _temp_now ]
-"8
-[; ;pid.c: 8: int32_t p = err * 5;
-[v _p `l ~T0 @X0 1 a ]
-[e = _p * _err -> -> 5 `i `l ]
-"10
-[; ;pid.c: 10: int32_t iterm_now = (i_PID * 1) / 20;
-[v _iterm_now `l ~T0 @X0 1 a ]
-[e = _iterm_now / * _i_PID -> -> 1 `i `l -> -> 20 `i `l ]
-"11
-[; ;pid.c: 11: int32_t duty_check = iterm_now + p;
-[v _duty_check `l ~T0 @X0 1 a ]
-[e = _duty_check + _iterm_now _p ]
-"13
-[; ;pid.c: 13: if (!((duty_check >= 1000 && err > 0) ||
-[e $ ! ! || && >= _duty_check -> -> 1000 `i `l > _err -> -> 0 `i `l && <= _duty_check -> -> 0 `i `l < _err -> -> 0 `i `l 468  ]
-"15
-[; ;pid.c: 15: {
+[; ;uart.c: 6: {
 {
+[e :U _UART_Init ]
+"5
+[; ;uart.c: 5: void UART_Init(uint32_t baud)
+[v _baud `ul ~T0 @X0 1 r1 ]
+"6
+[; ;uart.c: 6: {
+[f ]
+"7
+[; ;uart.c: 7:     BAUD1CONbits.BRG16 = 1;
+[e = . . _BAUD1CONbits 0 3 -> -> 1 `i `uc ]
+"8
+[; ;uart.c: 8:     TX1STAbits.BRGH = 1;
+[e = . . _TX1STAbits 0 2 -> -> 1 `i `uc ]
+"9
+[; ;uart.c: 9:     TX1STAbits.SYNC = 0;
+[e = . . _TX1STAbits 0 4 -> -> 0 `i `uc ]
+"11
+[; ;uart.c: 11:     uint32_t spbrg = (32000000UL / (4UL * baud)) - 1;
+[v _spbrg `ul ~T0 @X0 1 a ]
+[e = _spbrg - / -> 32000000 `ul * -> 4 `ul _baud -> -> -> 1 `i `l `ul ]
+"12
+[; ;uart.c: 12:     SP1BRGL = (uint8_t)(spbrg & 0xFF);
+[e = _SP1BRGL -> & _spbrg -> -> -> 255 `i `l `ul `uc ]
+"13
+[; ;uart.c: 13:     SP1BRGH = (uint8_t)(spbrg >> 8);
+[e = _SP1BRGH -> >> _spbrg -> 8 `i `uc ]
+"15
+[; ;uart.c: 15:     TX1STAbits.TX9 = 0;
+[e = . . _TX1STAbits 0 6 -> -> 0 `i `uc ]
 "16
-[; ;pid.c: 16:     i_PID += err;
-[e =+ _i_PID _err ]
+[; ;uart.c: 16:     RC1STAbits.RX9 = 0;
+[e = . . _RC1STAbits 0 6 -> -> 0 `i `uc ]
+"17
+[; ;uart.c: 17:     RC1STAbits.CREN = 1;
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
 "18
-[; ;pid.c: 18:     if (i_PID > (1000L * 20 / 1))
-[e $ ! > _i_PID / * -> 1000 `l -> -> 20 `i `l -> -> 1 `i `l 469  ]
+[; ;uart.c: 18:     TX1STAbits.TXEN = 1;
+[e = . . _TX1STAbits 0 5 -> -> 1 `i `uc ]
 "19
-[; ;pid.c: 19:         i_PID = 1000L * 20 / 1;
-[e = _i_PID / * -> 1000 `l -> -> 20 `i `l -> -> 1 `i `l ]
-[e :U 469 ]
-"21
-[; ;pid.c: 21:     if (i_PID < 0)
-[e $ ! < _i_PID -> -> 0 `i `l 470  ]
-"22
-[; ;pid.c: 22:         i_PID = 0;
-[e = _i_PID -> -> 0 `i `l ]
-[e :U 470 ]
-"23
-[; ;pid.c: 23: }
-}
-[e :U 468 ]
-"25
-[; ;pid.c: 25: int32_t iterm = (i_PID * 1) / 20;
-[v _iterm `l ~T0 @X0 1 a ]
-[e = _iterm / * _i_PID -> -> 1 `i `l -> -> 20 `i `l ]
-"26
-[; ;pid.c: 26: int32_t duty = iterm + p;
-[v _duty `l ~T0 @X0 1 a ]
-[e = _duty + _iterm _p ]
-"28
-[; ;pid.c: 28: if (duty > 1000)
-[e $ ! > _duty -> -> 1000 `i `l 471  ]
-"29
-[; ;pid.c: 29:     duty = 1000;
-[e = _duty -> -> 1000 `i `l ]
-[e :U 471 ]
-"31
-[; ;pid.c: 31: if (duty < 0)
-[e $ ! < _duty -> -> 0 `i `l 472  ]
-"32
-[; ;pid.c: 32:     duty = 0;
-[e = _duty -> -> 0 `i `l ]
-[e :U 472 ]
-"34
-[; ;pid.c: 34: PWM_SetDuty((uint16_t)duty);
-[e ( _PWM_SetDuty (1 -> _duty `us ]
-"35
-[; ;pid.c: 35: }
+[; ;uart.c: 19:     RC1STAbits.SPEN = 1;
+[e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
+"20
+[; ;uart.c: 20: }
 [e :UE 467 ]
+}
+"22
+[; ;uart.c: 22: void UART_Write(char data)
+[v _UART_Write `(v ~T0 @X0 1 ef1`uc ]
+"23
+[; ;uart.c: 23: {
+{
+[e :U _UART_Write ]
+"22
+[; ;uart.c: 22: void UART_Write(char data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"23
+[; ;uart.c: 23: {
+[f ]
+"24
+[; ;uart.c: 24:     while (!PIR1bits.TX1IF);
+[e $U 469  ]
+[e :U 470 ]
+[e :U 469 ]
+[e $ ! != -> . . _PIR1bits 0 3 `i -> 0 `i 470  ]
+[e :U 471 ]
+"25
+[; ;uart.c: 25:     TX1REG = data;
+[e = _TX1REG -> _data `uc ]
+"26
+[; ;uart.c: 26: }
+[e :UE 468 ]
+}
+"28
+[; ;uart.c: 28: void UART_WriteString(const char *str)
+[v _UART_WriteString `(v ~T0 @X0 1 ef1`*Cuc ]
+"29
+[; ;uart.c: 29: {
+{
+[e :U _UART_WriteString ]
+"28
+[; ;uart.c: 28: void UART_WriteString(const char *str)
+[v _str `*Cuc ~T0 @X0 1 r1 ]
+"29
+[; ;uart.c: 29: {
+[f ]
+"30
+[; ;uart.c: 30:     while (*str) UART_Write(*str++);
+[e $U 473  ]
+[e :U 474 ]
+[e ( _UART_Write (1 *U ++ _str * -> -> 1 `i `x -> -> # *U _str `i `x ]
+[e :U 473 ]
+[e $ != -> *U _str `i -> 0 `i 474  ]
+[e :U 475 ]
+"31
+[; ;uart.c: 31: }
+[e :UE 472 ]
+}
+"33
+[; ;uart.c: 33: uint8_t UART_DataReady(void)
+[v _UART_DataReady `(uc ~T0 @X0 1 ef ]
+"34
+[; ;uart.c: 34: {
+{
+[e :U _UART_DataReady ]
+[f ]
+"35
+[; ;uart.c: 35:     return PIR1bits.RC1IF;
+[e ) . . _PIR1bits 0 4 ]
+[e $UE 476  ]
+"36
+[; ;uart.c: 36: }
+[e :UE 476 ]
+}
+"38
+[; ;uart.c: 38: char UART_Read(void)
+[v _UART_Read `(uc ~T0 @X0 1 ef ]
+"39
+[; ;uart.c: 39: {
+{
+[e :U _UART_Read ]
+[f ]
+"40
+[; ;uart.c: 40:     if (RC1STAbits.OERR) {
+[e $ ! != -> . . _RC1STAbits 0 1 `i -> 0 `i 478  ]
+{
+"41
+[; ;uart.c: 41:         RC1STAbits.CREN = 0;
+[e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
+"42
+[; ;uart.c: 42:         RC1STAbits.CREN = 1;
+[e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
+"43
+[; ;uart.c: 43:     }
+}
+[e :U 478 ]
+"44
+[; ;uart.c: 44:     while (!PIR1bits.RC1IF);
+[e $U 479  ]
+[e :U 480 ]
+[e :U 479 ]
+[e $ ! != -> . . _PIR1bits 0 4 `i -> 0 `i 480  ]
+[e :U 481 ]
+"45
+[; ;uart.c: 45:     return RC1REG;
+[e ) -> _RC1REG `uc ]
+[e $UE 477  ]
+"46
+[; ;uart.c: 46: }
+[e :UE 477 ]
+}
+"48
+[; ;uart.c: 48: void putch(char c)
+[v _putch `(v ~T0 @X0 1 ef1`uc ]
+"49
+[; ;uart.c: 49: {
+{
+[e :U _putch ]
+"48
+[; ;uart.c: 48: void putch(char c)
+[v _c `uc ~T0 @X0 1 r1 ]
+"49
+[; ;uart.c: 49: {
+[f ]
+"50
+[; ;uart.c: 50:     UART_Write(c);
+[e ( _UART_Write (1 _c ]
+"51
+[; ;uart.c: 51: }
+[e :UE 482 ]
+}
+"52
+[; ;uart.c: 52: void UART_Write16(uint16_t value)
+[v _UART_Write16 `(v ~T0 @X0 1 ef1`us ]
+"53
+[; ;uart.c: 53: {
+{
+[e :U _UART_Write16 ]
+"52
+[; ;uart.c: 52: void UART_Write16(uint16_t value)
+[v _value `us ~T0 @X0 1 r1 ]
+"53
+[; ;uart.c: 53: {
+[f ]
+"54
+[; ;uart.c: 54:     char buffer[6];
+[v _buffer `uc ~T0 @X0 -> 6 `i a ]
+"55
+[; ;uart.c: 55:     uint8_t i = 0;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+"57
+[; ;uart.c: 57:     if (value == 0) {
+[e $ ! == -> _value `ui -> -> 0 `i `ui 484  ]
+{
+"58
+[; ;uart.c: 58:         UART_Write('0');
+[e ( _UART_Write (1 -> -> 48 `ui `uc ]
+"59
+[; ;uart.c: 59:         return;
+[e $UE 483  ]
+"60
+[; ;uart.c: 60:     }
+}
+[e :U 484 ]
+"62
+[; ;uart.c: 62:     while (value > 0) {
+[e $U 485  ]
+[e :U 486 ]
+{
+"63
+[; ;uart.c: 63:         buffer[i++] = '0' + (value % 10);
+[e = *U + &U _buffer * -> ++ _i -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux -> + -> 48 `ui % -> _value `ui -> -> 10 `i `ui `uc ]
+"64
+[; ;uart.c: 64:         value /= 10;
+[e =/ _value -> -> 10 `i `ui ]
+"65
+[; ;uart.c: 65:     }
+}
+[e :U 485 ]
+"62
+[; ;uart.c: 62:     while (value > 0) {
+[e $ > -> _value `ui -> -> 0 `i `ui 486  ]
+[e :U 487 ]
+"67
+[; ;uart.c: 67:     while (i > 0) {
+[e $U 488  ]
+[e :U 489 ]
+{
+"68
+[; ;uart.c: 68:         UART_Write(buffer[--i]);
+[e ( _UART_Write (1 *U + &U _buffer * -> =- _i -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux ]
+"69
+[; ;uart.c: 69:     }
+}
+[e :U 488 ]
+"67
+[; ;uart.c: 67:     while (i > 0) {
+[e $ > -> _i `i -> 0 `i 489  ]
+[e :U 490 ]
+"70
+[; ;uart.c: 70: }
+[e :UE 483 ]
+}
+"71
+[; ;uart.c: 71: void UART_Write16String(uint16_t value, const char *str)
+[v _UART_Write16String `(v ~T0 @X0 1 ef2`us`*Cuc ]
+"72
+[; ;uart.c: 72: {
+{
+[e :U _UART_Write16String ]
+"71
+[; ;uart.c: 71: void UART_Write16String(uint16_t value, const char *str)
+[v _value `us ~T0 @X0 1 r1 ]
+[v _str `*Cuc ~T0 @X0 1 r2 ]
+"72
+[; ;uart.c: 72: {
+[f ]
+"73
+[; ;uart.c: 73:     UART_Write16(value);
+[e ( _UART_Write16 (1 _value ]
+"74
+[; ;uart.c: 74:     UART_WriteString(str);
+[e ( _UART_WriteString (1 _str ]
+"75
+[; ;uart.c: 75: }
+[e :UE 491 ]
 }

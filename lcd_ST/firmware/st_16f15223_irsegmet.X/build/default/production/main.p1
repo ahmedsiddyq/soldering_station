@@ -116,9 +116,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72 ./display.h
 [; ;./display.h: 72: void display_init(void);
 [v _display_init `(v ~T0 @X0 0 ef ]
-"8 ./pwm.h
-[; ;./pwm.h: 8: void PWM_SetDuty(uint16_t permille);
-[v _PWM_SetDuty `(v ~T0 @X0 0 ef1`us ]
+"78
+[; ;./display.h: 78: _Bool display_set_brightness(uint8_t brightness);
+[v _display_set_brightness `(a ~T0 @X0 0 ef1`uc ]
 "13 ./adc.h
 [; ;./adc.h: 13: uint16_t ADC_Read(uint8_t channel);
 [v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
@@ -815,17 +815,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16
 [; ;main.c: 16:  display_init();
 [e ( _display_init ..  ]
+"17
+[; ;main.c: 17: display_set_brightness(2);
+[e ( _display_set_brightness (1 -> -> 2 `i `uc ]
 "19
-[; ;main.c: 19: PWM_SetDuty(350);
-[e ( _PWM_SetDuty (1 -> -> 350 `i `us ]
-"20
-[; ;main.c: 20: uint16_t raw_temp = ADC_Read(5);
+[; ;main.c: 19:  uint16_t raw_temp = ADC_Read(5);
 [v _raw_temp `us ~T0 @X0 1 a ]
 [e = _raw_temp ( _ADC_Read (1 -> -> 5 `i `uc ]
-"21
-[; ;main.c: 21:  uint16_t srt_temp = ADC_Read(4);
+"20
+[; ;main.c: 20:  uint16_t srt_temp = ADC_Read(4);
 [v _srt_temp `us ~T0 @X0 1 a ]
 [e = _srt_temp ( _ADC_Read (1 -> -> 4 `i `uc ]
+"21
+[; ;main.c: 21:  uint16_t oldsrt_temp =0;
+[v _oldsrt_temp `us ~T0 @X0 1 a ]
+[e = _oldsrt_temp -> -> 0 `i `us ]
+"22
+[; ;main.c: 22:  int32_t dtt=0;
+[v _dtt `l ~T0 @X0 1 a ]
+[e = _dtt -> -> 0 `i `l ]
 "23
 [; ;main.c: 23:     while (1)
 [e :U 470 ]
@@ -833,17 +841,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 24:     {
 {
 "26
-[; ;main.c: 26:     _delay((unsigned long)((100)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+[; ;main.c: 26:     _delay((unsigned long)((50)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
 "27
 [; ;main.c: 27:     tempSit();
 [e ( _tempSit ..  ]
 "28
-[; ;main.c: 28:     raw_temp = (uint16_t)((ADC_Read(5) * 10UL) / 22UL);
-[e = _raw_temp -> / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 10 `ul -> 22 `ul `us ]
+[; ;main.c: 28:     raw_temp = (uint16_t)((ADC_Read(5) * 45UL) / 77UL);
+[e = _raw_temp -> / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 45 `ul -> 77 `ul `us ]
 "29
-[; ;main.c: 29:     srt_temp = (uint16_t)((ADC_Read(4) * 10UL) / 22UL);
-[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 10 `ul -> 22 `ul `us ]
+[; ;main.c: 29:     srt_temp = (uint16_t)((ADC_Read(4) *45UL) / 77UL);
+[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 45 `ul -> 77 `ul `us ]
 "30
 [; ;main.c: 30:     UART_Write16String(raw_temp, " t\r\n");
 [e ( _UART_Write16String (2 , _raw_temp :s 1C ]
@@ -853,15 +861,48 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32
 [; ;main.c: 32:     display_write_number(raw_temp);
 [e ( _display_write_number (1 _raw_temp ]
-"34
-[; ;main.c: 34:     }
+"35
+[; ;main.c: 35:     dtt = srt_temp - oldsrt_temp;
+[e = _dtt -> - -> _srt_temp `ui -> _oldsrt_temp `ui `l ]
+"36
+[; ;main.c: 36:     if (dtt < 0)
+[e $ ! < _dtt -> -> 0 `i `l 472  ]
+"37
+[; ;main.c: 37:     dtt = -dtt;
+[e = _dtt -U _dtt ]
+[e :U 472 ]
+"39
+[; ;main.c: 39:     if (dtt < 10)
+[e $ ! < _dtt -> -> 10 `i `l 473  ]
+"40
+[; ;main.c: 40:     {
+{
+"41
+[; ;main.c: 41:     oldsrt_temp = srt_temp;
+[e = _oldsrt_temp _srt_temp ]
+"42
+[; ;main.c: 42:     display_write_number(srt_temp);
+[e ( _display_write_number (1 _srt_temp ]
+"43
+[; ;main.c: 43:     UART_Write16String(oldsrt_temp, " tempchange st\r\n");
+[e ( _UART_Write16String (2 , _oldsrt_temp :s 3C ]
+"44
+[; ;main.c: 44:      _delay((unsigned long)((2000)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"46
+[; ;main.c: 46:     }
+}
+[e :U 473 ]
+"47
+[; ;main.c: 47:     }
 }
 [e :U 469 ]
 [e $U 470  ]
 [e :U 471 ]
-"35
-[; ;main.c: 35: }
+"48
+[; ;main.c: 48: }
 [e :UE 468 ]
 }
+[a 3C 32 116 101 109 112 99 104 97 110 103 101 32 115 116 13 10 0 ]
 [a 2C 32 115 116 13 10 0 ]
 [a 1C 32 116 13 10 0 ]

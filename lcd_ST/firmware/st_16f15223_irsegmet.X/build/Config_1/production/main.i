@@ -5512,6 +5512,18 @@ ANSELAbits.ANSA2 = 0;
 }
 # 40 "./header.h" 2
 
+# 1 "./timer_1ms.h" 1
+
+
+
+
+
+
+extern volatile uint8_t tick_1ms;
+
+void Timer0_1ms_Init(void);
+# 41 "./header.h" 2
+
 # 1 "./uart.h" 1
 
 
@@ -5525,13 +5537,13 @@ uint8_t UART_DataReady(void);
 char UART_Read(void);
 void UART_Write16(uint16_t value);
 void UART_Write16String(uint16_t value, const char *str);
-# 41 "./header.h" 2
+# 42 "./header.h" 2
 
 # 1 "./adc.h" 1
 # 12 "./adc.h"
 void ADC_Init(void);
 uint16_t ADC_Read(uint8_t channel);
-# 42 "./header.h" 2
+# 43 "./header.h" 2
 
 # 1 "./pwm.h" 1
 
@@ -5542,7 +5554,7 @@ uint16_t ADC_Read(uint8_t channel);
 
 void PWM_Init(void);
 void PWM_SetDuty(uint16_t permille);
-# 43 "./header.h" 2
+# 44 "./header.h" 2
 
 # 1 "./pid.h" 1
 
@@ -5561,7 +5573,7 @@ int32_t i_PID = 0;
 
 
  void tempSit();
-# 44 "./header.h" 2
+# 45 "./header.h" 2
 
 # 1 "./display.h" 1
 # 62 "./display.h"
@@ -5604,7 +5616,7 @@ _Bool display_write_number(uint16_t value);
 
 
 _Bool display_read_keys(uint8_t *key_code, _Bool *pressed);
-# 45 "./header.h" 2
+# 46 "./header.h" 2
 
 # 1 "./i2c1.h" 1
 # 22 "./i2c1.h"
@@ -5620,7 +5632,7 @@ _Bool I2C1_WriteByte(uint8_t addr7, uint8_t data);
 
 
 _Bool I2C1_Read(uint8_t addr7, uint8_t *data, uint8_t len);
-# 46 "./header.h" 2
+# 47 "./header.h" 2
 # 2 "main.c" 2
 
 
@@ -5631,40 +5643,63 @@ uint8_t v=5;
 uint16_t x=0;
 void main(void)
 {
-    pins();
+pins();
   UART_Init(9600);
   ADC_Init();
+  Timer0_1ms_Init();
  PWM_Init();
  I2C1_Init();
  display_init();
-display_set_brightness(2);
+display_set_brightness(1);
 
  uint16_t raw_temp = ADC_Read(5);
  uint16_t srt_temp = ADC_Read(4);
  uint16_t oldsrt_temp =0;
  int32_t dtt=0;
+ uint8_t SW_Dp =0;
     while (1)
     {
 
     _delay((unsigned long)((50)*(32000000UL/4000.0)));
+
     tempSit();
     raw_temp = (uint16_t)((ADC_Read(5) * 45UL) / 77UL);
     srt_temp = (uint16_t)((ADC_Read(4) *45UL) / 77UL);
+
+    if(!SW_Dp){
     UART_Write16String(raw_temp, " t\r\n");
     UART_Write16String(srt_temp, " st\r\n");
     display_write_number(raw_temp);
-
-
-    dtt = srt_temp - oldsrt_temp;
-    if (dtt < 0)
-    dtt = -dtt;
-
-    if (dtt < 10)
+    }
+    else
     {
+     display_write_number(srt_temp);
+     SW_Dp=0;
+    }
+
+
+
+
+
+     if (tick_1ms)
+    {
+        tick_1ms = 0;
+    dtt = srt_temp - oldsrt_temp;
+
+    if (dtt < 0){
+    dtt = -dtt;}
+     UART_Write16String(dtt, " dtt1 \r\n");
+
+    if (10 < dtt)
+    {
+     UART_Write16String(dtt, " dtt 2\r\n");
     oldsrt_temp = srt_temp;
-    display_write_number(srt_temp);
-    UART_Write16String(oldsrt_temp, " tempchange st\r\n");
-     _delay((unsigned long)((2000)*(32000000UL/4000.0)));
+
+    SW_Dp=1;
+    }
+
+
+
 
     }
     }

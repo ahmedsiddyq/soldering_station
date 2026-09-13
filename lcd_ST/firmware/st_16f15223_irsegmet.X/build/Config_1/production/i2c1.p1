@@ -1,10 +1,129 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"13 ./adc.h
-[; ;./adc.h: 13: uint16_t ADC_Read(uint8_t channel);
-[v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
-"8 ./pwm.h
-[; ;./pwm.h: 8: void PWM_SetDuty(uint16_t permille);
-[v _PWM_SetDuty `(v ~T0 @X0 0 ef1`us ]
+"1993 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1993: extern volatile unsigned char SSP1CON2 __attribute__((address(0x191)));
+[v _SSP1CON2 `Vuc ~T0 @X0 0 e@401 ]
+"1515
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1515:     struct {
+[s S88 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S88 . BF UA R_nW S P D_nA CKE SMP ]
+"1525
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1525:     struct {
+[s S89 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S89 . . R_W . D_A ]
+"1531
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1531:     struct {
+[s S90 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S90 . . nW . nA ]
+"1537
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1537:     struct {
+[s S91 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S91 . . nWRITE . nADDRESS ]
+"1543
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1543:     struct {
+[s S92 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S92 . . READ_WRITE . DATA_ADDRESS ]
+"1549
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1549:     struct {
+[s S93 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S93 . . I2C_READ I2C_START I2C_STOP I2C_DAT ]
+"1556
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1556:     struct {
+[s S94 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S94 . BF1 UA1 R START STOP D CKE1 SMP1 ]
+"1566
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1566:     struct {
+[s S95 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S95 . . RW START1 STOP1 DA ]
+"1573
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1573:     struct {
+[s S96 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S96 . . RW1 I2C_START1 I2C_STOP2 DA1 ]
+"1580
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1580:     struct {
+[s S97 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S97 . . I2C_READ1 S2 P2 DATA_ADDRESS1 ]
+"1587
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1587:     struct {
+[s S98 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S98 . . READ_WRITE1 . D_A1 ]
+"1593
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1593:     struct {
+[s S99 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S99 . . R_W1 . D_nA1 ]
+"1599
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1599:     struct {
+[s S100 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S100 . . R_nW1 . I2C_DAT1 ]
+"1605
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1605:     struct {
+[s S101 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S101 . . nW2 . nA2 ]
+"1611
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1611:     struct {
+[s S102 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S102 . . nWRITE1 . nADDRESS1 ]
+"1514
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1514: typedef union {
+[u S87 `S88 1 `S89 1 `S90 1 `S91 1 `S92 1 `S93 1 `S94 1 `S95 1 `S96 1 `S97 1 `S98 1 `S99 1 `S100 1 `S101 1 `S102 1 ]
+[n S87 . . . . . . . . . . . . . . . . ]
+"1618
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1618: extern volatile SSP1STATbits_t SSP1STATbits __attribute__((address(0x18F)));
+[v _SSP1STATbits `VS87 ~T0 @X0 0 e@399 ]
+"1999
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1999:     struct {
+[s S108 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S108 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"2009
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 2009:     struct {
+[s S109 :1 `uc 1 :5 `uc 1 ]
+[n S109 . . ADMSK ]
+"2013
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 2013:     struct {
+[s S110 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S110 . . ADMSK1 ADMSK2 ADMSK3 ADMSK4 ADMSK5 ]
+"2021
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 2021:     struct {
+[s S111 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S111 . SEN1 ADMSK11 ADMSK21 ADMSK31 ACKEN1 ACKDT1 ACKSTAT1 GCEN1 ]
+"2031
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 2031:     struct {
+[s S112 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S112 . . RSEN1 PEN1 RCEN1 ADMSK41 ADMSK51 ]
+"1998
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1998: typedef union {
+[u S107 `S108 1 `S109 1 `S110 1 `S111 1 `S112 1 ]
+[n S107 . . . . . . ]
+"2040
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 2040: extern volatile SSP1CON2bits_t SSP1CON2bits __attribute__((address(0x191)));
+[v _SSP1CON2bits `VS107 ~T0 @X0 0 e@401 ]
+"1299
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1299: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
+"1873
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1873: extern volatile unsigned char SSP1CON1 __attribute__((address(0x190)));
+[v _SSP1CON1 `Vuc ~T0 @X0 0 e@400 ]
+"1879
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1879:     struct {
+[s S104 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S104 . SSPM CKP SSPEN SSPOV WCOL ]
+"1886
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1886:     struct {
+[s S105 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S105 . SSPM0 SSPM1 SSPM2 SSPM3 ]
+"1892
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1892:     struct {
+[s S106 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S106 . SSPM01 SSPM11 SSPM21 SSPM31 CKP1 SSPEN1 SSPOV1 WCOL1 ]
+"1878
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1878: typedef union {
+[u S103 `S104 1 `S105 1 `S106 1 ]
+[n S103 . . . . ]
+"1903
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1903: extern volatile SSP1CON1bits_t SSP1CON1bits __attribute__((address(0x190)));
+[v _SSP1CON1bits `VS103 ~T0 @X0 0 e@400 ]
+"1319
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1319: extern volatile unsigned char SSP1ADD __attribute__((address(0x18D)));
+[v _SSP1ADD `Vuc ~T0 @X0 0 e@397 ]
 "111 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 111: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -500,95 +619,381 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8661
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 8661: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"8 ./pid.h
-[; ;./pid.h: 8: int32_t i_PID = 0;
-[v _i_PID `l ~T0 @X0 1 e ]
-[i _i_PID
--> -> 0 `i `l
-]
-"2 pid.c
-[; ;pid.c: 2: void tempSit(){
-[v _tempSit `(v ~T0 @X0 1 ef ]
-{
-[e :U _tempSit ]
-[f ]
-"3
-[; ;pid.c: 3: int32_t temp_now = (int32_t)ADC_Read(5);
-[v _temp_now `l ~T0 @X0 1 a ]
-[e = _temp_now -> ( _ADC_Read (1 -> -> 5 `i `uc `l ]
-"4
-[; ;pid.c: 4: int32_t set_now = (int32_t)ADC_Read(4);
-[v _set_now `l ~T0 @X0 1 a ]
-[e = _set_now -> ( _ADC_Read (1 -> -> 4 `i `uc `l ]
-"6
-[; ;pid.c: 6: int32_t err = set_now - temp_now;
-[v _err `l ~T0 @X0 1 a ]
-[e = _err - _set_now _temp_now ]
-"8
-[; ;pid.c: 8: int32_t p = err * 5;
-[v _p `l ~T0 @X0 1 a ]
-[e = _p * _err -> -> 5 `i `l ]
-"10
-[; ;pid.c: 10: int32_t iterm_now = (i_PID * 1) / 20;
-[v _iterm_now `l ~T0 @X0 1 a ]
-[e = _iterm_now / * _i_PID -> -> 1 `i `l -> -> 20 `i `l ]
-"11
-[; ;pid.c: 11: int32_t duty_check = iterm_now + p;
-[v _duty_check `l ~T0 @X0 1 a ]
-[e = _duty_check + _iterm_now _p ]
-"13
-[; ;pid.c: 13: if (!((duty_check >= 1000 && err > 0) ||
-[e $ ! ! || && >= _duty_check -> -> 1000 `i `l > _err -> -> 0 `i `l && <= _duty_check -> -> 0 `i `l < _err -> -> 0 `i `l 468  ]
-"15
-[; ;pid.c: 15: {
-{
-"16
-[; ;pid.c: 16:     i_PID += err;
-[e =+ _i_PID _err ]
-"18
-[; ;pid.c: 18:     if (i_PID > (1000L * 20 / 1))
-[e $ ! > _i_PID / * -> 1000 `l -> -> 20 `i `l -> -> 1 `i `l 469  ]
+"18 i2c1.c
+[; ;i2c1.c: 18: static void I2C1_WaitIdle(void)
+[v _I2C1_WaitIdle `(v ~T0 @X0 1 sf ]
 "19
-[; ;pid.c: 19:         i_PID = 1000L * 20 / 1;
-[e = _i_PID / * -> 1000 `l -> -> 20 `i `l -> -> 1 `i `l ]
-[e :U 469 ]
-"21
-[; ;pid.c: 21:     if (i_PID < 0)
-[e $ ! < _i_PID -> -> 0 `i `l 470  ]
-"22
-[; ;pid.c: 22:         i_PID = 0;
-[e = _i_PID -> -> 0 `i `l ]
-[e :U 470 ]
+[; ;i2c1.c: 19: {
+{
+[e :U _I2C1_WaitIdle ]
+[f ]
 "23
-[; ;pid.c: 23: }
+[; ;i2c1.c: 23:     while ((SSP1CON2 & 0x1Fu) || SSP1STATbits.R_nW) {
+[e $U 468  ]
+[e :U 469 ]
+{
+"25
+[; ;i2c1.c: 25:     }
 }
 [e :U 468 ]
-"25
-[; ;pid.c: 25: int32_t iterm = (i_PID * 1) / 20;
-[v _iterm `l ~T0 @X0 1 a ]
-[e = _iterm / * _i_PID -> -> 1 `i `l -> -> 20 `i `l ]
+"23
+[; ;i2c1.c: 23:     while ((SSP1CON2 & 0x1Fu) || SSP1STATbits.R_nW) {
+[e $ || != & -> _SSP1CON2 `ui -> 31 `ui -> -> 0 `i `ui != -> . . _SSP1STATbits 0 2 `i -> 0 `i 469  ]
+[e :U 470 ]
 "26
-[; ;pid.c: 26: int32_t duty = iterm + p;
-[v _duty `l ~T0 @X0 1 a ]
-[e = _duty + _iterm _p ]
-"28
-[; ;pid.c: 28: if (duty > 1000)
-[e $ ! > _duty -> -> 1000 `i `l 471  ]
-"29
-[; ;pid.c: 29:     duty = 1000;
-[e = _duty -> -> 1000 `i `l ]
-[e :U 471 ]
-"31
-[; ;pid.c: 31: if (duty < 0)
-[e $ ! < _duty -> -> 0 `i `l 472  ]
-"32
-[; ;pid.c: 32:     duty = 0;
-[e = _duty -> -> 0 `i `l ]
-[e :U 472 ]
-"34
-[; ;pid.c: 34: PWM_SetDuty((uint16_t)duty);
-[e ( _PWM_SetDuty (1 -> _duty `us ]
-"35
-[; ;pid.c: 35: }
+[; ;i2c1.c: 26: }
 [e :UE 467 ]
+}
+"28
+[; ;i2c1.c: 28: static void I2C1_Start(void)
+[v _I2C1_Start `(v ~T0 @X0 1 sf ]
+"29
+[; ;i2c1.c: 29: {
+{
+[e :U _I2C1_Start ]
+[f ]
+"30
+[; ;i2c1.c: 30:     I2C1_WaitIdle();
+[e ( _I2C1_WaitIdle ..  ]
+"31
+[; ;i2c1.c: 31:     SSP1CON2bits.SEN = 1;
+[e = . . _SSP1CON2bits 0 0 -> -> 1 `i `uc ]
+"32
+[; ;i2c1.c: 32:     while (SSP1CON2bits.SEN) { ; }
+[e $U 472  ]
+[e :U 473 ]
+{
+}
+[e :U 472 ]
+[e $ != -> . . _SSP1CON2bits 0 0 `i -> 0 `i 473  ]
+[e :U 474 ]
+"33
+[; ;i2c1.c: 33: }
+[e :UE 471 ]
+}
+"35
+[; ;i2c1.c: 35: static void I2C1_RepeatedStart(void)
+[v _I2C1_RepeatedStart `(v ~T0 @X0 1 sf ]
+"36
+[; ;i2c1.c: 36: {
+{
+[e :U _I2C1_RepeatedStart ]
+[f ]
+"37
+[; ;i2c1.c: 37:     I2C1_WaitIdle();
+[e ( _I2C1_WaitIdle ..  ]
+"38
+[; ;i2c1.c: 38:     SSP1CON2bits.RSEN = 1;
+[e = . . _SSP1CON2bits 0 1 -> -> 1 `i `uc ]
+"39
+[; ;i2c1.c: 39:     while (SSP1CON2bits.RSEN) { ; }
+[e $U 476  ]
+[e :U 477 ]
+{
+}
+[e :U 476 ]
+[e $ != -> . . _SSP1CON2bits 0 1 `i -> 0 `i 477  ]
+[e :U 478 ]
+"40
+[; ;i2c1.c: 40: }
+[e :UE 475 ]
+}
+"42
+[; ;i2c1.c: 42: static void I2C1_Stop(void)
+[v _I2C1_Stop `(v ~T0 @X0 1 sf ]
+"43
+[; ;i2c1.c: 43: {
+{
+[e :U _I2C1_Stop ]
+[f ]
+"44
+[; ;i2c1.c: 44:     I2C1_WaitIdle();
+[e ( _I2C1_WaitIdle ..  ]
+"45
+[; ;i2c1.c: 45:     SSP1CON2bits.PEN = 1;
+[e = . . _SSP1CON2bits 0 2 -> -> 1 `i `uc ]
+"46
+[; ;i2c1.c: 46:     while (SSP1CON2bits.PEN) { ; }
+[e $U 480  ]
+[e :U 481 ]
+{
+}
+[e :U 480 ]
+[e $ != -> . . _SSP1CON2bits 0 2 `i -> 0 `i 481  ]
+[e :U 482 ]
+"47
+[; ;i2c1.c: 47: }
+[e :UE 479 ]
+}
+"50
+[; ;i2c1.c: 50: static _Bool I2C1_PutByte(uint8_t b)
+[v _I2C1_PutByte `(a ~T0 @X0 1 sf1`uc ]
+"51
+[; ;i2c1.c: 51: {
+{
+[e :U _I2C1_PutByte ]
+"50
+[; ;i2c1.c: 50: static _Bool I2C1_PutByte(uint8_t b)
+[v _b `uc ~T0 @X0 1 r1 ]
+"51
+[; ;i2c1.c: 51: {
+[f ]
+"52
+[; ;i2c1.c: 52:     I2C1_WaitIdle();
+[e ( _I2C1_WaitIdle ..  ]
+"53
+[; ;i2c1.c: 53:     SSP1BUF = b;
+[e = _SSP1BUF _b ]
+"54
+[; ;i2c1.c: 54:     I2C1_WaitIdle();
+[e ( _I2C1_WaitIdle ..  ]
+"55
+[; ;i2c1.c: 55:     return (SSP1CON2bits.ACKSTAT == 0);
+[e ) -> -> == -> . . _SSP1CON2bits 0 6 `i -> 0 `i `i `a ]
+[e $UE 483  ]
+"56
+[; ;i2c1.c: 56: }
+[e :UE 483 ]
+}
+"60
+[; ;i2c1.c: 60: static uint8_t I2C1_GetByte(_Bool ackIt)
+[v _I2C1_GetByte `(uc ~T0 @X0 1 sf1`a ]
+"61
+[; ;i2c1.c: 61: {
+{
+[e :U _I2C1_GetByte ]
+"60
+[; ;i2c1.c: 60: static uint8_t I2C1_GetByte(_Bool ackIt)
+[v _ackIt `a ~T0 @X0 1 r1 ]
+"61
+[; ;i2c1.c: 61: {
+[f ]
+"62
+[; ;i2c1.c: 62:     I2C1_WaitIdle();
+[e ( _I2C1_WaitIdle ..  ]
+"63
+[; ;i2c1.c: 63:     SSP1CON2bits.RCEN = 1;
+[e = . . _SSP1CON2bits 0 3 -> -> 1 `i `uc ]
+"64
+[; ;i2c1.c: 64:     while (SSP1CON2bits.RCEN) { ; }
+[e $U 485  ]
+[e :U 486 ]
+{
+}
+[e :U 485 ]
+[e $ != -> . . _SSP1CON2bits 0 3 `i -> 0 `i 486  ]
+[e :U 487 ]
+"65
+[; ;i2c1.c: 65:     uint8_t b = SSP1BUF;
+[v _b `uc ~T0 @X0 1 a ]
+[e = _b _SSP1BUF ]
+"67
+[; ;i2c1.c: 67:     I2C1_WaitIdle();
+[e ( _I2C1_WaitIdle ..  ]
+"68
+[; ;i2c1.c: 68:     SSP1CON2bits.ACKDT = ackIt ? 0 : 1;
+[e = . . _SSP1CON2bits 0 5 -> ? != -> _ackIt `i -> 0 `i : -> 0 `i -> 1 `i `uc ]
+"69
+[; ;i2c1.c: 69:     SSP1CON2bits.ACKEN = 1;
+[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
+"70
+[; ;i2c1.c: 70:     while (SSP1CON2bits.ACKEN) { ; }
+[e $U 488  ]
+[e :U 489 ]
+{
+}
+[e :U 488 ]
+[e $ != -> . . _SSP1CON2bits 0 4 `i -> 0 `i 489  ]
+[e :U 490 ]
+"72
+[; ;i2c1.c: 72:     return b;
+[e ) _b ]
+[e $UE 484  ]
+"73
+[; ;i2c1.c: 73: }
+[e :UE 484 ]
+}
+"75
+[; ;i2c1.c: 75: void I2C1_Init(void)
+[v _I2C1_Init `(v ~T0 @X0 1 ef ]
+"76
+[; ;i2c1.c: 76: {
+{
+[e :U _I2C1_Init ]
+[f ]
+"92
+[; ;i2c1.c: 92:     SSP1CON1 = 0x00;
+[e = _SSP1CON1 -> -> 0 `i `uc ]
+"93
+[; ;i2c1.c: 93:     SSP1CON1bits.SSPM = 0b1000;
+[e = . . _SSP1CON1bits 0 0 -> -> 8 `i `uc ]
+"94
+[; ;i2c1.c: 94:     SSP1STATbits.SMP = 1;
+[e = . . _SSP1STATbits 0 7 -> -> 1 `i `uc ]
+"95
+[; ;i2c1.c: 95:     SSP1STATbits.CKE = 0;
+[e = . . _SSP1STATbits 0 6 -> -> 0 `i `uc ]
+"98
+[; ;i2c1.c: 98:     SSP1ADD = (uint8_t)(((32000000UL / 4UL) / 100000UL) - 1UL);
+[e = _SSP1ADD -> - / / -> 32000000 `ul -> 4 `ul -> 100000 `ul -> 1 `ul `uc ]
+"100
+[; ;i2c1.c: 100:     SSP1CON1bits.SSPEN = 1;
+[e = . . _SSP1CON1bits 0 2 -> -> 1 `i `uc ]
+"101
+[; ;i2c1.c: 101: }
+[e :UE 491 ]
+}
+"103
+[; ;i2c1.c: 103: _Bool I2C1_Write(uint8_t addr7, const uint8_t *data, uint8_t len)
+[v _I2C1_Write `(a ~T0 @X0 1 ef3`uc`*Cuc`uc ]
+"104
+[; ;i2c1.c: 104: {
+{
+[e :U _I2C1_Write ]
+"103
+[; ;i2c1.c: 103: _Bool I2C1_Write(uint8_t addr7, const uint8_t *data, uint8_t len)
+[v _addr7 `uc ~T0 @X0 1 r1 ]
+[v _data `*Cuc ~T0 @X0 1 r2 ]
+[v _len `uc ~T0 @X0 1 r3 ]
+"104
+[; ;i2c1.c: 104: {
+[f ]
+"105
+[; ;i2c1.c: 105:     _Bool ok = 1;
+[v _ok `a ~T0 @X0 1 a ]
+[e = _ok -> -> 1 `i `a ]
+"107
+[; ;i2c1.c: 107:     I2C1_Start();
+[e ( _I2C1_Start ..  ]
+"108
+[; ;i2c1.c: 108:     ok = I2C1_PutByte((uint8_t)(addr7 << 1) | 0u);
+[e = _ok ( _I2C1_PutByte (1 -> | -> -> << -> _addr7 `i -> 1 `i `uc `ui -> 0 `ui `uc ]
+"110
+[; ;i2c1.c: 110:     for (uint8_t i = 0; ok && (i < len); i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 496  ]
+[e :U 493 ]
+{
+"111
+[; ;i2c1.c: 111:         ok = I2C1_PutByte(data[i]);
+[e = _ok ( _I2C1_PutByte (1 *U + _data * -> _i `ux -> -> # *U _data `ui `ux ]
+"112
+[; ;i2c1.c: 112:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 496 ]
+[e $ && != -> _ok `i -> 0 `i < -> _i `i -> _len `i 493  ]
+[e :U 494 ]
+}
+"114
+[; ;i2c1.c: 114:     I2C1_Stop();
+[e ( _I2C1_Stop ..  ]
+"115
+[; ;i2c1.c: 115:     return ok;
+[e ) _ok ]
+[e $UE 492  ]
+"116
+[; ;i2c1.c: 116: }
+[e :UE 492 ]
+}
+"118
+[; ;i2c1.c: 118: _Bool I2C1_WriteByte(uint8_t addr7, uint8_t data)
+[v _I2C1_WriteByte `(a ~T0 @X0 1 ef2`uc`uc ]
+"119
+[; ;i2c1.c: 119: {
+{
+[e :U _I2C1_WriteByte ]
+"118
+[; ;i2c1.c: 118: _Bool I2C1_WriteByte(uint8_t addr7, uint8_t data)
+[v _addr7 `uc ~T0 @X0 1 r1 ]
+[v _data `uc ~T0 @X0 1 r2 ]
+"119
+[; ;i2c1.c: 119: {
+[f ]
+"120
+[; ;i2c1.c: 120:     return I2C1_Write(addr7, &data, 1);
+[e ) ( _I2C1_Write (3 , , _addr7 -> &U _data `*Cuc -> -> 1 `i `uc ]
+[e $UE 497  ]
+"121
+[; ;i2c1.c: 121: }
+[e :UE 497 ]
+}
+"123
+[; ;i2c1.c: 123: _Bool I2C1_Read(uint8_t addr7, uint8_t *data, uint8_t len)
+[v _I2C1_Read `(a ~T0 @X0 1 ef3`uc`*uc`uc ]
+"124
+[; ;i2c1.c: 124: {
+{
+[e :U _I2C1_Read ]
+"123
+[; ;i2c1.c: 123: _Bool I2C1_Read(uint8_t addr7, uint8_t *data, uint8_t len)
+[v _addr7 `uc ~T0 @X0 1 r1 ]
+[v _data `*uc ~T0 @X0 1 r2 ]
+[v _len `uc ~T0 @X0 1 r3 ]
+"124
+[; ;i2c1.c: 124: {
+[f ]
+"125
+[; ;i2c1.c: 125:     if (len == 0) return 0;
+[e $ ! == -> _len `i -> 0 `i 499  ]
+[e ) -> -> 0 `i `a ]
+[e $UE 498  ]
+[e :U 499 ]
+"127
+[; ;i2c1.c: 127:     I2C1_Start();
+[e ( _I2C1_Start ..  ]
+"128
+[; ;i2c1.c: 128:     _Bool ok = I2C1_PutByte((uint8_t)(addr7 << 1) | 1u);
+[v _ok `a ~T0 @X0 1 a ]
+[e = _ok ( _I2C1_PutByte (1 -> | -> -> << -> _addr7 `i -> 1 `i `uc `ui -> 1 `ui `uc ]
+"129
+[; ;i2c1.c: 129:     if (!ok) {
+[e $ ! ! != -> _ok `i -> 0 `i 500  ]
+{
+"130
+[; ;i2c1.c: 130:         I2C1_Stop();
+[e ( _I2C1_Stop ..  ]
+"131
+[; ;i2c1.c: 131:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 498  ]
+"132
+[; ;i2c1.c: 132:     }
+}
+[e :U 500 ]
+"134
+[; ;i2c1.c: 134:     for (uint8_t i = 0; i < len; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 504  ]
+[e :U 501 ]
+{
+"135
+[; ;i2c1.c: 135:         _Bool lastByte = (i == (len - 1));
+[v _lastByte `a ~T0 @X0 1 a ]
+[e = _lastByte -> -> == -> _i `i - -> _len `i -> 1 `i `i `a ]
+"136
+[; ;i2c1.c: 136:         data[i] = I2C1_GetByte(!lastByte);
+[e = *U + _data * -> _i `ux -> -> # *U _data `ui `ux ( _I2C1_GetByte (1 -> -> ! != -> _lastByte `i -> 0 `i `i `a ]
+"137
+[; ;i2c1.c: 137:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 504 ]
+[e $ < -> _i `i -> _len `i 501  ]
+[e :U 502 ]
+}
+"139
+[; ;i2c1.c: 139:     I2C1_Stop();
+[e ( _I2C1_Stop ..  ]
+"140
+[; ;i2c1.c: 140:     return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 498  ]
+"141
+[; ;i2c1.c: 141: }
+[e :UE 498 ]
 }

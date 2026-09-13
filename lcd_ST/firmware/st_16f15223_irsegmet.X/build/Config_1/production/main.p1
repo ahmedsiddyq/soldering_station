@@ -1,10 +1,186 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"553 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 553:     struct {
+[s S37 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S37 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 ]
+"552
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 552: typedef union {
+[u S36 `S37 1 ]
+[n S36 . . ]
+"562
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 562: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x012)));
+[v _TRISAbits `VS36 ~T0 @X0 0 e@18 ]
+"603
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 603:     struct {
+[s S39 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S39 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 ]
+"602
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 602: typedef union {
+[u S38 `S39 1 ]
+[n S38 . . ]
+"612
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 612: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x014)));
+[v _TRISCbits `VS38 ~T0 @X0 0 e@20 ]
+"7984
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7984:     struct {
+[s S428 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S428 . ANSC0 ANSC1 ANSC2 ANSC3 ANSC4 ANSC5 ]
+"7983
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7983: typedef union {
+[u S427 `S428 1 ]
+[n S427 . . ]
+"7993
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7993: extern volatile ANSELCbits_t ANSELCbits __attribute__((address(0x1F4E)));
+[v _ANSELCbits `VS427 ~T0 @X0 0 e@8014 ]
+"7599
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7599:     struct {
+[s S412 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S412 . ANSA0 ANSA1 ANSA2 . ANSA4 ANSA5 ]
+"7598
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7598: typedef union {
+[u S411 `S412 1 ]
+[n S411 . . ]
+"7608
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7608: extern volatile ANSELAbits_t ANSELAbits __attribute__((address(0x1F38)));
+[v _ANSELAbits `VS411 ~T0 @X0 0 e@7992 ]
+"5837
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 5837: extern volatile unsigned char PPSLOCK __attribute__((address(0x1E8F)));
+[v _PPSLOCK `Vuc ~T0 @X0 0 e@7823 ]
+"5843
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 5843:     struct {
+[s S309 :1 `uc 1 ]
+[n S309 . PPSLOCKED ]
+"5842
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 5842: typedef union {
+[u S308 `S309 1 ]
+[n S308 . . ]
+"5847
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 5847: extern volatile PPSLOCKbits_t PPSLOCKbits __attribute__((address(0x1E8F)));
+[v _PPSLOCKbits `VS308 ~T0 @X0 0 e@7823 ]
+"7361
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7361: extern volatile unsigned char RC2PPS __attribute__((address(0x1F22)));
+[v _RC2PPS `Vuc ~T0 @X0 0 e@7970 ]
+"6580
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 6580: extern volatile unsigned char RXPPS __attribute__((address(0x1ECB)));
+[v _RXPPS `Vuc ~T0 @X0 0 e@7883 ]
+"7535
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7535: extern volatile unsigned char RC5PPS __attribute__((address(0x1F25)));
+[v _RC5PPS `Vuc ~T0 @X0 0 e@7973 ]
+"6373
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 6373: extern volatile unsigned char SSP1CLKPPS __attribute__((address(0x1EC5)));
+[v _SSP1CLKPPS `Vuc ~T0 @X0 0 e@7877 ]
+"6439
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 6439: extern volatile unsigned char SSP1DATPPS __attribute__((address(0x1EC6)));
+[v _SSP1DATPPS `Vuc ~T0 @X0 0 e@7878 ]
+"7245
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7245: extern volatile unsigned char RC0PPS __attribute__((address(0x1F20)));
+[v _RC0PPS `Vuc ~T0 @X0 0 e@7968 ]
+"7303
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7303: extern volatile unsigned char RC1PPS __attribute__((address(0x1F21)));
+[v _RC1PPS `Vuc ~T0 @X0 0 e@7969 ]
+"976
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 976:     struct {
+[s S61 :2 `uc 1 :2 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S61 . TH . PU SLEW ]
+"975
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 975: typedef union {
+[u S60 `S61 1 ]
+[n S60 . . ]
+"983
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 983: extern volatile RC0I2Cbits_t RC0I2Cbits __attribute__((address(0x10E)));
+[v _RC0I2Cbits `VS60 ~T0 @X0 0 e@270 ]
+"1009
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1009:     struct {
+[s S63 :2 `uc 1 :2 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S63 . TH . PU SLEW ]
+"1008
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1008: typedef union {
+[u S62 `S63 1 ]
+[n S62 . . ]
+"1016
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1016: extern volatile RC1I2Cbits_t RC1I2Cbits __attribute__((address(0x10F)));
+[v _RC1I2Cbits `VS62 ~T0 @X0 0 e@271 ]
+[p mainexit ]
+"6 ./uart.h
+[; ;./uart.h: 6: void UART_Init(uint32_t baud);
+[v _UART_Init `(v ~T0 @X0 0 ef1`ul ]
+"12 ./adc.h
+[; ;./adc.h: 12: void ADC_Init(void);
+[v _ADC_Init `(v ~T0 @X0 0 ef ]
+"9 ./timer_1ms.h
+[; ;./timer_1ms.h: 9: void Timer0_1ms_Init(void);
+[v _Timer0_1ms_Init `(v ~T0 @X0 0 ef ]
+"7 ./pwm.h
+[; ;./pwm.h: 7: void PWM_Init(void);
+[v _PWM_Init `(v ~T0 @X0 0 ef ]
+"22 ./i2c1.h
+[; ;./i2c1.h: 22: void I2C1_Init(void);
+[v _I2C1_Init `(v ~T0 @X0 0 ef ]
+"72 ./display.h
+[; ;./display.h: 72: void display_init(void);
+[v _display_init `(v ~T0 @X0 0 ef ]
+"78
+[; ;./display.h: 78: _Bool display_set_brightness(uint8_t brightness);
+[v _display_set_brightness `(a ~T0 @X0 0 ef1`uc ]
 "13 ./adc.h
 [; ;./adc.h: 13: uint16_t ADC_Read(uint8_t channel);
 [v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
-"8 ./pwm.h
-[; ;./pwm.h: 8: void PWM_SetDuty(uint16_t permille);
-[v _PWM_SetDuty `(v ~T0 @X0 0 ef1`us ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"16 ./pid.h
+[; ;./pid.h: 16:  void tempSit();
+[v _tempSit `(v ~T0 @X0 0 e? ]
+"12 ./uart.h
+[; ;./uart.h: 12: void UART_Write16String(uint16_t value, const char *str);
+[v _UART_Write16String `(v ~T0 @X0 0 ef2`us`*Cuc ]
+"94 ./display.h
+[; ;./display.h: 94: _Bool display_write_number(uint16_t value);
+[v _display_write_number `(a ~T0 @X0 0 ef1`us ]
+"7 ./timer_1ms.h
+[; ;./timer_1ms.h: 7: extern volatile uint8_t tick_1ms;
+[v _tick_1ms `Vuc ~T0 @X0 0 e ]
+"7 ./header.h
+[p x FEXTOSC  =  OFF     ]
+"8
+[p x RSTOSC  =  HFINTOSC_32MHZ ]
+"9
+[p x CLKOUTEN  =  OFF    ]
+"10
+[p x VDDAR  =  HI        ]
+"13
+[p x MCLRE  =  EXTMCLR   ]
+"14
+[p x PWRTS  =  PWRT_OFF  ]
+"15
+[p x WDTE  =  OFF         ]
+"16
+[p x BOREN  =  ON        ]
+"17
+[p x BORV  =  LO         ]
+"18
+[p x PPS1WAY  =  ON      ]
+"19
+[p x STVREN  =  OFF       ]
+"24
+[p x BBSIZE  =  BB512    ]
+"25
+[p x BBEN  =  OFF        ]
+"26
+[p x SAFEN  =  OFF       ]
+"27
+[p x WRTAPP  =  OFF      ]
+"28
+[p x WRTB  =  OFF        ]
+"29
+[p x WRTC  =  OFF        ]
+"30
+[p x WRTSAF  =  OFF      ]
+"31
+[p x LVP  =    ON         ]
+"34
+[p x CP  =  OFF          ]
 "111 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 111: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -500,95 +676,286 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8661
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 8661: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
+"6 ./pin_deffiine.h
+[; ;./pin_deffiine.h: 6: void pins (){
+[v _pins `(v ~T0 @X0 1 ef ]
+{
+[e :U _pins ]
+[f ]
+"7
+[; ;./pin_deffiine.h: 7: TRISAbits.TRISA5 = 1;
+[e = . . _TRISAbits 0 5 -> -> 1 `i `uc ]
+"8
+[; ;./pin_deffiine.h: 8: TRISAbits.TRISA4 = 1;
+[e = . . _TRISAbits 0 4 -> -> 1 `i `uc ]
+"9
+[; ;./pin_deffiine.h: 9: TRISCbits.TRISC5 = 0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"10
+[; ;./pin_deffiine.h: 10: TRISCbits.TRISC3 = 1;
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+"13
+[; ;./pin_deffiine.h: 13: TRISCbits.TRISC2 = 0;
+[e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
+"14
+[; ;./pin_deffiine.h: 14: TRISAbits.TRISA2 = 1;
+[e = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
+"16
+[; ;./pin_deffiine.h: 16: ANSELCbits.ANSC5 = 0;
+[e = . . _ANSELCbits 0 5 -> -> 0 `i `uc ]
+"17
+[; ;./pin_deffiine.h: 17: ANSELCbits.ANSC2 = 0;
+[e = . . _ANSELCbits 0 2 -> -> 0 `i `uc ]
+"18
+[; ;./pin_deffiine.h: 18: ANSELCbits.ANSC0 = 0;
+[e = . . _ANSELCbits 0 0 -> -> 0 `i `uc ]
+"19
+[; ;./pin_deffiine.h: 19: ANSELCbits.ANSC1 = 0;
+[e = . . _ANSELCbits 0 1 -> -> 0 `i `uc ]
+"20
+[; ;./pin_deffiine.h: 20: ANSELAbits.ANSA2 = 0;
+[e = . . _ANSELAbits 0 2 -> -> 0 `i `uc ]
+"23
+[; ;./pin_deffiine.h: 23:     PPSLOCK = 0x55;
+[e = _PPSLOCK -> -> 85 `i `uc ]
+"24
+[; ;./pin_deffiine.h: 24:     PPSLOCK = 0xAA;
+[e = _PPSLOCK -> -> 170 `i `uc ]
+"25
+[; ;./pin_deffiine.h: 25:     PPSLOCKbits.PPSLOCKED = 0;
+[e = . . _PPSLOCKbits 0 0 -> -> 0 `i `uc ]
+"32
+[; ;./pin_deffiine.h: 32:     RC2PPS = 0x05;
+[e = _RC2PPS -> -> 5 `i `uc ]
+"36
+[; ;./pin_deffiine.h: 36:     RXPPS = 0x02;
+[e = _RXPPS -> -> 2 `i `uc ]
+"37
+[; ;./pin_deffiine.h: 37:     RC5PPS = 0x03;
+[e = _RC5PPS -> -> 3 `i `uc ]
+"39
+[; ;./pin_deffiine.h: 39:     ANSELCbits.ANSC0 = 0;
+[e = . . _ANSELCbits 0 0 -> -> 0 `i `uc ]
+"40
+[; ;./pin_deffiine.h: 40:     ANSELCbits.ANSC1 = 0;
+[e = . . _ANSELCbits 0 1 -> -> 0 `i `uc ]
+"41
+[; ;./pin_deffiine.h: 41:     TRISCbits.TRISC0 = 1;
+[e = . . _TRISCbits 0 0 -> -> 1 `i `uc ]
+"42
+[; ;./pin_deffiine.h: 42:     TRISCbits.TRISC1 = 1;
+[e = . . _TRISCbits 0 1 -> -> 1 `i `uc ]
+"44
+[; ;./pin_deffiine.h: 44:     SSP1CLKPPS = 0x10;
+[e = _SSP1CLKPPS -> -> 16 `i `uc ]
+"45
+[; ;./pin_deffiine.h: 45:     SSP1DATPPS = 0x11;
+[e = _SSP1DATPPS -> -> 17 `i `uc ]
+"46
+[; ;./pin_deffiine.h: 46:     RC0PPS = 0x07;
+[e = _RC0PPS -> -> 7 `i `uc ]
+"47
+[; ;./pin_deffiine.h: 47:     RC1PPS = 0x08;
+[e = _RC1PPS -> -> 8 `i `uc ]
+"48
+[; ;./pin_deffiine.h: 48:     RC0I2Cbits.PU = 1;
+[e = . . _RC0I2Cbits 0 2 -> -> 1 `i `uc ]
+"49
+[; ;./pin_deffiine.h: 49:     RC1I2Cbits.PU = 1;
+[e = . . _RC1I2Cbits 0 2 -> -> 1 `i `uc ]
+"74
+[; ;./pin_deffiine.h: 74:     PPSLOCK = 0x55;
+[e = _PPSLOCK -> -> 85 `i `uc ]
+"75
+[; ;./pin_deffiine.h: 75:     PPSLOCK = 0xAA;
+[e = _PPSLOCK -> -> 170 `i `uc ]
+"76
+[; ;./pin_deffiine.h: 76:     PPSLOCKbits.PPSLOCKED = 1;
+[e = . . _PPSLOCKbits 0 0 -> -> 1 `i `uc ]
+"78
+[; ;./pin_deffiine.h: 78: }
+[e :UE 467 ]
+}
 "8 ./pid.h
 [; ;./pid.h: 8: int32_t i_PID = 0;
 [v _i_PID `l ~T0 @X0 1 e ]
 [i _i_PID
 -> -> 0 `i `l
 ]
-"2 pid.c
-[; ;pid.c: 2: void tempSit(){
-[v _tempSit `(v ~T0 @X0 1 ef ]
-{
-[e :U _tempSit ]
-[f ]
-"3
-[; ;pid.c: 3: int32_t temp_now = (int32_t)ADC_Read(5);
-[v _temp_now `l ~T0 @X0 1 a ]
-[e = _temp_now -> ( _ADC_Read (1 -> -> 5 `i `uc `l ]
-"4
-[; ;pid.c: 4: int32_t set_now = (int32_t)ADC_Read(4);
-[v _set_now `l ~T0 @X0 1 a ]
-[e = _set_now -> ( _ADC_Read (1 -> -> 4 `i `uc `l ]
-"6
-[; ;pid.c: 6: int32_t err = set_now - temp_now;
-[v _err `l ~T0 @X0 1 a ]
-[e = _err - _set_now _temp_now ]
+"7 main.c
+[; ;main.c: 7: uint8_t v=5;
+[v _v `uc ~T0 @X0 1 e ]
+[i _v
+-> -> 5 `i `uc
+]
 "8
-[; ;pid.c: 8: int32_t p = err * 5;
-[v _p `l ~T0 @X0 1 a ]
-[e = _p * _err -> -> 5 `i `l ]
+[; ;main.c: 8: uint16_t x=0;
+[v _x `us ~T0 @X0 1 e ]
+[i _x
+-> -> 0 `i `us
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"9
+[; ;main.c: 9: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
 "10
-[; ;pid.c: 10: int32_t iterm_now = (i_PID * 1) / 20;
-[v _iterm_now `l ~T0 @X0 1 a ]
-[e = _iterm_now / * _i_PID -> -> 1 `i `l -> -> 20 `i `l ]
-"11
-[; ;pid.c: 11: int32_t duty_check = iterm_now + p;
-[v _duty_check `l ~T0 @X0 1 a ]
-[e = _duty_check + _iterm_now _p ]
-"13
-[; ;pid.c: 13: if (!((duty_check >= 1000 && err > 0) ||
-[e $ ! ! || && >= _duty_check -> -> 1000 `i `l > _err -> -> 0 `i `l && <= _duty_check -> -> 0 `i `l < _err -> -> 0 `i `l 468  ]
-"15
-[; ;pid.c: 15: {
+[; ;main.c: 10: {
 {
+[e :U _main ]
+[f ]
+"11
+[; ;main.c: 11: pins();
+[e ( _pins ..  ]
+"12
+[; ;main.c: 12:   UART_Init(9600);
+[e ( _UART_Init (1 -> -> -> 9600 `i `l `ul ]
+"13
+[; ;main.c: 13:   ADC_Init();
+[e ( _ADC_Init ..  ]
+"14
+[; ;main.c: 14:   Timer0_1ms_Init();
+[e ( _Timer0_1ms_Init ..  ]
+"15
+[; ;main.c: 15:  PWM_Init();
+[e ( _PWM_Init ..  ]
 "16
-[; ;pid.c: 16:     i_PID += err;
-[e =+ _i_PID _err ]
+[; ;main.c: 16:  I2C1_Init();
+[e ( _I2C1_Init ..  ]
+"17
+[; ;main.c: 17:  display_init();
+[e ( _display_init ..  ]
 "18
-[; ;pid.c: 18:     if (i_PID > (1000L * 20 / 1))
-[e $ ! > _i_PID / * -> 1000 `l -> -> 20 `i `l -> -> 1 `i `l 469  ]
-"19
-[; ;pid.c: 19:         i_PID = 1000L * 20 / 1;
-[e = _i_PID / * -> 1000 `l -> -> 20 `i `l -> -> 1 `i `l ]
-[e :U 469 ]
+[; ;main.c: 18: display_set_brightness(1);
+[e ( _display_set_brightness (1 -> -> 1 `i `uc ]
+"20
+[; ;main.c: 20:  uint16_t raw_temp = ADC_Read(5);
+[v _raw_temp `us ~T0 @X0 1 a ]
+[e = _raw_temp ( _ADC_Read (1 -> -> 5 `i `uc ]
 "21
-[; ;pid.c: 21:     if (i_PID < 0)
-[e $ ! < _i_PID -> -> 0 `i `l 470  ]
+[; ;main.c: 21:  uint16_t srt_temp = ADC_Read(4);
+[v _srt_temp `us ~T0 @X0 1 a ]
+[e = _srt_temp ( _ADC_Read (1 -> -> 4 `i `uc ]
 "22
-[; ;pid.c: 22:         i_PID = 0;
-[e = _i_PID -> -> 0 `i `l ]
-[e :U 470 ]
+[; ;main.c: 22:  uint16_t oldsrt_temp =0;
+[v _oldsrt_temp `us ~T0 @X0 1 a ]
+[e = _oldsrt_temp -> -> 0 `i `us ]
 "23
-[; ;pid.c: 23: }
-}
-[e :U 468 ]
+[; ;main.c: 23:  int32_t dtt=0;
+[v _dtt `l ~T0 @X0 1 a ]
+[e = _dtt -> -> 0 `i `l ]
+"24
+[; ;main.c: 24:  uint8_t SW_Dp =0;
+[v _SW_Dp `uc ~T0 @X0 1 a ]
+[e = _SW_Dp -> -> 0 `i `uc ]
 "25
-[; ;pid.c: 25: int32_t iterm = (i_PID * 1) / 20;
-[v _iterm `l ~T0 @X0 1 a ]
-[e = _iterm / * _i_PID -> -> 1 `i `l -> -> 20 `i `l ]
+[; ;main.c: 25:     while (1)
+[e :U 470 ]
 "26
-[; ;pid.c: 26: int32_t duty = iterm + p;
-[v _duty `l ~T0 @X0 1 a ]
-[e = _duty + _iterm _p ]
+[; ;main.c: 26:     {
+{
 "28
-[; ;pid.c: 28: if (duty > 1000)
-[e $ ! > _duty -> -> 1000 `i `l 471  ]
-"29
-[; ;pid.c: 29:     duty = 1000;
-[e = _duty -> -> 1000 `i `l ]
-[e :U 471 ]
+[; ;main.c: 28:     _delay((unsigned long)((50)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"30
+[; ;main.c: 30:     tempSit();
+[e ( _tempSit ..  ]
 "31
-[; ;pid.c: 31: if (duty < 0)
-[e $ ! < _duty -> -> 0 `i `l 472  ]
+[; ;main.c: 31:     raw_temp = (uint16_t)((ADC_Read(5) * 45UL) / 77UL);
+[e = _raw_temp -> / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 45 `ul -> 77 `ul `us ]
 "32
-[; ;pid.c: 32:     duty = 0;
-[e = _duty -> -> 0 `i `l ]
-[e :U 472 ]
+[; ;main.c: 32:     srt_temp = (uint16_t)((ADC_Read(4) *45UL) / 77UL);
+[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 45 `ul -> 77 `ul `us ]
 "34
-[; ;pid.c: 34: PWM_SetDuty((uint16_t)duty);
-[e ( _PWM_SetDuty (1 -> _duty `us ]
+[; ;main.c: 34:     if(!SW_Dp){
+[e $ ! ! != -> _SW_Dp `i -> 0 `i 472  ]
+{
 "35
-[; ;pid.c: 35: }
-[e :UE 467 ]
+[; ;main.c: 35:     UART_Write16String(raw_temp, " t\r\n");
+[e ( _UART_Write16String (2 , _raw_temp :s 1C ]
+"36
+[; ;main.c: 36:     UART_Write16String(srt_temp, " st\r\n");
+[e ( _UART_Write16String (2 , _srt_temp :s 2C ]
+"37
+[; ;main.c: 37:     display_write_number(raw_temp);
+[e ( _display_write_number (1 _raw_temp ]
+"38
+[; ;main.c: 38:     }
 }
+[e $U 473  ]
+"39
+[; ;main.c: 39:     else
+[e :U 472 ]
+"40
+[; ;main.c: 40:     {
+{
+"41
+[; ;main.c: 41:      display_write_number(srt_temp);
+[e ( _display_write_number (1 _srt_temp ]
+"42
+[; ;main.c: 42:      SW_Dp=0;
+[e = _SW_Dp -> -> 0 `i `uc ]
+"43
+[; ;main.c: 43:     }
+}
+[e :U 473 ]
+"49
+[; ;main.c: 49:      if (tick_1ms)
+[e $ ! != -> _tick_1ms `i -> 0 `i 474  ]
+"50
+[; ;main.c: 50:     {
+{
+"51
+[; ;main.c: 51:         tick_1ms = 0;
+[e = _tick_1ms -> -> 0 `i `uc ]
+"52
+[; ;main.c: 52:     dtt = srt_temp - oldsrt_temp;
+[e = _dtt -> - -> _srt_temp `ui -> _oldsrt_temp `ui `l ]
+"54
+[; ;main.c: 54:     if (dtt < 0){
+[e $ ! < _dtt -> -> 0 `i `l 475  ]
+{
+"55
+[; ;main.c: 55:     dtt = -dtt;}
+[e = _dtt -U _dtt ]
+}
+[e :U 475 ]
+"56
+[; ;main.c: 56:      UART_Write16String(dtt, " dtt1 \r\n");
+[e ( _UART_Write16String (2 , -> _dtt `us :s 3C ]
+"58
+[; ;main.c: 58:     if (10 < dtt)
+[e $ ! < -> -> 10 `i `l _dtt 476  ]
+"59
+[; ;main.c: 59:     {
+{
+"60
+[; ;main.c: 60:      UART_Write16String(dtt, " dtt 2\r\n");
+[e ( _UART_Write16String (2 , -> _dtt `us :s 4C ]
+"61
+[; ;main.c: 61:     oldsrt_temp = srt_temp;
+[e = _oldsrt_temp _srt_temp ]
+"63
+[; ;main.c: 63:     SW_Dp=1;
+[e = _SW_Dp -> -> 1 `i `uc ]
+"64
+[; ;main.c: 64:     }
+}
+[e :U 476 ]
+"69
+[; ;main.c: 69:     }
+}
+[e :U 474 ]
+"70
+[; ;main.c: 70:     }
+}
+[e :U 469 ]
+[e $U 470  ]
+[e :U 471 ]
+"71
+[; ;main.c: 71: }
+[e :UE 468 ]
+}
+[a 2C 32 115 116 13 10 0 ]
+[a 1C 32 116 13 10 0 ]
+[a 4C 32 100 116 116 32 50 13 10 0 ]
+[a 3C 32 100 116 116 49 32 13 10 0 ]

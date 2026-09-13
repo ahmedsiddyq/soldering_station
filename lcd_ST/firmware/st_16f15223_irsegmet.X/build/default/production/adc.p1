@@ -594,36 +594,76 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;adc.c: 19: uint16_t ADC_Read(uint8_t channel)
 [v _ADC_Read `(us ~T0 @X0 1 ef1`uc ]
 "20
-[; ;adc.c: 20: {
+[; ;adc.c: 20: { if(channel==5){
 {
 [e :U _ADC_Read ]
 "19
 [; ;adc.c: 19: uint16_t ADC_Read(uint8_t channel)
 [v _channel `uc ~T0 @X0 1 r1 ]
 "20
-[; ;adc.c: 20: {
+[; ;adc.c: 20: { if(channel==5){
 [f ]
+[e $ ! == -> _channel `i -> 5 `i 472  ]
+{
 "21
-[; ;adc.c: 21:     ADCON0bits.CHS = channel;
-[e = . . _ADCON0bits 0 2 _channel ]
+[; ;adc.c: 21:    ADCON1bits.PREF = 0b11;
+[e = . . _ADCON1bits 0 0 -> -> 3 `i `uc ]
 "22
-[; ;adc.c: 22:     _delay((unsigned long)((5)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
+[; ;adc.c: 22:     ADCON0bits.CHS = channel;
+[e = . . _ADCON0bits 0 2 _channel ]
 "23
-[; ;adc.c: 23:     ADCON0bits.GO = 1;
-[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
+[; ;adc.c: 23:     _delay((unsigned long)((5)*(32000000UL/4000000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
 "24
-[; ;adc.c: 24:     while (ADCON0bits.GO);
-[e $U 472  ]
-[e :U 473 ]
-[e :U 472 ]
-[e $ != -> . . _ADCON0bits 0 1 `i -> 0 `i 473  ]
-[e :U 474 ]
+[; ;adc.c: 24:     ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
 "25
-[; ;adc.c: 25:     return ((uint16_t)ADRESH << 8) | ADRESL;
+[; ;adc.c: 25:     while (ADCON0bits.GO);
+[e $U 473  ]
+[e :U 474 ]
+[e :U 473 ]
+[e $ != -> . . _ADCON0bits 0 1 `i -> 0 `i 474  ]
+[e :U 475 ]
+"26
+[; ;adc.c: 26:     return ((uint16_t)ADRESH << 8) | ADRESL;
 [e ) -> | << -> -> _ADRESH `us `ui -> 8 `i -> _ADRESL `ui `us ]
 [e $UE 471  ]
-"26
-[; ;adc.c: 26: }
+"27
+[; ;adc.c: 27: }
+}
+[e $U 476  ]
+"28
+[; ;adc.c: 28: else{
+[e :U 472 ]
+{
+"29
+[; ;adc.c: 29:     ADCON1bits.PREF = 0b00;
+[e = . . _ADCON1bits 0 0 -> -> 0 `i `uc ]
+"30
+[; ;adc.c: 30:     ADCON0bits.CHS = channel;
+[e = . . _ADCON0bits 0 2 _channel ]
+"31
+[; ;adc.c: 31:     _delay((unsigned long)((5)*(32000000UL/4000000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
+"32
+[; ;adc.c: 32:     ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
+"33
+[; ;adc.c: 33:     while (ADCON0bits.GO);
+[e $U 477  ]
+[e :U 478 ]
+[e :U 477 ]
+[e $ != -> . . _ADCON0bits 0 1 `i -> 0 `i 478  ]
+[e :U 479 ]
+"34
+[; ;adc.c: 34:     return ((uint16_t)ADRESH << 8) | ADRESL;
+[e ) -> | << -> -> _ADRESH `us `ui -> 8 `i -> _ADRESL `ui `us ]
+[e $UE 471  ]
+"35
+[; ;adc.c: 35: }
+}
+[e :U 476 ]
+"36
+[; ;adc.c: 36: }
 [e :UE 471 ]
 }

@@ -38,6 +38,7 @@
 
 #include <xc.h>
 #include "pin_deffiine.h"
+#include "timer_1ms.h"
 #include "uart.h"
 #include "adc.h"
 #include "pwm.h"

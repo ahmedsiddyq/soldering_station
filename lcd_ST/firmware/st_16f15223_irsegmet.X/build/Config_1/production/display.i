@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "display.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
+# 1 "display.c" 2
+# 1 "./display.h" 1
+# 61 "./display.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 1 3
 
 
@@ -112,44 +114,50 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 145 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 2 3
-# 1 "main.c" 2
+# 61 "./display.h" 2
 
-# 1 "./header.h" 1
-
-
-
-
-
-
-#pragma config FEXTOSC = OFF
-#pragma config RSTOSC = HFINTOSC_32MHZ
-#pragma config CLKOUTEN = OFF
-#pragma config VDDAR = HI
-
-
-#pragma config MCLRE = EXTMCLR
-#pragma config PWRTS = PWRT_OFF
-#pragma config WDTE = OFF
-#pragma config BOREN = ON
-#pragma config BORV = LO
-#pragma config PPS1WAY = ON
-#pragma config STVREN = OFF
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
+# 62 "./display.h" 2
 
 
 
 
-#pragma config BBSIZE = BB512
-#pragma config BBEN = OFF
-#pragma config SAFEN = OFF
-#pragma config WRTAPP = OFF
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-#pragma config WRTSAF = OFF
-#pragma config LVP = ON
 
 
-#pragma config CP = OFF
+extern const uint8_t display_font[16];
 
+
+
+void display_init(void);
+
+
+_Bool display_display_on(_Bool on);
+
+
+_Bool display_set_brightness(uint8_t brightness);
+
+
+_Bool display_write_digit_raw(uint8_t position, uint8_t segments);
+
+
+_Bool display_write_digit_hex(uint8_t position, uint8_t value, _Bool dot);
+
+
+_Bool display_clear_digit(uint8_t position);
+
+
+_Bool display_clear_all(void);
+
+
+
+_Bool display_write_number(uint16_t value);
+
+
+
+_Bool display_read_keys(uint8_t *key_code, _Bool *pressed);
+# 1 "display.c" 2
+
+# 1 "./i2c1.h" 1
 
 
 
@@ -5452,161 +5460,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\xc.h" 2 3
-# 39 "./header.h" 2
-
-# 1 "./pin_deffiine.h" 1
-
-
-
-
-
-void pins (){
-TRISAbits.TRISA5 = 1;
-TRISAbits.TRISA4 = 1;
-TRISCbits.TRISC5 = 0;
-TRISCbits.TRISC3 = 1;
-
-
-TRISCbits.TRISC2 = 0;
-TRISAbits.TRISA2 = 1;
-
-ANSELCbits.ANSC5 = 0;
-ANSELCbits.ANSC2 = 0;
-ANSELCbits.ANSC0 = 0;
-ANSELCbits.ANSC1 = 0;
-ANSELAbits.ANSA2 = 0;
-
-
-    PPSLOCK = 0x55;
-    PPSLOCK = 0xAA;
-    PPSLOCKbits.PPSLOCKED = 0;
-
-
-
-
-
-
-    RC2PPS = 0x05;
-
-
-
-    RXPPS = 0x02;
-    RC5PPS = 0x03;
-
-    ANSELCbits.ANSC0 = 0;
-    ANSELCbits.ANSC1 = 0;
-    TRISCbits.TRISC0 = 1;
-    TRISCbits.TRISC1 = 1;
-
-    SSP1CLKPPS = 0x10;
-    SSP1DATPPS = 0x11;
-    RC0PPS = 0x07;
-    RC1PPS = 0x08;
-    RC0I2Cbits.PU = 1;
-    RC1I2Cbits.PU = 1;
-# 74 "./pin_deffiine.h"
-    PPSLOCK = 0x55;
-    PPSLOCK = 0xAA;
-    PPSLOCKbits.PPSLOCKED = 1;
-
-}
-# 40 "./header.h" 2
-
-# 1 "./uart.h" 1
-
-
-
-
-
-void UART_Init(uint32_t baud);
-void UART_Write(char data);
-void UART_WriteString(const char *str);
-uint8_t UART_DataReady(void);
-char UART_Read(void);
-void UART_Write16(uint16_t value);
-void UART_Write16String(uint16_t value, const char *str);
-# 41 "./header.h" 2
-
-# 1 "./adc.h" 1
-# 12 "./adc.h"
-void ADC_Init(void);
-uint16_t ADC_Read(uint8_t channel);
-# 42 "./header.h" 2
-
-# 1 "./pwm.h" 1
-
-
-
-
-
-
-void PWM_Init(void);
-void PWM_SetDuty(uint16_t permille);
-# 43 "./header.h" 2
-
-# 1 "./pid.h" 1
-
-
-
-
-
-
-
-int32_t i_PID = 0;
-
-
-
-
-
-
-
- void tempSit();
-# 44 "./header.h" 2
-
-# 1 "./display.h" 1
-# 62 "./display.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
-# 62 "./display.h" 2
-
-
-
-
-
-
-extern const uint8_t display_font[16];
-
-
-
-void display_init(void);
-
-
-_Bool display_display_on(_Bool on);
-
-
-_Bool display_set_brightness(uint8_t brightness);
-
-
-_Bool display_write_digit_raw(uint8_t position, uint8_t segments);
-
-
-_Bool display_write_digit_hex(uint8_t position, uint8_t value, _Bool dot);
-
-
-_Bool display_clear_digit(uint8_t position);
-
-
-_Bool display_clear_all(void);
-
-
-
-_Bool display_write_number(uint16_t value);
-
-
-
-_Bool display_read_keys(uint8_t *key_code, _Bool *pressed);
-# 45 "./header.h" 2
-
-# 1 "./i2c1.h" 1
+# 5 "./i2c1.h" 2
 # 22 "./i2c1.h"
 void I2C1_Init(void);
 
@@ -5620,52 +5474,130 @@ _Bool I2C1_WriteByte(uint8_t addr7, uint8_t data);
 
 
 _Bool I2C1_Read(uint8_t addr7, uint8_t *data, uint8_t len);
-# 46 "./header.h" 2
-# 2 "main.c" 2
+# 2 "display.c" 2
 
 
 
 
 
-uint8_t v=5;
-uint16_t x=0;
-void main(void)
+
+
+static const uint8_t display_digit_addr[4] = { 0x34u, 0x35u, 0x36u, 0x37u };
+
+const uint8_t display_font[16] = {
+    0x3F,
+    0x06,
+    0x5B,
+    0x4F,
+    0x66,
+    0x6D,
+    0x7D,
+    0x07,
+    0x7F,
+    0x6F,
+    0x77,
+    0x7C,
+    0x39,
+    0x5E,
+    0x79,
+    0x71,
+};
+
+
+
+
+
+static uint8_t s_ctrl_reg = 0;
+
+static _Bool display_push_ctrl(void)
 {
-    pins();
-  UART_Init(9600);
-  ADC_Init();
- PWM_Init();
- I2C1_Init();
- display_init();
-display_set_brightness(2);
+    return I2C1_WriteByte(0x24u, s_ctrl_reg);
+}
 
- uint16_t raw_temp = ADC_Read(5);
- uint16_t srt_temp = ADC_Read(4);
- uint16_t oldsrt_temp =0;
- int32_t dtt=0;
-    while (1)
-    {
+void display_init(void)
+{
 
-    _delay((unsigned long)((50)*(32000000UL/4000.0)));
-    tempSit();
-    raw_temp = (uint16_t)((ADC_Read(5) * 45UL) / 77UL);
-    srt_temp = (uint16_t)((ADC_Read(4) *45UL) / 77UL);
-    UART_Write16String(raw_temp, " t\r\n");
-    UART_Write16String(srt_temp, " st\r\n");
-    display_write_number(raw_temp);
+    s_ctrl_reg = (uint8_t)((4u << 4) | (0u << 3) | 1u);
+    display_push_ctrl();
+    display_clear_all();
+}
 
-
-    dtt = srt_temp - oldsrt_temp;
-    if (dtt < 0)
-    dtt = -dtt;
-
-    if (dtt < 10)
-    {
-    oldsrt_temp = srt_temp;
-    display_write_number(srt_temp);
-    UART_Write16String(oldsrt_temp, " tempchange st\r\n");
-     _delay((unsigned long)((2000)*(32000000UL/4000.0)));
-
+_Bool display_display_on(_Bool on)
+{
+    if (on) {
+        s_ctrl_reg |= 0x01u;
+    } else {
+        s_ctrl_reg &= (uint8_t)~0x01u;
     }
+    return display_push_ctrl();
+}
+
+_Bool display_set_brightness(uint8_t brightness)
+{
+    if (brightness > 7u) brightness = 7u;
+    s_ctrl_reg = (uint8_t)((s_ctrl_reg & 0x8Fu) | (brightness << 4));
+    return display_push_ctrl();
+}
+
+_Bool display_write_digit_raw(uint8_t position, uint8_t segments)
+{
+    if (position >= 4) return 0;
+    return I2C1_WriteByte(display_digit_addr[position], segments);
+}
+
+_Bool display_write_digit_hex(uint8_t position, uint8_t value, _Bool dot)
+{
+    if (value > 15u) return 0;
+    uint8_t segs = display_font[value];
+    if (dot) segs |= 0x80u;
+    return display_write_digit_raw(position, segs);
+}
+
+_Bool display_clear_digit(uint8_t position)
+{
+    return display_write_digit_raw(position, 0x00u);
+}
+
+_Bool display_clear_all(void)
+{
+    _Bool ok = 1;
+    for (uint8_t i = 0; i < 4; i++) {
+        ok = display_clear_digit(i) && ok;
     }
+    return ok;
+}
+
+_Bool display_write_number(uint16_t value)
+{
+    if (value > 9999u) return 0;
+
+    uint8_t digits[4];
+    for (int8_t i = 4 - 1; i >= 0; i--) {
+        digits[i] = (uint8_t)(value % 10u);
+        value /= 10u;
+    }
+
+    _Bool ok = 1;
+    _Bool leading = 1;
+    for (uint8_t i = 0; i < 4; i++) {
+        _Bool isLast = (i == 4 - 1);
+        if (leading && digits[i] == 0 && !isLast) {
+            ok = display_clear_digit(i) && ok;
+        } else {
+            leading = 0;
+            ok = display_write_digit_hex(i, digits[i], 0) && ok;
+        }
+    }
+    return ok;
+}
+
+_Bool display_read_keys(uint8_t *key_code, _Bool *pressed)
+{
+    uint8_t raw;
+    if (!I2C1_Read(0x27u, &raw, 1)) {
+        return 0;
+    }
+    if (key_code) *key_code = (uint8_t)(raw & 0x3Fu);
+    if (pressed) *pressed = ((raw & 0x40u) != 0u);
+    return 1;
 }
