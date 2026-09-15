@@ -5438,11 +5438,20 @@ void ADC_Init(void)
 
 uint16_t ADC_Read(uint8_t channel)
 {
+    uint16_t adc;
 
     ADCON1bits.PREF = (channel == 5) ? 0b11 : 0b00;
     ADCON0bits.CHS = channel;
+
     _delay((unsigned long)((5)*(32000000UL/4000000.0)));
+
     ADCON0bits.GO = 1;
     while (ADCON0bits.GO);
-    return ((uint16_t)ADRESH << 8) | ADRESL;
+
+    adc = ((uint16_t)ADRESH << 8) | ADRESL;
+
+    if (channel == 4)
+        adc = (adc * 47UL) / 60UL;
+
+    return adc;
 }

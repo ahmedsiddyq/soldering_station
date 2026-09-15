@@ -125,16 +125,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13 ./adc.h
 [; ;./adc.h: 13: uint16_t ADC_Read(uint8_t channel);
 [v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
-"12 D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
-[p i __delay ]
 "16 ./pid.h
 [; ;./pid.h: 16:  void tempSit();
 [v _tempSit `(v ~T0 @X0 0 e? ]
-"12 ./uart.h
-[; ;./uart.h: 12: void UART_Write16String(uint16_t value, const char *str);
-[v _UART_Write16String `(v ~T0 @X0 0 ef2`us`*Cuc ]
 "94 ./display.h
 [; ;./display.h: 94: _Bool display_write_number(uint16_t value);
 [v _display_write_number `(a ~T0 @X0 0 ef1`us ]
@@ -794,168 +787,221 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _x
 -> -> 0 `i `us
 ]
-[v $root$_main `(v ~T0 @X0 0 e ]
 "9
-[; ;main.c: 9: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
+[; ;main.c: 9: uint16_t tick_1s = 0;
+[v _tick_1s `us ~T0 @X0 1 e ]
+[i _tick_1s
+-> -> 0 `i `us
+]
 "10
-[; ;main.c: 10: {
+[; ;main.c: 10: uint8_t tick_50ms=0;
+[v _tick_50ms `uc ~T0 @X0 1 e ]
+[i _tick_50ms
+-> -> 0 `i `uc
+]
+"11
+[; ;main.c: 11: uint8_t pid_en=0;
+[v _pid_en `uc ~T0 @X0 1 e ]
+[i _pid_en
+-> -> 0 `i `uc
+]
+"12
+[; ;main.c: 12: uint8_t SW_Dp =0;
+[v _SW_Dp `uc ~T0 @X0 1 e ]
+[i _SW_Dp
+-> -> 0 `i `uc
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"13
+[; ;main.c: 13: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"14
+[; ;main.c: 14: {
 {
 [e :U _main ]
 [f ]
-"11
-[; ;main.c: 11: pins();
-[e ( _pins ..  ]
-"12
-[; ;main.c: 12:   UART_Init(9600);
-[e ( _UART_Init (1 -> -> -> 9600 `i `l `ul ]
-"13
-[; ;main.c: 13:   ADC_Init();
-[e ( _ADC_Init ..  ]
-"14
-[; ;main.c: 14:   Timer0_1ms_Init();
-[e ( _Timer0_1ms_Init ..  ]
 "15
-[; ;main.c: 15:  PWM_Init();
-[e ( _PWM_Init ..  ]
+[; ;main.c: 15: pins();
+[e ( _pins ..  ]
 "16
-[; ;main.c: 16:  I2C1_Init();
-[e ( _I2C1_Init ..  ]
+[; ;main.c: 16:   UART_Init(9600);
+[e ( _UART_Init (1 -> -> -> 9600 `i `l `ul ]
 "17
-[; ;main.c: 17:  display_init();
-[e ( _display_init ..  ]
+[; ;main.c: 17:   ADC_Init();
+[e ( _ADC_Init ..  ]
 "18
-[; ;main.c: 18: display_set_brightness(1);
-[e ( _display_set_brightness (1 -> -> 1 `i `uc ]
+[; ;main.c: 18:   Timer0_1ms_Init();
+[e ( _Timer0_1ms_Init ..  ]
+"19
+[; ;main.c: 19:  PWM_Init();
+[e ( _PWM_Init ..  ]
 "20
-[; ;main.c: 20:  uint16_t raw_temp = ADC_Read(5);
+[; ;main.c: 20:  I2C1_Init();
+[e ( _I2C1_Init ..  ]
+"21
+[; ;main.c: 21:  display_init();
+[e ( _display_init ..  ]
+"22
+[; ;main.c: 22: display_set_brightness(1);
+[e ( _display_set_brightness (1 -> -> 1 `i `uc ]
+"24
+[; ;main.c: 24:  uint16_t raw_temp = ADC_Read(5);
 [v _raw_temp `us ~T0 @X0 1 a ]
 [e = _raw_temp ( _ADC_Read (1 -> -> 5 `i `uc ]
-"21
-[; ;main.c: 21:  uint16_t srt_temp = ADC_Read(4);
+"25
+[; ;main.c: 25:  uint16_t srt_temp = ADC_Read(4);
 [v _srt_temp `us ~T0 @X0 1 a ]
 [e = _srt_temp ( _ADC_Read (1 -> -> 4 `i `uc ]
-"22
-[; ;main.c: 22:  uint16_t oldsrt_temp =0;
+"26
+[; ;main.c: 26:  uint16_t oldsrt_temp =0;
 [v _oldsrt_temp `us ~T0 @X0 1 a ]
 [e = _oldsrt_temp -> -> 0 `i `us ]
-"23
-[; ;main.c: 23:  int32_t dtt=0;
+"27
+[; ;main.c: 27:  int32_t dtt=0;
 [v _dtt `l ~T0 @X0 1 a ]
 [e = _dtt -> -> 0 `i `l ]
-"24
-[; ;main.c: 24:  uint8_t SW_Dp =0;
-[v _SW_Dp `uc ~T0 @X0 1 a ]
-[e = _SW_Dp -> -> 0 `i `uc ]
-"25
-[; ;main.c: 25:     while (1)
+"29
+[; ;main.c: 29:     while (1)
 [e :U 470 ]
-"26
-[; ;main.c: 26:     {
-{
-"28
-[; ;main.c: 28:     _delay((unsigned long)((50)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
 "30
-[; ;main.c: 30:     tempSit();
-[e ( _tempSit ..  ]
-"31
-[; ;main.c: 31:     raw_temp = (uint16_t)((ADC_Read(5) * 45UL) / 77UL);
-[e = _raw_temp -> / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 45 `ul -> 77 `ul `us ]
+[; ;main.c: 30:     {
+{
 "32
-[; ;main.c: 32:     srt_temp = (uint16_t)((ADC_Read(4) *45UL) / 77UL);
-[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 45 `ul -> 77 `ul `us ]
-"34
-[; ;main.c: 34:     if(!SW_Dp){
-[e $ ! ! != -> _SW_Dp `i -> 0 `i 472  ]
-{
-"35
-[; ;main.c: 35:     UART_Write16String(raw_temp, " t\r\n");
-[e ( _UART_Write16String (2 , _raw_temp :s 1C ]
+[; ;main.c: 32:     raw_temp = (uint16_t)((ADC_Read(5) * 351UL) /553UL);
+[e = _raw_temp -> / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 351 `ul -> 553 `ul `us ]
+"33
+[; ;main.c: 33:     srt_temp = (uint16_t)((ADC_Read(4) * 351UL) /553UL);
+[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 351 `ul -> 553 `ul `us ]
 "36
-[; ;main.c: 36:     UART_Write16String(srt_temp, " st\r\n");
-[e ( _UART_Write16String (2 , _srt_temp :s 2C ]
-"37
-[; ;main.c: 37:     display_write_number(raw_temp);
-[e ( _display_write_number (1 _raw_temp ]
-"38
-[; ;main.c: 38:     }
-}
-[e $U 473  ]
-"39
-[; ;main.c: 39:     else
-[e :U 472 ]
-"40
-[; ;main.c: 40:     {
+[; ;main.c: 36:     if(pid_en){
+[e $ ! != -> _pid_en `i -> 0 `i 472  ]
 {
+"40
+[; ;main.c: 40:     tempSit();
+[e ( _tempSit ..  ]
 "41
-[; ;main.c: 41:      display_write_number(srt_temp);
-[e ( _display_write_number (1 _srt_temp ]
-"42
-[; ;main.c: 42:      SW_Dp=0;
-[e = _SW_Dp -> -> 0 `i `uc ]
+[; ;main.c: 41:     pid_en=0;
+[e = _pid_en -> -> 0 `i `uc ]
 "43
-[; ;main.c: 43:     }
+[; ;main.c: 43:     if(!SW_Dp){
+[e $ ! ! != -> _SW_Dp `i -> 0 `i 473  ]
+{
+"46
+[; ;main.c: 46:     display_write_number(raw_temp);
+[e ( _display_write_number (1 _raw_temp ]
+"47
+[; ;main.c: 47:     }
 }
+[e $U 474  ]
+"48
+[; ;main.c: 48:     else
 [e :U 473 ]
 "49
-[; ;main.c: 49:      if (tick_1ms)
-[e $ ! != -> _tick_1ms `i -> 0 `i 474  ]
+[; ;main.c: 49:     {
+{
 "50
-[; ;main.c: 50:     {
-{
+[; ;main.c: 50:      display_write_number(srt_temp);
+[e ( _display_write_number (1 _srt_temp ]
 "51
-[; ;main.c: 51:         tick_1ms = 0;
-[e = _tick_1ms -> -> 0 `i `uc ]
-"52
-[; ;main.c: 52:     dtt = srt_temp - oldsrt_temp;
-[e = _dtt -> - -> _srt_temp `ui -> _oldsrt_temp `ui `l ]
-"54
-[; ;main.c: 54:     if (dtt < 0){
-[e $ ! < _dtt -> -> 0 `i `l 475  ]
-{
-"55
-[; ;main.c: 55:     dtt = -dtt;}
-[e = _dtt -U _dtt ]
-}
-[e :U 475 ]
-"56
-[; ;main.c: 56:      UART_Write16String(dtt, " dtt1 \r\n");
-[e ( _UART_Write16String (2 , -> _dtt `us :s 3C ]
-"58
-[; ;main.c: 58:     if (10 < dtt)
-[e $ ! < -> -> 10 `i `l _dtt 476  ]
-"59
-[; ;main.c: 59:     {
-{
-"60
-[; ;main.c: 60:      UART_Write16String(dtt, " dtt 2\r\n");
-[e ( _UART_Write16String (2 , -> _dtt `us :s 4C ]
-"61
-[; ;main.c: 61:     oldsrt_temp = srt_temp;
-[e = _oldsrt_temp _srt_temp ]
-"63
-[; ;main.c: 63:     SW_Dp=1;
-[e = _SW_Dp -> -> 1 `i `uc ]
-"64
-[; ;main.c: 64:     }
-}
-[e :U 476 ]
-"69
-[; ;main.c: 69:     }
+[; ;main.c: 51:     }
 }
 [e :U 474 ]
+"53
+[; ;main.c: 53:     }
+}
+[e :U 472 ]
+"62
+[; ;main.c: 62:      if (tick_1ms)
+[e $ ! != -> _tick_1ms `i -> 0 `i 475  ]
+"63
+[; ;main.c: 63:     {
+{
+"64
+[; ;main.c: 64:    tick_1ms = 0;
+[e = _tick_1ms -> -> 0 `i `uc ]
+"65
+[; ;main.c: 65:    tick_50ms++;
+[e ++ _tick_50ms -> -> 1 `i `uc ]
+"69
+[; ;main.c: 69:         if(SW_Dp){
+[e $ ! != -> _SW_Dp `i -> 0 `i 476  ]
+{
 "70
-[; ;main.c: 70:     }
+[; ;main.c: 70:         tick_1s++;
+[e ++ _tick_1s -> -> 1 `i `us ]
+"72
+[; ;main.c: 72:         if(3000<tick_1s)
+[e $ ! < -> -> 3000 `i `ui -> _tick_1s `ui 477  ]
+"73
+[; ;main.c: 73:         {
+{
+"74
+[; ;main.c: 74:         tick_1s=0;
+[e = _tick_1s -> -> 0 `i `us ]
+"75
+[; ;main.c: 75:         SW_Dp=0;
+[e = _SW_Dp -> -> 0 `i `uc ]
+"76
+[; ;main.c: 76:         }}
+}
+[e :U 477 ]
+}
+[e :U 476 ]
+"78
+[; ;main.c: 78:         if(50<tick_50ms)
+[e $ ! < -> 50 `i -> _tick_50ms `i 478  ]
+"79
+[; ;main.c: 79:         {
+{
+"80
+[; ;main.c: 80:         tick_50ms=0;
+[e = _tick_50ms -> -> 0 `i `uc ]
+"81
+[; ;main.c: 81:         pid_en=1;
+[e = _pid_en -> -> 1 `i `uc ]
+"82
+[; ;main.c: 82:         }
+}
+[e :U 478 ]
+"85
+[; ;main.c: 85:     dtt = srt_temp - oldsrt_temp;
+[e = _dtt -> - -> _srt_temp `ui -> _oldsrt_temp `ui `l ]
+"87
+[; ;main.c: 87:     if (dtt < 0){
+[e $ ! < _dtt -> -> 0 `i `l 479  ]
+{
+"88
+[; ;main.c: 88:     dtt = -dtt;}
+[e = _dtt -U _dtt ]
+}
+[e :U 479 ]
+"91
+[; ;main.c: 91:     if (20 < dtt)
+[e $ ! < -> -> 20 `i `l _dtt 480  ]
+"92
+[; ;main.c: 92:     {
+{
+"94
+[; ;main.c: 94:     oldsrt_temp = srt_temp;
+[e = _oldsrt_temp _srt_temp ]
+"95
+[; ;main.c: 95:     SW_Dp=1;
+[e = _SW_Dp -> -> 1 `i `uc ]
+"96
+[; ;main.c: 96:     }
+}
+[e :U 480 ]
+"98
+[; ;main.c: 98:     }
+}
+[e :U 475 ]
+"99
+[; ;main.c: 99:     }
 }
 [e :U 469 ]
 [e $U 470  ]
 [e :U 471 ]
-"71
-[; ;main.c: 71: }
+"100
+[; ;main.c: 100: }
 [e :UE 468 ]
 }
-[a 2C 32 115 116 13 10 0 ]
-[a 1C 32 116 13 10 0 ]
-[a 4C 32 100 116 116 32 50 13 10 0 ]
-[a 3C 32 100 116 116 49 32 13 10 0 ]

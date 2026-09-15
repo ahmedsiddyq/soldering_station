@@ -5641,6 +5641,10 @@ _Bool I2C1_Read(uint8_t addr7, uint8_t *data, uint8_t len);
 
 uint8_t v=5;
 uint16_t x=0;
+uint16_t tick_1s = 0;
+uint8_t tick_50ms=0;
+uint8_t pid_en=0;
+uint8_t SW_Dp =0;
 void main(void)
 {
 pins();
@@ -5656,50 +5660,68 @@ display_set_brightness(1);
  uint16_t srt_temp = ADC_Read(4);
  uint16_t oldsrt_temp =0;
  int32_t dtt=0;
- uint8_t SW_Dp =0;
+
     while (1)
     {
 
-    _delay((unsigned long)((50)*(32000000UL/4000.0)));
+    raw_temp = (uint16_t)((ADC_Read(5) * 351UL) /553UL);
+    srt_temp = (uint16_t)((ADC_Read(4) * 351UL) /553UL);
+
+
+    if(pid_en){
+
+
 
     tempSit();
-    raw_temp = (uint16_t)((ADC_Read(5) * 45UL) / 77UL);
-    srt_temp = (uint16_t)((ADC_Read(4) *45UL) / 77UL);
+    pid_en=0;
 
     if(!SW_Dp){
-    UART_Write16String(raw_temp, " t\r\n");
-    UART_Write16String(srt_temp, " st\r\n");
+
+
     display_write_number(raw_temp);
     }
     else
     {
      display_write_number(srt_temp);
-     SW_Dp=0;
     }
 
-
-
-
-
+    }
+# 62 "main.c"
      if (tick_1ms)
     {
-        tick_1ms = 0;
+   tick_1ms = 0;
+   tick_50ms++;
+
+
+
+        if(SW_Dp){
+        tick_1s++;
+
+        if(3000<tick_1s)
+        {
+        tick_1s=0;
+        SW_Dp=0;
+        }}
+
+        if(50<tick_50ms)
+        {
+        tick_50ms=0;
+        pid_en=1;
+        }
+
+
     dtt = srt_temp - oldsrt_temp;
 
     if (dtt < 0){
     dtt = -dtt;}
-     UART_Write16String(dtt, " dtt1 \r\n");
 
-    if (10 < dtt)
+
+    if (20 < dtt)
     {
-     UART_Write16String(dtt, " dtt 2\r\n");
-    oldsrt_temp = srt_temp;
 
+    oldsrt_temp = srt_temp;
     SW_Dp=1;
     }
-
-
-
 
     }
     }

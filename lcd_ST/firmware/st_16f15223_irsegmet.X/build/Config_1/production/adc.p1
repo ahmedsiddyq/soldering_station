@@ -603,30 +603,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20
 [; ;adc.c: 20: {
 [f ]
-"22
-[; ;adc.c: 22:     ADCON1bits.PREF = (channel == 5) ? 0b11 : 0b00;
-[e = . . _ADCON1bits 0 0 -> ? == -> _channel `i -> 5 `i : -> 3 `i -> 0 `i `uc ]
+"21
+[; ;adc.c: 21:     uint16_t adc;
+[v _adc `us ~T0 @X0 1 a ]
 "23
-[; ;adc.c: 23:     ADCON0bits.CHS = channel;
-[e = . . _ADCON0bits 0 2 _channel ]
+[; ;adc.c: 23:     ADCON1bits.PREF = (channel == 5) ? 0b11 : 0b00;
+[e = . . _ADCON1bits 0 0 -> ? == -> _channel `i -> 5 `i : -> 3 `i -> 0 `i `uc ]
 "24
-[; ;adc.c: 24:     _delay((unsigned long)((5)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"25
-[; ;adc.c: 25:     ADCON0bits.GO = 1;
-[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
+[; ;adc.c: 24:     ADCON0bits.CHS = channel;
+[e = . . _ADCON0bits 0 2 _channel ]
 "26
-[; ;adc.c: 26:     while (ADCON0bits.GO);
+[; ;adc.c: 26:     _delay((unsigned long)((5)*(32000000UL/4000000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
+"28
+[; ;adc.c: 28:     ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
+"29
+[; ;adc.c: 29:     while (ADCON0bits.GO);
 [e $U 472  ]
 [e :U 473 ]
 [e :U 472 ]
 [e $ != -> . . _ADCON0bits 0 1 `i -> 0 `i 473  ]
 [e :U 474 ]
-"27
-[; ;adc.c: 27:     return ((uint16_t)ADRESH << 8) | ADRESL;
-[e ) -> | << -> -> _ADRESH `us `ui -> 8 `i -> _ADRESL `ui `us ]
+"31
+[; ;adc.c: 31:     adc = ((uint16_t)ADRESH << 8) | ADRESL;
+[e = _adc -> | << -> -> _ADRESH `us `ui -> 8 `i -> _ADRESL `ui `us ]
+"33
+[; ;adc.c: 33:     if (channel == 4)
+[e $ ! == -> _channel `i -> 4 `i 475  ]
+"34
+[; ;adc.c: 34:         adc = (adc * 47UL) / 60UL;
+[e = _adc -> / * -> _adc `ul -> 47 `ul -> 60 `ul `us ]
+[e :U 475 ]
+"36
+[; ;adc.c: 36:     return adc;
+[e ) _adc ]
 [e $UE 471  ]
-"28
-[; ;adc.c: 28: }
+"37
+[; ;adc.c: 37: }
 [e :UE 471 ]
 }
