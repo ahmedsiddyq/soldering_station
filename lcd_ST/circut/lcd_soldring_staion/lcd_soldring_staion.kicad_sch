@@ -4614,28 +4614,6 @@
 			)
 		)
 	)
-	(global_label "TX"
-		(shape input)
-		(at 232.41 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "205a5a3f-653b-4dc7-abbf-09a0a2063a51")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.5723 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "heater"
 		(shape input)
 		(at 195.58 114.3 90)
@@ -4856,28 +4834,6 @@
 			)
 		)
 	)
-	(global_label "clk"
-		(shape input)
-		(at 232.41 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "59891625-05db-4295-b24b-79657b47d3b3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.1771 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "A"
 		(shape input)
 		(at 240.03 76.2 0)
@@ -4966,6 +4922,28 @@
 			)
 		)
 	)
+	(global_label "TX"
+		(shape input)
+		(at 232.41 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8157d9e7-3ff7-4170-a50b-aa9b651bf640")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.5723 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TEMP"
 		(shape input)
 		(at 156.21 76.2 180)
@@ -4984,6 +4962,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "dat"
+		(shape input)
+		(at 232.41 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "907226df-f1cf-43a3-8da0-7b25c62384e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.4189 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "clk"
+		(shape input)
+		(at 232.41 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "90cf9d89-aa16-426a-850c-5a5d8b0c21d1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.1771 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5274,28 +5296,6 @@
 			)
 		)
 	)
-	(global_label "dat"
-		(shape input)
-		(at 232.41 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f37becf8-7ff5-4a8c-bac2-e3c0e76958ed")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.4189 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PGD"
 		(shape input)
 		(at 232.41 76.2 0)
@@ -5435,7 +5435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 119.38 153.67 0)
 			(effects
 				(font
@@ -6872,7 +6872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:01x04_fat_pins"
 			(at 270.51 20.32 0)
 			(effects
 				(font
@@ -6990,9 +6990,9 @@
 		(lib_id "Device:R")
 		(at 243.84 60.96 90)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(dnp yes)
 		(uuid "57ed0857-2406-483e-a138-8f0b77ff2f11")
 		(property "Reference" "R14"
@@ -7080,7 +7080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:01x04_fat_pins"
 			(at 269.24 38.1 0)
 			(effects
 				(font
@@ -8055,7 +8055,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 26.67 85.09 0)
 			(effects
 				(font
@@ -9970,7 +9970,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 116.84 120.65 0)
 			(effects
 				(font
@@ -10306,9 +10306,9 @@
 		(at 248.92 125.73 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "f69507d0-a5e4-46ca-9d27-05f19cc13c7d")
 		(property "Reference" "J4"
 			(at 254 126.365 0)
