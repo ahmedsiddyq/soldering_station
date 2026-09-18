@@ -5434,11 +5434,11 @@ int32_t i_PID = 0;
 
 
 
- void tempSit();
+void tempSit(uint16_t tempNa);
 # 1 "pid.c" 2
 
-void tempSit(){
-int32_t temp_now = (int32_t)ADC_Read(5);
+void tempSit(uint16_t tempNa){
+int32_t temp_now = (int32_t)tempNa;
 int32_t set_now = (int32_t)ADC_Read(4);
 
 int32_t err = set_now - temp_now;

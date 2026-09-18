@@ -507,15 +507,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `l
 ]
 "2 pid.c
-[; ;pid.c: 2: void tempSit(){
-[v _tempSit `(v ~T0 @X0 1 ef ]
+[; ;pid.c: 2: void tempSit(uint16_t tempNa){
+[v _tempSit `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _tempSit ]
+[v _tempNa `us ~T0 @X0 1 r1 ]
 [f ]
 "3
-[; ;pid.c: 3: int32_t temp_now = (int32_t)ADC_Read(5);
+[; ;pid.c: 3: int32_t temp_now = (int32_t)tempNa;
 [v _temp_now `l ~T0 @X0 1 a ]
-[e = _temp_now -> ( _ADC_Read (1 -> -> 5 `i `uc `l ]
+[e = _temp_now -> _tempNa `l ]
 "4
 [; ;pid.c: 4: int32_t set_now = (int32_t)ADC_Read(4);
 [v _set_now `l ~T0 @X0 1 a ]

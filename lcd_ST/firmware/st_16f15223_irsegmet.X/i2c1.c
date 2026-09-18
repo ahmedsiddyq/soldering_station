@@ -15,6 +15,8 @@
 #define PPS_OUT_SCL1SCK1 0x07u
 #define PPS_OUT_SDA1SDO1 0x08u
 
+
+
 static void I2C1_WaitIdle(void)
 {
     // Bus is busy while any of the auto-clearing sequence bits are set,

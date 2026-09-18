@@ -1,6 +1,6 @@
 #include "pid.h"
-void tempSit(){ 
-int32_t temp_now = (int32_t)ADC_Read(ADC_CH_TEMP);
+void tempSit(uint16_t tempNa){ 
+int32_t temp_now = (int32_t)tempNa;
 int32_t set_now  = (int32_t)ADC_Read(ADC_CH_TEMP_SET);
 
 int32_t err = set_now - temp_now;

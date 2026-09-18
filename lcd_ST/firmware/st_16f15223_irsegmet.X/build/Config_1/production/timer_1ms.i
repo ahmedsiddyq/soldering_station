@@ -5446,7 +5446,6 @@ void __attribute__((picinterrupt(("")))) ISR(void)
         PIR0bits.TMR0IF = 0;
         TMR0H = 0xFC;
         TMR0L = 0x18;
-
         tick_1ms = 1;
 
     }

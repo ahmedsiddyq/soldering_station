@@ -21,17 +21,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "612
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 612: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x014)));
 [v _TRISCbits `VS38 ~T0 @X0 0 e@20 ]
-"7984
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7984:     struct {
-[s S428 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S428 . ANSC0 ANSC1 ANSC2 ANSC3 ANSC4 ANSC5 ]
-"7983
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7983: typedef union {
-[u S427 `S428 1 ]
-[n S427 . . ]
-"7993
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7993: extern volatile ANSELCbits_t ANSELCbits __attribute__((address(0x1F4E)));
-[v _ANSELCbits `VS427 ~T0 @X0 0 e@8014 ]
+"703
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 703:     struct {
+[s S43 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S43 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 ]
+"702
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 702: typedef union {
+[u S42 `S43 1 ]
+[n S42 . . ]
+"712
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 712: extern volatile LATCbits_t LATCbits __attribute__((address(0x01A)));
+[v _LATCbits `VS42 ~T0 @X0 0 e@26 ]
 "7599
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7599:     struct {
 [s S412 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -43,6 +43,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7608
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7608: extern volatile ANSELAbits_t ANSELAbits __attribute__((address(0x1F38)));
 [v _ANSELAbits `VS411 ~T0 @X0 0 e@7992 ]
+"7984
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7984:     struct {
+[s S428 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S428 . ANSC0 ANSC1 ANSC2 ANSC3 ANSC4 ANSC5 ]
+"7983
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7983: typedef union {
+[u S427 `S428 1 ]
+[n S427 . . ]
+"7993
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7993: extern volatile ANSELCbits_t ANSELCbits __attribute__((address(0x1F4E)));
+[v _ANSELCbits `VS427 ~T0 @X0 0 e@8014 ]
 "5837
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 5837: extern volatile unsigned char PPSLOCK __attribute__((address(0x1E8F)));
 [v _PPSLOCK `Vuc ~T0 @X0 0 e@7823 ]
@@ -57,49 +68,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5847
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 5847: extern volatile PPSLOCKbits_t PPSLOCKbits __attribute__((address(0x1E8F)));
 [v _PPSLOCKbits `VS308 ~T0 @X0 0 e@7823 ]
-"7361
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7361: extern volatile unsigned char RC2PPS __attribute__((address(0x1F22)));
-[v _RC2PPS `Vuc ~T0 @X0 0 e@7970 ]
+"7245
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7245: extern volatile unsigned char RC0PPS __attribute__((address(0x1F20)));
+[v _RC0PPS `Vuc ~T0 @X0 0 e@7968 ]
 "6580
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 6580: extern volatile unsigned char RXPPS __attribute__((address(0x1ECB)));
 [v _RXPPS `Vuc ~T0 @X0 0 e@7883 ]
-"7535
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7535: extern volatile unsigned char RC5PPS __attribute__((address(0x1F25)));
-[v _RC5PPS `Vuc ~T0 @X0 0 e@7973 ]
+"7477
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7477: extern volatile unsigned char RC4PPS __attribute__((address(0x1F24)));
+[v _RC4PPS `Vuc ~T0 @X0 0 e@7972 ]
 "6373
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 6373: extern volatile unsigned char SSP1CLKPPS __attribute__((address(0x1EC5)));
 [v _SSP1CLKPPS `Vuc ~T0 @X0 0 e@7877 ]
 "6439
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 6439: extern volatile unsigned char SSP1DATPPS __attribute__((address(0x1EC6)));
 [v _SSP1DATPPS `Vuc ~T0 @X0 0 e@7878 ]
-"7245
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7245: extern volatile unsigned char RC0PPS __attribute__((address(0x1F20)));
-[v _RC0PPS `Vuc ~T0 @X0 0 e@7968 ]
+"7361
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7361: extern volatile unsigned char RC2PPS __attribute__((address(0x1F22)));
+[v _RC2PPS `Vuc ~T0 @X0 0 e@7970 ]
 "7303
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 7303: extern volatile unsigned char RC1PPS __attribute__((address(0x1F21)));
 [v _RC1PPS `Vuc ~T0 @X0 0 e@7969 ]
-"976
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 976:     struct {
-[s S61 :2 `uc 1 :2 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S61 . TH . PU SLEW ]
-"975
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 975: typedef union {
-[u S60 `S61 1 ]
-[n S60 . . ]
-"983
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 983: extern volatile RC0I2Cbits_t RC0I2Cbits __attribute__((address(0x10E)));
-[v _RC0I2Cbits `VS60 ~T0 @X0 0 e@270 ]
-"1009
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1009:     struct {
-[s S63 :2 `uc 1 :2 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S63 . TH . PU SLEW ]
-"1008
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1008: typedef union {
-[u S62 `S63 1 ]
-[n S62 . . ]
-"1016
-[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 1016: extern volatile RC1I2Cbits_t RC1I2Cbits __attribute__((address(0x10F)));
-[v _RC1I2Cbits `VS62 ~T0 @X0 0 e@271 ]
+"8034
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 8034:     struct {
+[s S430 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S430 . WPUC0 WPUC1 WPUC2 WPUC3 WPUC4 WPUC5 ]
+"8033
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 8033: typedef union {
+[u S429 `S430 1 ]
+[n S429 . . ]
+"8043
+[; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 8043: extern volatile WPUCbits_t WPUCbits __attribute__((address(0x1F4F)));
+[v _WPUCbits `VS429 ~T0 @X0 0 e@8015 ]
 [p mainexit ]
 "6 ./uart.h
 [; ;./uart.h: 6: void UART_Init(uint32_t baud);
@@ -126,14 +126,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./adc.h: 13: uint16_t ADC_Read(uint8_t channel);
 [v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
 "16 ./pid.h
-[; ;./pid.h: 16:  void tempSit();
-[v _tempSit `(v ~T0 @X0 0 e? ]
+[; ;./pid.h: 16: void tempSit(uint16_t tempNa);
+[v _tempSit `(v ~T0 @X0 0 ef1`us ]
 "94 ./display.h
 [; ;./display.h: 94: _Bool display_write_number(uint16_t value);
 [v _display_write_number `(a ~T0 @X0 0 ef1`us ]
-"7 ./timer_1ms.h
-[; ;./timer_1ms.h: 7: extern volatile uint8_t tick_1ms;
-[v _tick_1ms `Vuc ~T0 @X0 0 e ]
 "7 ./header.h
 [p x FEXTOSC  =  OFF     ]
 "8
@@ -669,104 +666,118 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8661
 [; ;D:/apps/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f15223.h: 8661: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"6 ./pin_deffiine.h
-[; ;./pin_deffiine.h: 6: void pins (){
+"21 ./pin_deffiine.h
+[; ;./pin_deffiine.h: 21: void pins(void)
 [v _pins `(v ~T0 @X0 1 ef ]
+"22
+[; ;./pin_deffiine.h: 22: {
 {
 [e :U _pins ]
 [f ]
-"7
-[; ;./pin_deffiine.h: 7: TRISAbits.TRISA5 = 1;
+"26
+[; ;./pin_deffiine.h: 26:     TRISAbits.TRISA5 = 1;
 [e = . . _TRISAbits 0 5 -> -> 1 `i `uc ]
-"8
-[; ;./pin_deffiine.h: 8: TRISAbits.TRISA4 = 1;
+"27
+[; ;./pin_deffiine.h: 27:     TRISAbits.TRISA4 = 1;
 [e = . . _TRISAbits 0 4 -> -> 1 `i `uc ]
-"9
-[; ;./pin_deffiine.h: 9: TRISCbits.TRISC5 = 0;
-[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
-"10
-[; ;./pin_deffiine.h: 10: TRISCbits.TRISC3 = 1;
-[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
-"13
-[; ;./pin_deffiine.h: 13: TRISCbits.TRISC2 = 0;
-[e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
-"14
-[; ;./pin_deffiine.h: 14: TRISAbits.TRISA2 = 1;
-[e = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
-"16
-[; ;./pin_deffiine.h: 16: ANSELCbits.ANSC5 = 0;
-[e = . . _ANSELCbits 0 5 -> -> 0 `i `uc ]
-"17
-[; ;./pin_deffiine.h: 17: ANSELCbits.ANSC2 = 0;
-[e = . . _ANSELCbits 0 2 -> -> 0 `i `uc ]
-"18
-[; ;./pin_deffiine.h: 18: ANSELCbits.ANSC0 = 0;
-[e = . . _ANSELCbits 0 0 -> -> 0 `i `uc ]
-"19
-[; ;./pin_deffiine.h: 19: ANSELCbits.ANSC1 = 0;
-[e = . . _ANSELCbits 0 1 -> -> 0 `i `uc ]
-"20
-[; ;./pin_deffiine.h: 20: ANSELAbits.ANSA2 = 0;
-[e = . . _ANSELAbits 0 2 -> -> 0 `i `uc ]
-"23
-[; ;./pin_deffiine.h: 23:     PPSLOCK = 0x55;
-[e = _PPSLOCK -> -> 85 `i `uc ]
-"24
-[; ;./pin_deffiine.h: 24:     PPSLOCK = 0xAA;
-[e = _PPSLOCK -> -> 170 `i `uc ]
-"25
-[; ;./pin_deffiine.h: 25:     PPSLOCKbits.PPSLOCKED = 0;
-[e = . . _PPSLOCKbits 0 0 -> -> 0 `i `uc ]
+"29
+[; ;./pin_deffiine.h: 29:     TRISCbits.TRISC4 = 0;
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+"30
+[; ;./pin_deffiine.h: 30:     TRISCbits.TRISC5 = 1;
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
 "32
-[; ;./pin_deffiine.h: 32:     RC2PPS = 0x05;
-[e = _RC2PPS -> -> 5 `i `uc ]
+[; ;./pin_deffiine.h: 32:     TRISCbits.TRISC0 = 0;
+[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
+"33
+[; ;./pin_deffiine.h: 33:     TRISAbits.TRISA2 = 1;
+[e = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
 "36
-[; ;./pin_deffiine.h: 36:     RXPPS = 0x02;
-[e = _RXPPS -> -> 2 `i `uc ]
+[; ;./pin_deffiine.h: 36:     LATCbits.LATC3 = 0;
+[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 "37
-[; ;./pin_deffiine.h: 37:     RC5PPS = 0x03;
-[e = _RC5PPS -> -> 3 `i `uc ]
-"39
-[; ;./pin_deffiine.h: 39:     ANSELCbits.ANSC0 = 0;
-[e = . . _ANSELCbits 0 0 -> -> 0 `i `uc ]
-"40
-[; ;./pin_deffiine.h: 40:     ANSELCbits.ANSC1 = 0;
-[e = . . _ANSELCbits 0 1 -> -> 0 `i `uc ]
-"41
-[; ;./pin_deffiine.h: 41:     TRISCbits.TRISC0 = 1;
-[e = . . _TRISCbits 0 0 -> -> 1 `i `uc ]
-"42
-[; ;./pin_deffiine.h: 42:     TRISCbits.TRISC1 = 1;
-[e = . . _TRISCbits 0 1 -> -> 1 `i `uc ]
+[; ;./pin_deffiine.h: 37:     TRISCbits.TRISC3 = 0;
+[e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
 "44
-[; ;./pin_deffiine.h: 44:     SSP1CLKPPS = 0x10;
-[e = _SSP1CLKPPS -> -> 16 `i `uc ]
+[; ;./pin_deffiine.h: 44:     ANSELAbits.ANSA5 = 1;
+[e = . . _ANSELAbits 0 5 -> -> 1 `i `uc ]
 "45
-[; ;./pin_deffiine.h: 45:     SSP1DATPPS = 0x11;
-[e = _SSP1DATPPS -> -> 17 `i `uc ]
+[; ;./pin_deffiine.h: 45:     ANSELAbits.ANSA4 = 1;
+[e = . . _ANSELAbits 0 4 -> -> 1 `i `uc ]
 "46
-[; ;./pin_deffiine.h: 46:     RC0PPS = 0x07;
-[e = _RC0PPS -> -> 7 `i `uc ]
-"47
-[; ;./pin_deffiine.h: 47:     RC1PPS = 0x08;
-[e = _RC1PPS -> -> 8 `i `uc ]
+[; ;./pin_deffiine.h: 46:     ANSELAbits.ANSA2 = 0;
+[e = . . _ANSELAbits 0 2 -> -> 0 `i `uc ]
 "48
-[; ;./pin_deffiine.h: 48:     RC0I2Cbits.PU = 1;
-[e = . . _RC0I2Cbits 0 2 -> -> 1 `i `uc ]
+[; ;./pin_deffiine.h: 48:     ANSELCbits.ANSC5 = 1;
+[e = . . _ANSELCbits 0 5 -> -> 1 `i `uc ]
 "49
-[; ;./pin_deffiine.h: 49:     RC1I2Cbits.PU = 1;
-[e = . . _RC1I2Cbits 0 2 -> -> 1 `i `uc ]
-"74
-[; ;./pin_deffiine.h: 74:     PPSLOCK = 0x55;
+[; ;./pin_deffiine.h: 49:     ANSELCbits.ANSC4 = 0;
+[e = . . _ANSELCbits 0 4 -> -> 0 `i `uc ]
+"50
+[; ;./pin_deffiine.h: 50:     ANSELCbits.ANSC3 = 0;
+[e = . . _ANSELCbits 0 3 -> -> 0 `i `uc ]
+"51
+[; ;./pin_deffiine.h: 51:     ANSELCbits.ANSC0 = 0;
+[e = . . _ANSELCbits 0 0 -> -> 0 `i `uc ]
+"52
+[; ;./pin_deffiine.h: 52:     ANSELCbits.ANSC2 = 0;
+[e = . . _ANSELCbits 0 2 -> -> 0 `i `uc ]
+"53
+[; ;./pin_deffiine.h: 53:     ANSELCbits.ANSC1 = 0;
+[e = . . _ANSELCbits 0 1 -> -> 0 `i `uc ]
+"60
+[; ;./pin_deffiine.h: 60:     PPSLOCK = 0x55;
 [e = _PPSLOCK -> -> 85 `i `uc ]
-"75
-[; ;./pin_deffiine.h: 75:     PPSLOCK = 0xAA;
+"61
+[; ;./pin_deffiine.h: 61:     PPSLOCK = 0xAA;
 [e = _PPSLOCK -> -> 170 `i `uc ]
-"76
-[; ;./pin_deffiine.h: 76:     PPSLOCKbits.PPSLOCKED = 1;
+"62
+[; ;./pin_deffiine.h: 62:     PPSLOCKbits.PPSLOCKED = 0;
+[e = . . _PPSLOCKbits 0 0 -> -> 0 `i `uc ]
+"70
+[; ;./pin_deffiine.h: 70:     RC0PPS = 0x05;
+[e = _RC0PPS -> -> 5 `i `uc ]
+"73
+[; ;./pin_deffiine.h: 73:     RXPPS = 0x02;
+[e = _RXPPS -> -> 2 `i `uc ]
+"77
+[; ;./pin_deffiine.h: 77: RC4PPS = 0x03;
+[e = _RC4PPS -> -> 3 `i `uc ]
+"84
+[; ;./pin_deffiine.h: 84:     TRISCbits.TRISC2 = 1;
+[e = . . _TRISCbits 0 2 -> -> 1 `i `uc ]
+"85
+[; ;./pin_deffiine.h: 85:     TRISCbits.TRISC1 = 1;
+[e = . . _TRISCbits 0 1 -> -> 1 `i `uc ]
+"88
+[; ;./pin_deffiine.h: 88:     SSP1CLKPPS = 0x12;
+[e = _SSP1CLKPPS -> -> 18 `i `uc ]
+"89
+[; ;./pin_deffiine.h: 89:     SSP1DATPPS = 0x11;
+[e = _SSP1DATPPS -> -> 17 `i `uc ]
+"92
+[; ;./pin_deffiine.h: 92:     RC2PPS = 0x07;
+[e = _RC2PPS -> -> 7 `i `uc ]
+"93
+[; ;./pin_deffiine.h: 93:     RC1PPS = 0x08;
+[e = _RC1PPS -> -> 8 `i `uc ]
+"97
+[; ;./pin_deffiine.h: 97: WPUCbits.WPUC2 = 1;
+[e = . . _WPUCbits 0 2 -> -> 1 `i `uc ]
+"98
+[; ;./pin_deffiine.h: 98: WPUCbits.WPUC1 = 1;
+[e = . . _WPUCbits 0 1 -> -> 1 `i `uc ]
+"103
+[; ;./pin_deffiine.h: 103:     PPSLOCK = 0x55;
+[e = _PPSLOCK -> -> 85 `i `uc ]
+"104
+[; ;./pin_deffiine.h: 104:     PPSLOCK = 0xAA;
+[e = _PPSLOCK -> -> 170 `i `uc ]
+"105
+[; ;./pin_deffiine.h: 105:     PPSLOCKbits.PPSLOCKED = 1;
 [e = . . _PPSLOCKbits 0 0 -> -> 1 `i `uc ]
-"78
-[; ;./pin_deffiine.h: 78: }
+"106
+[; ;./pin_deffiine.h: 106: }
 [e :UE 467 ]
 }
 "8 ./pid.h
@@ -775,233 +786,306 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _i_PID
 -> -> 0 `i `l
 ]
-"7 main.c
-[; ;main.c: 7: uint8_t v=5;
-[v _v `uc ~T0 @X0 1 e ]
-[i _v
--> -> 5 `i `uc
-]
-"8
-[; ;main.c: 8: uint16_t x=0;
-[v _x `us ~T0 @X0 1 e ]
-[i _x
+"13 main.c
+[; ;main.c: 13: uint16_t avr_t[50] = {0};
+[v _avr_t `us ~T0 @X0 -> 50 `i e ]
+[i _avr_t
+:U ..
 -> -> 0 `i `us
+..
 ]
-"9
-[; ;main.c: 9: uint16_t tick_1s = 0;
+"15
+[; ;main.c: 15: volatile uint8_t tick_1ms = 0;
+[v _tick_1ms `Vuc ~T0 @X0 1 e ]
+[i _tick_1ms
+-> -> 0 `i `uc
+]
+"17
+[; ;main.c: 17: uint16_t tick_1s = 0;
 [v _tick_1s `us ~T0 @X0 1 e ]
 [i _tick_1s
 -> -> 0 `i `us
 ]
-"10
-[; ;main.c: 10: uint8_t tick_50ms=0;
-[v _tick_50ms `uc ~T0 @X0 1 e ]
-[i _tick_50ms
--> -> 0 `i `uc
+"18
+[; ;main.c: 18: uint16_t tick_pid = 0;
+[v _tick_pid `us ~T0 @X0 1 e ]
+[i _tick_pid
+-> -> 0 `i `us
 ]
-"11
-[; ;main.c: 11: uint8_t pid_en=0;
+"20
+[; ;main.c: 20: uint8_t pid_en = 0;
 [v _pid_en `uc ~T0 @X0 1 e ]
 [i _pid_en
 -> -> 0 `i `uc
 ]
-"12
-[; ;main.c: 12: uint8_t SW_Dp =0;
+"21
+[; ;main.c: 21: uint8_t SW_Dp = 0;
 [v _SW_Dp `uc ~T0 @X0 1 e ]
 [i _SW_Dp
 -> -> 0 `i `uc
 ]
+"23
+[; ;main.c: 23: uint16_t temp_avg = 0;
+[v _temp_avg `us ~T0 @X0 1 e ]
+[i _temp_avg
+-> -> 0 `i `us
+]
+"24
+[; ;main.c: 24: uint8_t ADC_Read_i = 0;
+[v _ADC_Read_i `uc ~T0 @X0 1 e ]
+[i _ADC_Read_i
+-> -> 0 `i `uc
+]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"13
-[; ;main.c: 13: void main(void)
+"29
+[; ;main.c: 29: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"14
-[; ;main.c: 14: {
+"30
+[; ;main.c: 30: {
 {
 [e :U _main ]
 [f ]
-"15
-[; ;main.c: 15: pins();
+"33
+[; ;main.c: 33:     pins();
 [e ( _pins ..  ]
-"16
-[; ;main.c: 16:   UART_Init(9600);
+"35
+[; ;main.c: 35:     UART_Init(9600);
 [e ( _UART_Init (1 -> -> -> 9600 `i `l `ul ]
-"17
-[; ;main.c: 17:   ADC_Init();
+"37
+[; ;main.c: 37:     ADC_Init();
 [e ( _ADC_Init ..  ]
-"18
-[; ;main.c: 18:   Timer0_1ms_Init();
+"39
+[; ;main.c: 39:     Timer0_1ms_Init();
 [e ( _Timer0_1ms_Init ..  ]
-"19
-[; ;main.c: 19:  PWM_Init();
+"41
+[; ;main.c: 41:     PWM_Init();
 [e ( _PWM_Init ..  ]
-"20
-[; ;main.c: 20:  I2C1_Init();
+"43
+[; ;main.c: 43:     I2C1_Init();
 [e ( _I2C1_Init ..  ]
-"21
-[; ;main.c: 21:  display_init();
+"45
+[; ;main.c: 45:     display_init();
 [e ( _display_init ..  ]
-"22
-[; ;main.c: 22: display_set_brightness(1);
+"47
+[; ;main.c: 47:     display_set_brightness(1);
 [e ( _display_set_brightness (1 -> -> 1 `i `uc ]
-"24
-[; ;main.c: 24:  uint16_t raw_temp = ADC_Read(5);
-[v _raw_temp `us ~T0 @X0 1 a ]
-[e = _raw_temp ( _ADC_Read (1 -> -> 5 `i `uc ]
-"25
-[; ;main.c: 25:  uint16_t srt_temp = ADC_Read(4);
+"52
+[; ;main.c: 52:     uint16_t srt_temp =
 [v _srt_temp `us ~T0 @X0 1 a ]
-[e = _srt_temp ( _ADC_Read (1 -> -> 4 `i `uc ]
-"26
-[; ;main.c: 26:  uint16_t oldsrt_temp =0;
+[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 351 `ul -> 553 `ul `us ]
+"55
+[; ;main.c: 55:     uint16_t oldsrt_temp = srt_temp;
 [v _oldsrt_temp `us ~T0 @X0 1 a ]
-[e = _oldsrt_temp -> -> 0 `i `us ]
-"27
-[; ;main.c: 27:  int32_t dtt=0;
+[e = _oldsrt_temp _srt_temp ]
+"57
+[; ;main.c: 57:     int32_t dtt = 0;
 [v _dtt `l ~T0 @X0 1 a ]
 [e = _dtt -> -> 0 `i `l ]
-"29
-[; ;main.c: 29:     while (1)
-[e :U 470 ]
-"30
-[; ;main.c: 30:     {
-{
-"32
-[; ;main.c: 32:     raw_temp = (uint16_t)((ADC_Read(5) * 351UL) /553UL);
-[e = _raw_temp -> / * -> ( _ADC_Read (1 -> -> 5 `i `uc `ul -> 351 `ul -> 553 `ul `us ]
-"33
-[; ;main.c: 33:     srt_temp = (uint16_t)((ADC_Read(4) * 351UL) /553UL);
-[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 351 `ul -> 553 `ul `us ]
-"36
-[; ;main.c: 36:     if(pid_en){
-[e $ ! != -> _pid_en `i -> 0 `i 472  ]
-{
-"40
-[; ;main.c: 40:     tempSit();
-[e ( _tempSit ..  ]
-"41
-[; ;main.c: 41:     pid_en=0;
-[e = _pid_en -> -> 0 `i `uc ]
-"43
-[; ;main.c: 43:     if(!SW_Dp){
-[e $ ! ! != -> _SW_Dp `i -> 0 `i 473  ]
-{
-"46
-[; ;main.c: 46:     display_write_number(raw_temp);
-[e ( _display_write_number (1 _raw_temp ]
-"47
-[; ;main.c: 47:     }
-}
-[e $U 474  ]
-"48
-[; ;main.c: 48:     else
-[e :U 473 ]
-"49
-[; ;main.c: 49:     {
-{
-"50
-[; ;main.c: 50:      display_write_number(srt_temp);
-[e ( _display_write_number (1 _srt_temp ]
-"51
-[; ;main.c: 51:     }
-}
-[e :U 474 ]
-"53
-[; ;main.c: 53:     }
-}
-[e :U 472 ]
 "62
-[; ;main.c: 62:      if (tick_1ms)
-[e $ ! != -> _tick_1ms `i -> 0 `i 475  ]
+[; ;main.c: 62:     while (1)
+[e :U 470 ]
 "63
 [; ;main.c: 63:     {
 {
-"64
-[; ;main.c: 64:    tick_1ms = 0;
-[e = _tick_1ms -> -> 0 `i `uc ]
-"65
-[; ;main.c: 65:    tick_50ms++;
-[e ++ _tick_50ms -> -> 1 `i `uc ]
 "69
-[; ;main.c: 69:         if(SW_Dp){
-[e $ ! != -> _SW_Dp `i -> 0 `i 476  ]
+[; ;main.c: 69:         srt_temp =
+[e = _srt_temp -> / * -> ( _ADC_Read (1 -> -> 4 `i `uc `ul -> 351 `ul -> 553 `ul `us ]
+"77
+[; ;main.c: 77:         if (pid_en)
+[e $ ! != -> _pid_en `i -> 0 `i 472  ]
+"78
+[; ;main.c: 78:         {
 {
-"70
-[; ;main.c: 70:         tick_1s++;
-[e ++ _tick_1s -> -> 1 `i `us ]
-"72
-[; ;main.c: 72:         if(3000<tick_1s)
-[e $ ! < -> -> 3000 `i `ui -> _tick_1s `ui 477  ]
-"73
-[; ;main.c: 73:         {
+"79
+[; ;main.c: 79:             uint32_t sum = 0;
+[v _sum `ul ~T0 @X0 1 a ]
+[e = _sum -> -> -> 0 `i `l `ul ]
+"84
+[; ;main.c: 84:             for (uint8_t p = 0; p < 50; p++)
 {
-"74
-[; ;main.c: 74:         tick_1s=0;
-[e = _tick_1s -> -> 0 `i `us ]
-"75
-[; ;main.c: 75:         SW_Dp=0;
-[e = _SW_Dp -> -> 0 `i `uc ]
-"76
-[; ;main.c: 76:         }}
+[v _p `uc ~T0 @X0 1 a ]
+[e = _p -> -> 0 `i `uc ]
+[e $ < -> _p `i -> 50 `i 473  ]
+[e $U 474  ]
+[e :U 473 ]
+"85
+[; ;main.c: 85:             {
+{
+"86
+[; ;main.c: 86:                 sum += avr_t[p];
+[e =+ _sum -> *U + &U _avr_t * -> _p `ux -> -> # *U &U _avr_t `ui `ux `ul ]
+"87
+[; ;main.c: 87:             }
+}
+[e ++ _p -> -> 1 `i `uc ]
+[e $ < -> _p `i -> 50 `i 473  ]
+[e :U 474 ]
+}
+"92
+[; ;main.c: 92:             temp_avg =
+[e = _temp_avg -> / _sum -> -> -> 50 `i `l `ul `us ]
+"98
+[; ;main.c: 98:             tempSit(temp_avg);
+[e ( _tempSit (1 _temp_avg ]
+"103
+[; ;main.c: 103:             pid_en = 0;
+[e = _pid_en -> -> 0 `i `uc ]
+"108
+[; ;main.c: 108:             uint16_t temp_avg_c =
+[v _temp_avg_c `us ~T0 @X0 1 a ]
+[e = _temp_avg_c -> / * -> _temp_avg `ul -> 351 `ul -> 553 `ul `us ]
+"114
+[; ;main.c: 114:             if (!SW_Dp)
+[e $ ! ! != -> _SW_Dp `i -> 0 `i 476  ]
+"115
+[; ;main.c: 115:             {
+{
+"118
+[; ;main.c: 118:                 display_write_number(temp_avg_c);
+[e ( _display_write_number (1 _temp_avg_c ]
+"119
+[; ;main.c: 119:             }
+}
+[e $U 477  ]
+"120
+[; ;main.c: 120:             else
+[e :U 476 ]
+"121
+[; ;main.c: 121:             {
+{
+"124
+[; ;main.c: 124:                 display_write_number(srt_temp);
+[e ( _display_write_number (1 _srt_temp ]
+"125
+[; ;main.c: 125:             }
 }
 [e :U 477 ]
+"126
+[; ;main.c: 126:         }
 }
-[e :U 476 ]
-"78
-[; ;main.c: 78:         if(50<tick_50ms)
-[e $ ! < -> 50 `i -> _tick_50ms `i 478  ]
-"79
-[; ;main.c: 79:         {
+[e :U 472 ]
+"133
+[; ;main.c: 133:         if (tick_1ms)
+[e $ ! != -> _tick_1ms `i -> 0 `i 478  ]
+"134
+[; ;main.c: 134:         {
 {
-"80
-[; ;main.c: 80:         tick_50ms=0;
-[e = _tick_50ms -> -> 0 `i `uc ]
-"81
-[; ;main.c: 81:         pid_en=1;
-[e = _pid_en -> -> 1 `i `uc ]
-"82
-[; ;main.c: 82:         }
-}
-[e :U 478 ]
-"85
-[; ;main.c: 85:     dtt = srt_temp - oldsrt_temp;
-[e = _dtt -> - -> _srt_temp `ui -> _oldsrt_temp `ui `l ]
-"87
-[; ;main.c: 87:     if (dtt < 0){
-[e $ ! < _dtt -> -> 0 `i `l 479  ]
+"135
+[; ;main.c: 135:             tick_1ms = 0;
+[e = _tick_1ms -> -> 0 `i `uc ]
+"142
+[; ;main.c: 142:             avr_t[ADC_Read_i] =
+[e = *U + &U _avr_t * -> _ADC_Read_i `ux -> -> # *U &U _avr_t `ui `ux ( _ADC_Read (1 -> -> 5 `i `uc ]
+"146
+[; ;main.c: 146:             ADC_Read_i++;
+[e ++ _ADC_Read_i -> -> 1 `i `uc ]
+"151
+[; ;main.c: 151:             if (ADC_Read_i >= 50)
+[e $ ! >= -> _ADC_Read_i `i -> 50 `i 479  ]
+"152
+[; ;main.c: 152:             {
 {
-"88
-[; ;main.c: 88:     dtt = -dtt;}
-[e = _dtt -U _dtt ]
+"153
+[; ;main.c: 153:                 ADC_Read_i = 0;
+[e = _ADC_Read_i -> -> 0 `i `uc ]
+"154
+[; ;main.c: 154:             }
 }
 [e :U 479 ]
-"91
-[; ;main.c: 91:     if (20 < dtt)
-[e $ ! < -> -> 20 `i `l _dtt 480  ]
-"92
-[; ;main.c: 92:     {
+"161
+[; ;main.c: 161:             tick_pid++;
+[e ++ _tick_pid -> -> 1 `i `us ]
+"164
+[; ;main.c: 164:             if (tick_pid >= 200)
+[e $ ! >= -> _tick_pid `ui -> -> 200 `i `ui 480  ]
+"165
+[; ;main.c: 165:             {
 {
-"94
-[; ;main.c: 94:     oldsrt_temp = srt_temp;
-[e = _oldsrt_temp _srt_temp ]
-"95
-[; ;main.c: 95:     SW_Dp=1;
-[e = _SW_Dp -> -> 1 `i `uc ]
-"96
-[; ;main.c: 96:     }
+"166
+[; ;main.c: 166:                 tick_pid = 0;
+[e = _tick_pid -> -> 0 `i `us ]
+"168
+[; ;main.c: 168:                 pid_en = 1;
+[e = _pid_en -> -> 1 `i `uc ]
+"169
+[; ;main.c: 169:             }
 }
 [e :U 480 ]
-"98
-[; ;main.c: 98:     }
+"176
+[; ;main.c: 176:             if (SW_Dp)
+[e $ ! != -> _SW_Dp `i -> 0 `i 481  ]
+"177
+[; ;main.c: 177:             {
+{
+"178
+[; ;main.c: 178:                 tick_1s++;
+[e ++ _tick_1s -> -> 1 `i `us ]
+"181
+[; ;main.c: 181:                 if (tick_1s >= 3000)
+[e $ ! >= -> _tick_1s `ui -> -> 3000 `i `ui 482  ]
+"182
+[; ;main.c: 182:                 {
+{
+"183
+[; ;main.c: 183:                     tick_1s = 0;
+[e = _tick_1s -> -> 0 `i `us ]
+"185
+[; ;main.c: 185:                     SW_Dp = 0;
+[e = _SW_Dp -> -> 0 `i `uc ]
+"186
+[; ;main.c: 186:                 }
 }
-[e :U 475 ]
-"99
-[; ;main.c: 99:     }
+[e :U 482 ]
+"187
+[; ;main.c: 187:             }
+}
+[e :U 481 ]
+"194
+[; ;main.c: 194:             dtt =
+[e = _dtt - -> _srt_temp `l -> _oldsrt_temp `l ]
+"201
+[; ;main.c: 201:             if (dtt < 0)
+[e $ ! < _dtt -> -> 0 `i `l 483  ]
+"202
+[; ;main.c: 202:             {
+{
+"203
+[; ;main.c: 203:                 dtt = -dtt;
+[e = _dtt -U _dtt ]
+"204
+[; ;main.c: 204:             }
+}
+[e :U 483 ]
+"211
+[; ;main.c: 211:             if (dtt > 20)
+[e $ ! > _dtt -> -> 20 `i `l 484  ]
+"212
+[; ;main.c: 212:             {
+{
+"213
+[; ;main.c: 213:                 oldsrt_temp = srt_temp;
+[e = _oldsrt_temp _srt_temp ]
+"215
+[; ;main.c: 215:                 SW_Dp = 1;
+[e = _SW_Dp -> -> 1 `i `uc ]
+"217
+[; ;main.c: 217:                 tick_1s = 0;
+[e = _tick_1s -> -> 0 `i `us ]
+"218
+[; ;main.c: 218:             }
+}
+[e :U 484 ]
+"219
+[; ;main.c: 219:         }
+}
+[e :U 478 ]
+"220
+[; ;main.c: 220:     }
 }
 [e :U 469 ]
 [e $U 470  ]
 [e :U 471 ]
-"100
-[; ;main.c: 100: }
+"221
+[; ;main.c: 221: }
 [e :UE 468 ]
 }

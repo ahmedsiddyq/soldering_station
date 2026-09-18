@@ -30,7 +30,6 @@ void __interrupt() ISR(void)
         PIR0bits.TMR0IF = 0;
         TMR0H = TMR0_RELOAD_H;   // reload ? H before L, every time
         TMR0L = TMR0_RELOAD_L;
-
         tick_1ms = 1;   
 
     }

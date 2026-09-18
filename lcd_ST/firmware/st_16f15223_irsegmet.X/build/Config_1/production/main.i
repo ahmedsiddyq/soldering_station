@@ -5455,26 +5455,44 @@ extern __bank0 __bit __timeout;
 # 39 "./header.h" 2
 
 # 1 "./pin_deffiine.h" 1
+# 21 "./pin_deffiine.h"
+void pins(void)
+{
+
+
+
+    TRISAbits.TRISA5 = 1;
+    TRISAbits.TRISA4 = 1;
+
+    TRISCbits.TRISC4 = 0;
+    TRISCbits.TRISC5 = 1;
+
+    TRISCbits.TRISC0 = 0;
+    TRISAbits.TRISA2 = 1;
+
+
+    LATCbits.LATC3 = 0;
+    TRISCbits.TRISC3 = 0;
 
 
 
 
 
-void pins (){
-TRISAbits.TRISA5 = 1;
-TRISAbits.TRISA4 = 1;
-TRISCbits.TRISC5 = 0;
-TRISCbits.TRISC3 = 1;
+
+    ANSELAbits.ANSA5 = 1;
+    ANSELAbits.ANSA4 = 1;
+    ANSELAbits.ANSA2 = 0;
+
+    ANSELCbits.ANSC5 = 1;
+    ANSELCbits.ANSC4 = 0;
+    ANSELCbits.ANSC3 = 0;
+    ANSELCbits.ANSC0 = 0;
+    ANSELCbits.ANSC2 = 0;
+    ANSELCbits.ANSC1 = 0;
 
 
-TRISCbits.TRISC2 = 0;
-TRISAbits.TRISA2 = 1;
 
-ANSELCbits.ANSC5 = 0;
-ANSELCbits.ANSC2 = 0;
-ANSELCbits.ANSC0 = 0;
-ANSELCbits.ANSC1 = 0;
-ANSELAbits.ANSA2 = 0;
+
 
 
     PPSLOCK = 0x55;
@@ -5486,29 +5504,43 @@ ANSELAbits.ANSA2 = 0;
 
 
 
-    RC2PPS = 0x05;
 
+    RC0PPS = 0x05;
 
 
     RXPPS = 0x02;
-    RC5PPS = 0x03;
 
-    ANSELCbits.ANSC0 = 0;
-    ANSELCbits.ANSC1 = 0;
-    TRISCbits.TRISC0 = 1;
+
+
+RC4PPS = 0x03;
+
+
+
+
+
+
+    TRISCbits.TRISC2 = 1;
     TRISCbits.TRISC1 = 1;
 
-    SSP1CLKPPS = 0x10;
+
+    SSP1CLKPPS = 0x12;
     SSP1DATPPS = 0x11;
-    RC0PPS = 0x07;
+
+
+    RC2PPS = 0x07;
     RC1PPS = 0x08;
-    RC0I2Cbits.PU = 1;
-    RC1I2Cbits.PU = 1;
-# 74 "./pin_deffiine.h"
+
+
+
+WPUCbits.WPUC2 = 1;
+WPUCbits.WPUC1 = 1;
+
+
+
+
     PPSLOCK = 0x55;
     PPSLOCK = 0xAA;
     PPSLOCKbits.PPSLOCKED = 1;
-
 }
 # 40 "./header.h" 2
 
@@ -5572,7 +5604,7 @@ int32_t i_PID = 0;
 
 
 
- void tempSit();
+void tempSit(uint16_t tempNa);
 # 45 "./header.h" 2
 
 # 1 "./display.h" 1
@@ -5634,95 +5666,213 @@ _Bool I2C1_WriteByte(uint8_t addr7, uint8_t data);
 _Bool I2C1_Read(uint8_t addr7, uint8_t *data, uint8_t len);
 # 47 "./header.h" 2
 # 2 "main.c" 2
+# 13 "main.c"
+uint16_t avr_t[50] = {0};
 
+volatile uint8_t tick_1ms = 0;
 
-
-
-
-uint8_t v=5;
-uint16_t x=0;
 uint16_t tick_1s = 0;
-uint8_t tick_50ms=0;
-uint8_t pid_en=0;
-uint8_t SW_Dp =0;
+uint16_t tick_pid = 0;
+
+uint8_t pid_en = 0;
+uint8_t SW_Dp = 0;
+
+uint16_t temp_avg = 0;
+uint8_t ADC_Read_i = 0;
+
+
+
+
 void main(void)
 {
-pins();
-  UART_Init(9600);
-  ADC_Init();
-  Timer0_1ms_Init();
- PWM_Init();
- I2C1_Init();
- display_init();
-display_set_brightness(1);
 
- uint16_t raw_temp = ADC_Read(5);
- uint16_t srt_temp = ADC_Read(4);
- uint16_t oldsrt_temp =0;
- int32_t dtt=0;
+
+    pins();
+
+    UART_Init(9600);
+
+    ADC_Init();
+
+    Timer0_1ms_Init();
+
+    PWM_Init();
+
+    I2C1_Init();
+
+    display_init();
+
+    display_set_brightness(1);
+
+
+
+
+    uint16_t srt_temp =
+        (uint16_t)((ADC_Read(4) * 351UL) / 553UL);
+
+    uint16_t oldsrt_temp = srt_temp;
+
+    int32_t dtt = 0;
+
+
+
 
     while (1)
     {
 
-    raw_temp = (uint16_t)((ADC_Read(5) * 351UL) /553UL);
-    srt_temp = (uint16_t)((ADC_Read(4) * 351UL) /553UL);
-
-
-    if(pid_en){
 
 
 
-    tempSit();
-    pid_en=0;
 
-    if(!SW_Dp){
-
-
-    display_write_number(raw_temp);
-    }
-    else
-    {
-     display_write_number(srt_temp);
-    }
-
-    }
-# 62 "main.c"
-     if (tick_1ms)
-    {
-   tick_1ms = 0;
-   tick_50ms++;
+        srt_temp =
+            (uint16_t)((ADC_Read(4) * 351UL) / 553UL);
 
 
 
-        if(SW_Dp){
-        tick_1s++;
 
-        if(3000<tick_1s)
+
+
+        if (pid_en)
         {
-        tick_1s=0;
-        SW_Dp=0;
-        }}
+            uint32_t sum = 0;
 
-        if(50<tick_50ms)
-        {
-        tick_50ms=0;
-        pid_en=1;
+
+
+
+            for (uint8_t p = 0; p < 50; p++)
+            {
+                sum += avr_t[p];
+            }
+
+
+
+
+            temp_avg =
+                (uint16_t)(sum / 50);
+
+
+
+
+            tempSit(temp_avg);
+
+
+
+
+            pid_en = 0;
+
+
+
+
+            uint16_t temp_avg_c =
+                (uint16_t)((temp_avg * 351UL) / 553UL);
+
+
+
+
+            if (!SW_Dp)
+            {
+
+
+                display_write_number(temp_avg_c);
+            }
+            else
+            {
+
+
+                display_write_number(srt_temp);
+            }
         }
 
 
-    dtt = srt_temp - oldsrt_temp;
-
-    if (dtt < 0){
-    dtt = -dtt;}
 
 
-    if (20 < dtt)
-    {
 
-    oldsrt_temp = srt_temp;
-    SW_Dp=1;
-    }
 
-    }
+        if (tick_1ms)
+        {
+            tick_1ms = 0;
+
+
+
+
+
+
+            avr_t[ADC_Read_i] =
+                ADC_Read(5);
+
+
+            ADC_Read_i++;
+
+
+
+
+            if (ADC_Read_i >= 50)
+            {
+                ADC_Read_i = 0;
+            }
+
+
+
+
+
+
+            tick_pid++;
+
+
+            if (tick_pid >= 200)
+            {
+                tick_pid = 0;
+
+                pid_en = 1;
+            }
+
+
+
+
+
+
+            if (SW_Dp)
+            {
+                tick_1s++;
+
+
+                if (tick_1s >= 3000)
+                {
+                    tick_1s = 0;
+
+                    SW_Dp = 0;
+                }
+            }
+
+
+
+
+
+
+            dtt =
+                (int32_t)srt_temp -
+                (int32_t)oldsrt_temp;
+
+
+
+
+            if (dtt < 0)
+            {
+                dtt = -dtt;
+            }
+
+
+
+
+
+
+            if (dtt > 20)
+            {
+                oldsrt_temp = srt_temp;
+
+                SW_Dp = 1;
+
+                tick_1s = 0;
+            }
+        }
     }
 }

@@ -11,52 +11,52 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
+$C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
 idloc IDLOC 5 8000 8000 4 2 1
 reset_vec CODE 0 0 0 1 2 1
 end_init CODE 0 14 14 1 2 1
 config CONFIG 4 8007 8007 5 2 1
 $dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-cinit CODE 0 15 15 15 2 1
+cinit CODE 0 15 15 1B 2 1
 idloc IDLOC 5 8000 8000 4 2 1
-text1 CODE 0 2A 2A 121 2 1
-text2 CODE 0 228 228 82 2 1
-text3 CODE 0 326 326 5E 2 1
-text4 CODE 0 494 494 2F 2 1
-text5 CODE 0 425 425 3B 2 1
-text6 CODE 0 2AA 2AA 7C 2 1
-text7 CODE 0 548 548 19 2 1
-text8 CODE 0 4C3 4C3 2C 2 1
-text9 CODE 0 460 460 34 2 1
-text10 CODE 0 579 579 14 2 1
-text11 CODE 0 5F9 5F9 6 2 1
-text12 CODE 0 5FF 5FF 6 2 1
-text13 CODE 0 4EF 4EF 21 2 1
-text14 CODE 0 611 611 5 2 1
-text15 CODE 0 58D 58D 13 2 1
-text16 CODE 0 5E9 5E9 8 2 1
-text17 CODE 0 510 510 1E 2 1
-text18 CODE 0 605 605 6 2 1
-text19 CODE 0 60B 60B 6 2 1
-text20 CODE 0 5D0 5D0 D 2 1
-text21 CODE 0 5F1 5F1 8 2 1
-text22 CODE 0 3D7 3D7 4E 2 1
-text23 CODE 0 384 384 53 2 1
-text24 CODE 0 5B0 5B0 10 2 1
-text25 CODE 0 561 561 18 2 1
-text26 CODE 0 52E 52E 1A 2 1
-text27 CODE 0 5DD 5DD C 2 1
-text28 CODE 0 5C0 5C0 10 2 1
-maintext CODE 0 14B 14B DD 2 1
+text1 CODE 0 1E9 1E9 11F 2 1
+text2 CODE 0 308 308 82 2 1
+text3 CODE 0 406 406 5E 2 1
+text4 CODE 0 571 571 2F 2 1
+text5 CODE 0 505 505 38 2 1
+text6 CODE 0 38A 38A 7C 2 1
+text7 CODE 0 625 625 19 2 1
+text8 CODE 0 5A0 5A0 2C 2 1
+text9 CODE 0 53D 53D 34 2 1
+text10 CODE 0 656 656 14 2 1
+text11 CODE 0 6E2 6E2 6 2 1
+text12 CODE 0 6E8 6E8 6 2 1
+text13 CODE 0 5CC 5CC 21 2 1
+text14 CODE 0 6FA 6FA 5 2 1
+text15 CODE 0 66A 66A 13 2 1
+text16 CODE 0 6D2 6D2 8 2 1
+text17 CODE 0 5ED 5ED 1E 2 1
+text18 CODE 0 6EE 6EE 6 2 1
+text19 CODE 0 6F4 6F4 6 2 1
+text20 CODE 0 6AD 6AD D 2 1
+text21 CODE 0 6DA 6DA 8 2 1
+text22 CODE 0 4B7 4B7 4E 2 1
+text23 CODE 0 464 464 53 2 1
+text24 CODE 0 68D 68D 10 2 1
+text25 CODE 0 63E 63E 18 2 1
+text26 CODE 0 60B 60B 1A 2 1
+text27 CODE 0 6C6 6C6 C 2 1
+text28 CODE 0 69D 69D 10 2 1
+maintext CODE 0 30 30 1B9 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
-cstackBANK0 BANK0 1 20 20 47 1 1
-stringtext1 STRCODE 0 5A0 5A0 10 2 1
-stringtext2 STRCODE 0 616 616 4 2 1
+cstackBANK0 BANK0 1 20 20 42 1 1
+cstackBANK1 BANK1 1 A0 A0 13 1 1
+stringtext1 STRCODE 0 67D 67D 10 2 1
+stringtext2 STRCODE 0 6FF 6FF 4 2 1
 intentry CODE 0 4 4 10 2 1
-bssBANK0 BANK0 1 67 67 9 1 1
-bssBANK1 BANK1 1 A0 A0 4 1 1
-idataBANK1 CODE 0 61A 61A 1 2 1
-dataBANK1 BANK1 1 A4 A4 1 1 1
+bssBANK0 BANK0 1 62 62 5 1 1
+bssBANK1 BANK1 1 B3 B3 A 1 1
+clrtext CODE 0 6BA 6BA C 2 1
 config CONFIG 4 8007 8007 5 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -64,14 +64,14 @@ config CONFIG 4 8007 8007 5 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM A5-EF 1
-RAM 120-16F 1
-BANK1 A5-EF 1
-BANK2 120-16F 1
+RAM 67-6F 1
+RAM BD-DB 1
+BANK0 67-6F 1
+BANK1 BD-DB 1
 CONST 1-3 2
-CONST 61B-7FF 2
+CONST 703-7FF 2
 ENTRY 1-3 2
-ENTRY 61B-7FF 2
+ENTRY 703-7FF 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
 SFR12 600-66F 1
@@ -127,7 +127,7 @@ SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 CODE 1-3 2
-CODE 61B-7FF 2
+CODE 703-7FF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -140,9 +140,9 @@ SFR8 400-46F 1
 SFR9 480-4EF 1
 BIGRAM 2000-20EF 1
 STRCODE 1-3 2
-STRCODE 61B-7FF 2
+STRCODE 703-7FF 2
 STRING 1-3 2
-STRING 61B-7FF 2
+STRING 703-7FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -157,394 +157,430 @@ STRING 61B-7FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-15 cinit CODE >2960:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-15 cinit CODE >2963:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-15 cinit CODE >3007:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-16 cinit CODE >3008:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-17 cinit CODE >3009:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-18 cinit CODE >3014:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-19 cinit CODE >3015:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-1A cinit CODE >3016:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-1B cinit CODE >3017:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-1C cinit CODE >3018:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-1D cinit CODE >3019:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-1E cinit CODE >3020:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-1F cinit CODE >3021:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-20 cinit CODE >3022:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-21 cinit CODE >3023:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-22 cinit CODE >3027:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-23 cinit CODE >3028:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-24 cinit CODE >3029:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-25 cinit CODE >3030:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-26 cinit CODE >3031:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-27 cinit CODE >3037:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-27 cinit CODE >3039:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-28 cinit CODE >3040:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
-29 cinit CODE >3041:C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_1.s
+15 cinit CODE >2957:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+15 cinit CODE >2960:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+15 cinit CODE >3018:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+16 cinit CODE >3019:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+17 cinit CODE >3020:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+18 cinit CODE >3021:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+19 cinit CODE >3022:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+1A cinit CODE >3023:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+1B cinit CODE >3024:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+1C cinit CODE >3025:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+1D cinit CODE >3026:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+1E cinit CODE >3030:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+1F cinit CODE >3031:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+20 cinit CODE >3032:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+21 cinit CODE >3033:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+22 cinit CODE >3034:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+23 cinit CODE >3035:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+24 cinit CODE >3039:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+25 cinit CODE >3040:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+26 cinit CODE >3041:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+27 cinit CODE >3042:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+28 cinit CODE >3043:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+29 cinit CODE >3044:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+2A cinit CODE >3045:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+2B cinit CODE >3046:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+2C cinit CODE >3047:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+2D cinit CODE >3053:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+2D cinit CODE >3055:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+2E cinit CODE >3056:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+2F cinit CODE >3057:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
 4 intentry CODE >26:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
 6 intentry CODE >28:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
 9 intentry CODE >30:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
 A intentry CODE >31:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
 D intentry CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-F intentry CODE >34:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-12 intentry CODE >40:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5C0 text28 CODE >5:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5C0 text28 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5C3 text28 CODE >9:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5C4 text28 CODE >10:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5C6 text28 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5C8 text28 CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5CC text28 CODE >14:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5CE text28 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5CF text28 CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-5DD text27 CODE >75:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5DD text27 CODE >92:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5DF text27 CODE >93:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5E3 text27 CODE >94:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5E4 text27 CODE >95:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5E5 text27 CODE >98:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5E7 text27 CODE >100:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5E8 text27 CODE >101:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-52E text26 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-52E text26 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-531 text26 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-533 text26 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-539 text26 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-547 text26 CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-561 text25 CODE >4:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-561 text25 CODE >7:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-563 text25 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-568 text25 CODE >9:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-56C text25 CODE >10:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-56E text25 CODE >11:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-570 text25 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-571 text25 CODE >14:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-573 text25 CODE >15:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-574 text25 CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-578 text25 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
-5B0 text24 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5B0 text24 CODE >14:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5B3 text24 CODE >15:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5B5 text24 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5B7 text24 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5B9 text24 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5BA text24 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5BD text24 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5BE text24 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-5BF text24 CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
-384 text23 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-384 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-38D text23 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-391 text23 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-393 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-395 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-397 text23 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-39E text23 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3A2 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3A3 text23 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3AA text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3AC text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3B0 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3B4 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3B8 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3BA text23 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3C2 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3C3 text23 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3CA text23 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3CE text23 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3D6 text23 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
-3D7 text22 CODE >5:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-3D7 text22 CODE >7:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-3D9 text22 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-3DA text22 CODE >9:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-3DB text22 CODE >11:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-409 text22 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-40C text22 CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-41F text22 CODE >15:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-420 text22 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-421 text22 CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-422 text22 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-423 text22 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-424 text22 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
-5F1 text21 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5F1 text21 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5D0 text20 CODE >50:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5D1 text20 CODE >52:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5D2 text20 CODE >53:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5D5 text20 CODE >54:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5D6 text20 CODE >55:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5D9 text20 CODE >55:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5DC text20 CODE >56:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-60B text19 CODE >28:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-60B text19 CODE >30:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-60C text19 CODE >31:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-60E text19 CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-605 text18 CODE >42:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-605 text18 CODE >44:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-606 text18 CODE >45:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-608 text18 CODE >46:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-510 text17 CODE >103:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-511 text17 CODE >107:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-512 text17 CODE >108:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-515 text17 CODE >110:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-517 text17 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-519 text17 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-51B text17 CODE >111:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-524 text17 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-52B text17 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-52C text17 CODE >115:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-52D text17 CODE >116:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5E9 text16 CODE >118:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5EA text16 CODE >120:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-5F0 text16 CODE >121:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
-58D text15 CODE >66:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-58E text15 CODE >68:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-590 text15 CODE >68:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-594 text15 CODE >69:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-59A text15 CODE >69:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-59F text15 CODE >70:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-611 text14 CODE >80:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-612 text14 CODE >82:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-615 text14 CODE >83:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-4EF text13 CODE >85:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-4EF text13 CODE >87:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-4F2 text13 CODE >88:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-4F3 text13 CODE >89:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-4F7 text13 CODE >89:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-507 text13 CODE >90:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-50D text13 CODE >90:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-5FF text12 CODE >36:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-5FF text12 CODE >38:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-604 text12 CODE >39:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-5F9 text11 CODE >41:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-5F9 text11 CODE >44:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-5FC text11 CODE >45:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-5FD text11 CODE >46:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-5FE text11 CODE >47:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-579 text10 CODE >59:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-57A text10 CODE >61:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-57C text10 CODE >61:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-580 text10 CODE >62:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-58B text10 CODE >63:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-58C text10 CODE >64:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-460 text9 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-460 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-462 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-466 text9 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-468 text9 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-46A text9 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-46F text9 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-473 text9 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-474 text9 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-479 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-47B text9 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-47F text9 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-481 text9 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-485 text9 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-486 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-48B text9 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-48F text9 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-493 text9 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4C3 text8 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4C3 text8 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4C7 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4C9 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4CB text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4D0 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4D4 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4D5 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4D7 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4DB text8 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4DD text8 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4E1 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4E6 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4EA text8 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4EE text8 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-548 text7 CODE >72:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-54A text7 CODE >74:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-54C text7 CODE >74:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-550 text7 CODE >75:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-554 text7 CODE >75:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-559 text7 CODE >76:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-55C text7 CODE >77:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-560 text7 CODE >78:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2AA text6 CODE >94:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2AA text6 CODE >96:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2AE text6 CODE >96:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2B0 text6 CODE >96:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2B2 text6 CODE >99:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2B4 text6 CODE >100:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2C3 text6 CODE >101:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2D2 text6 CODE >102:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2D8 text6 CODE >104:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2DA text6 CODE >105:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2DC text6 CODE >106:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2DD text6 CODE >107:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2E5 text6 CODE >108:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2F2 text6 CODE >109:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-2F6 text6 CODE >109:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-301 text6 CODE >111:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-302 text6 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-30D text6 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-31D text6 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-323 text6 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
-425 text5 CODE >6:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-425 text5 CODE >7:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-427 text5 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-428 text5 CODE >9:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-429 text5 CODE >10:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-42A text5 CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-42B text5 CODE >14:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-42C text5 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-42E text5 CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-42F text5 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-430 text5 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-431 text5 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-432 text5 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-435 text5 CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-437 text5 CODE >25:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-438 text5 CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-43B text5 CODE >36:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-43E text5 CODE >37:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-441 text5 CODE >39:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-442 text5 CODE >40:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-443 text5 CODE >41:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-445 text5 CODE >42:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-446 text5 CODE >44:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-449 text5 CODE >45:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-44B text5 CODE >46:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-44E text5 CODE >47:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-450 text5 CODE >48:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-455 text5 CODE >49:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-459 text5 CODE >74:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-45C text5 CODE >75:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-45E text5 CODE >76:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-45F text5 CODE >78:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
-494 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-494 text4 CODE >119:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-49C text4 CODE >121:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-49E text4 CODE >122:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-4A6 text4 CODE >123:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-4AD text4 CODE >124:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-4B4 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-4B8 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-4BA text4 CODE >128:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-4C2 text4 CODE >129:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
-326 text3 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-328 text3 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-33B text3 CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-346 text3 CODE >26:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-34A text3 CODE >28:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-34C text3 CODE >29:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-34E text3 CODE >31:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-355 text3 CODE >33:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-359 text3 CODE >34:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-37F text3 CODE >36:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-383 text3 CODE >37:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
-228 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-228 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-22A text2 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-22C text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-231 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-233 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-235 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-237 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-239 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-239 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-23B text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-240 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-242 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-244 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-246 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-24A text2 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-252 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-256 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-258 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-25A text2 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-25C text2 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-263 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-267 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-268 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-26F text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-271 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-275 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-279 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-27D text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-27F text2 CODE >32:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-287 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-288 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-28F text2 CODE >36:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-293 text2 CODE >38:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-296 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-29B text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-29D text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-29F text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-2A1 text2 CODE >40:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-2A9 text2 CODE >41:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
-2A text1 CODE >2:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-2A text1 CODE >3:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-33 text1 CODE >4:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-3C text1 CODE >6:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-50 text1 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-6A text1 CODE >10:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-84 text1 CODE >11:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-98 text1 CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-C9 text1 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-D2 text1 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-E0 text1 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-E9 text1 CODE >21:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-EC text1 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-F4 text1 CODE >25:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-10F text1 CODE >26:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-123 text1 CODE >28:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-131 text1 CODE >29:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-13A text1 CODE >31:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-13D text1 CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-145 text1 CODE >34:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-14A text1 CODE >35:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
-14B maintext CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-14B maintext CODE >15:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-14C maintext CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-156 maintext CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-157 maintext CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-158 maintext CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-159 maintext CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-15A maintext CODE >21:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-15B maintext CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-15D maintext CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-15F maintext CODE >25:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-161 maintext CODE >26:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-164 maintext CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-195 maintext CODE >33:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1C6 maintext CODE >36:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1C9 maintext CODE >40:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1CA maintext CODE >41:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1CC maintext CODE >43:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1CF maintext CODE >46:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1D3 maintext CODE >50:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1D8 maintext CODE >62:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1DC maintext CODE >64:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1DD maintext CODE >65:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1E1 maintext CODE >69:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1E4 maintext CODE >70:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1E9 maintext CODE >72:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1EC maintext CODE >72:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1EE maintext CODE >72:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1F0 maintext CODE >74:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1F2 maintext CODE >75:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1F4 maintext CODE >78:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1F7 maintext CODE >78:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1F9 maintext CODE >80:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1FA maintext CODE >81:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-1FC maintext CODE >85:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-204 maintext CODE >87:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-206 maintext CODE >88:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-20B maintext CODE >88:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-20D maintext CODE >88:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-20F maintext CODE >88:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-211 maintext CODE >91:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-220 maintext CODE >94:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
-225 maintext CODE >95:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+F intentry CODE >33:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+12 intentry CODE >39:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+69D text28 CODE >5:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+69D text28 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6A0 text28 CODE >9:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6A1 text28 CODE >10:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6A3 text28 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6A5 text28 CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6A9 text28 CODE >14:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6AB text28 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6AC text28 CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+6C6 text27 CODE >77:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6C6 text27 CODE >94:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6C8 text27 CODE >95:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6CC text27 CODE >96:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6CD text27 CODE >97:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6CE text27 CODE >100:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6D0 text27 CODE >102:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6D1 text27 CODE >103:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+60B text26 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+60B text26 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+60E text26 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+610 text26 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+616 text26 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+624 text26 CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+63E text25 CODE >4:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+63E text25 CODE >7:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+640 text25 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+645 text25 CODE >9:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+649 text25 CODE >10:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+64B text25 CODE >11:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+64D text25 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+64E text25 CODE >14:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+650 text25 CODE >15:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+651 text25 CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+655 text25 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pwm.c
+68D text24 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+68D text24 CODE >14:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+690 text24 CODE >15:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+692 text24 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+694 text24 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+696 text24 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+697 text24 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+69A text24 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+69B text24 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+69C text24 CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\timer_1ms.c
+464 text23 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+464 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+46D text23 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+471 text23 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+473 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+475 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+477 text23 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+47E text23 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+482 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+483 text23 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+48A text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+48C text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+490 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+494 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+498 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+49A text23 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+4A2 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+4A3 text23 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+4AA text23 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+4AE text23 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+4B6 text23 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+4B7 text22 CODE >5:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+4B7 text22 CODE >7:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+4B9 text22 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+4BA text22 CODE >9:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+4BB text22 CODE >11:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+4E9 text22 CODE >12:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+4EC text22 CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+4FF text22 CODE >15:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+500 text22 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+501 text22 CODE >17:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+502 text22 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+503 text22 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+504 text22 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\uart.c
+6DA text21 CODE >20:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6DA text21 CODE >25:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6AD text20 CODE >52:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6AE text20 CODE >54:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6AF text20 CODE >55:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6B2 text20 CODE >56:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6B3 text20 CODE >57:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6B6 text20 CODE >57:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6B9 text20 CODE >58:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6F4 text19 CODE >30:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6F4 text19 CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6F5 text19 CODE >33:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6F7 text19 CODE >34:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6EE text18 CODE >44:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6EE text18 CODE >46:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6EF text18 CODE >47:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6F1 text18 CODE >48:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+5ED text17 CODE >105:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+5EE text17 CODE >109:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+5EF text17 CODE >110:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+5F2 text17 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+5F4 text17 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+5F6 text17 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+5F8 text17 CODE >113:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+601 text17 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+608 text17 CODE >116:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+609 text17 CODE >117:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+60A text17 CODE >118:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6D2 text16 CODE >120:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6D3 text16 CODE >122:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+6D9 text16 CODE >123:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\i2c1.c
+66A text15 CODE >66:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+66B text15 CODE >68:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+66D text15 CODE >68:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+671 text15 CODE >69:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+677 text15 CODE >69:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+67C text15 CODE >70:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6FA text14 CODE >80:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6FB text14 CODE >82:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6FE text14 CODE >83:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+5CC text13 CODE >85:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+5CC text13 CODE >87:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+5CF text13 CODE >88:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+5D0 text13 CODE >89:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+5D4 text13 CODE >89:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+5E4 text13 CODE >90:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+5EA text13 CODE >90:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6E8 text12 CODE >36:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6E8 text12 CODE >38:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6ED text12 CODE >39:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6E2 text11 CODE >41:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6E2 text11 CODE >44:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6E5 text11 CODE >45:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6E6 text11 CODE >46:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+6E7 text11 CODE >47:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+656 text10 CODE >59:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+657 text10 CODE >61:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+659 text10 CODE >61:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+65D text10 CODE >62:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+668 text10 CODE >63:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+669 text10 CODE >64:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+53D text9 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+53D text9 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+53F text9 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+543 text9 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+545 text9 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+547 text9 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+54C text9 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+550 text9 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+551 text9 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+556 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+558 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+55C text9 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+55E text9 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+562 text9 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+563 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+568 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+56C text9 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+570 text9 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+5A0 text8 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5A0 text8 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5A4 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5A6 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5A8 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5AD text8 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5B1 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5B2 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5B4 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5B8 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5BA text8 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5BE text8 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5C3 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5C7 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+5CB text8 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+625 text7 CODE >72:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+627 text7 CODE >74:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+629 text7 CODE >74:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+62D text7 CODE >75:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+631 text7 CODE >75:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+636 text7 CODE >76:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+639 text7 CODE >77:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+63D text7 CODE >78:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+38A text6 CODE >94:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+38A text6 CODE >96:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+38E text6 CODE >96:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+390 text6 CODE >96:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+392 text6 CODE >99:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+394 text6 CODE >100:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3A3 text6 CODE >101:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3B2 text6 CODE >102:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3B8 text6 CODE >104:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3BA text6 CODE >105:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3BC text6 CODE >106:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3BD text6 CODE >107:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3C5 text6 CODE >108:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3D2 text6 CODE >109:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3D6 text6 CODE >109:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3E1 text6 CODE >111:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3E2 text6 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3ED text6 CODE >112:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+3FD text6 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+403 text6 CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\display.c
+505 text5 CODE >21:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+505 text5 CODE >26:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+507 text5 CODE >27:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+508 text5 CODE >29:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+509 text5 CODE >30:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+50A text5 CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+50B text5 CODE >33:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+50C text5 CODE >36:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+50D text5 CODE >37:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+50E text5 CODE >44:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+510 text5 CODE >45:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+511 text5 CODE >46:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+512 text5 CODE >48:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+513 text5 CODE >49:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+514 text5 CODE >50:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+515 text5 CODE >51:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+516 text5 CODE >52:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+517 text5 CODE >53:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+518 text5 CODE >60:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+51B text5 CODE >61:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+51D text5 CODE >62:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+51E text5 CODE >70:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+521 text5 CODE >73:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+524 text5 CODE >77:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+527 text5 CODE >84:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+529 text5 CODE >85:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+52A text5 CODE >88:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+52D text5 CODE >89:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+52F text5 CODE >92:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+532 text5 CODE >93:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+534 text5 CODE >97:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+535 text5 CODE >98:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+536 text5 CODE >103:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+539 text5 CODE >104:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+53B text5 CODE >105:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+53C text5 CODE >106:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X/pin_deffiine.h
+571 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+571 text4 CODE >119:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+579 text4 CODE >121:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+57B text4 CODE >122:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+583 text4 CODE >123:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+58A text4 CODE >124:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+591 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+595 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+597 text4 CODE >128:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+59F text4 CODE >129:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+406 text3 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+408 text3 CODE >23:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+41B text3 CODE >24:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+426 text3 CODE >26:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+42A text3 CODE >28:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+42C text3 CODE >29:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+42E text3 CODE >31:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+435 text3 CODE >33:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+439 text3 CODE >34:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+45F text3 CODE >36:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+463 text3 CODE >37:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\adc.c
+308 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+308 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+30A text2 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+30C text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+311 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+313 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+315 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+317 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+319 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+319 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+31B text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+320 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+322 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+324 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+326 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+32A text2 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+332 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+336 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+338 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+33A text2 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+33C text2 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+343 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+347 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+348 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+34F text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+351 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+355 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+359 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+35D text2 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+35F text2 CODE >32:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+367 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+368 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+36F text2 CODE >36:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+373 text2 CODE >38:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+376 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+37B text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+37D text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+37F text2 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+381 text2 CODE >40:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+389 text2 CODE >41:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\aldiv.c
+1E9 text1 CODE >2:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+1E9 text1 CODE >3:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+1F0 text1 CODE >4:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+1F9 text1 CODE >6:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+20D text1 CODE >8:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+227 text1 CODE >10:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+241 text1 CODE >11:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+255 text1 CODE >13:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+286 text1 CODE >16:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+28F text1 CODE >18:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+29D text1 CODE >19:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2A6 text1 CODE >21:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2A9 text1 CODE >22:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2B1 text1 CODE >25:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2CC text1 CODE >26:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2E0 text1 CODE >28:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2EE text1 CODE >29:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2F7 text1 CODE >31:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+2FA text1 CODE >32:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+302 text1 CODE >34:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+307 text1 CODE >35:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\pid.c
+30 maintext CODE >29:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+30 maintext CODE >33:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+31 maintext CODE >35:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+3B maintext CODE >37:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+3C maintext CODE >39:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+3D maintext CODE >41:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+3E maintext CODE >43:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+3F maintext CODE >45:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+40 maintext CODE >47:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+42 maintext CODE >52:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+7B maintext CODE >55:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+7F maintext CODE >69:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+B8 maintext CODE >77:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+BB maintext CODE >79:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+C3 maintext CODE >84:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+C4 maintext CODE >86:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+E2 maintext CODE >87:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+EA maintext CODE >87:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+EC maintext CODE >92:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+10E maintext CODE >98:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+116 maintext CODE >103:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+118 maintext CODE >108:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+143 maintext CODE >114:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+146 maintext CODE >118:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+14C maintext CODE >124:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+154 maintext CODE >133:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+158 maintext CODE >135:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+159 maintext CODE >142:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+170 maintext CODE >146:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+175 maintext CODE >151:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+177 maintext CODE >151:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+178 maintext CODE >153:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+179 maintext CODE >161:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+17D maintext CODE >164:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+180 maintext CODE >164:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+182 maintext CODE >164:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+184 maintext CODE >166:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+186 maintext CODE >168:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+188 maintext CODE >176:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+18B maintext CODE >178:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+18F maintext CODE >181:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+192 maintext CODE >181:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+194 maintext CODE >181:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+196 maintext CODE >183:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+198 maintext CODE >185:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+199 maintext CODE >194:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1C3 maintext CODE >201:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1C5 maintext CODE >203:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1CA maintext CODE >203:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1CC maintext CODE >203:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1CE maintext CODE >203:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1D0 maintext CODE >211:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1DF maintext CODE >213:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1E4 maintext CODE >215:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+1E6 maintext CODE >217:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware\st_16f15223_irsegmet.X\main.c
+6BA clrtext CODE >3001:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6BA clrtext CODE >3002:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6BB clrtext CODE >3003:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6BB clrtext CODE >3004:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6BC clrtext CODE >3005:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6BD clrtext CODE >3006:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6BE clrtext CODE >3007:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6BF clrtext CODE >3008:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6C0 clrtext CODE >3009:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6C1 clrtext CODE >3010:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6C2 clrtext CODE >3011:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6C3 clrtext CODE >3012:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6C4 clrtext CODE >3014:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
+6C5 clrtext CODE >3013:C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -559,80 +595,79 @@ F4 text1 CODE >25:C:\Users\siddyq\OneDrive\project\solder_staion\lcd_ST\firmware
 %SYMTAB
 ___latbits 0 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__LdataBANK1 0 0 ABS 0 dataBANK1 -
-__Hspace_0 61B 0 ABS 0 - -
-__Hspace_1 A5 0 ABS 0 - -
+__Hspace_0 703 0 ABS 0 - -
+__Hspace_1 BD 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10013 0 ABS 0 - -
-__HidataBANK1 0 0 ABS 0 idataBANK1 -
 _SSP1STATbits 18F 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_tick_1s A0 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_tick_1s B7 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _PWM3CON 316 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
+main@p B0 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _T2PR 28D 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-_main 296 0 CODE 0 maintext dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_pins 84A 0 CODE 0 text5 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+_main 60 0 CODE 0 maintext dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_pins A0A 0 CODE 0 text5 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 btemp 7E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-start 28 0 CODE 0 init C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-_I2C1_PutByte BA0 0 CODE 0 text20 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-tempSit@duty 50 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+start 28 0 CODE 0 init C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+_I2C1_PutByte D5A 0 CODE 0 text20 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@duty 52 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_digit_hex@value 7B 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 I2C1_Write@ok 76 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ?___lmul 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__LidataBANK1 0 0 ABS 0 idataBANK1 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
 ___aldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 wtemp0 7E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 _RC1STAbits 11D 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_write_number$656 2A 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_write_number$658 2B 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_write_number$672 2A 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_write_number$674 2B 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___aldiv@sign 21 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_tick_50ms 6E 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 I2C1_PutByte@b 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_PWM_SetDuty A5C 0 CODE 0 text26 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_PWM_SetDuty C16 0 CODE 0 text26 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_clear_all@i 22 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _ADRESH 9C 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _ADRESL 9B 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 UART_Init@baud 2D 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _FVRCONbits 90C 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_number@leading 29 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of___lmul 986 0 CODE 0 text4 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of___lmul B40 0 CODE 0 text4 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_clear_all@ok 21 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_I2C1_PutByte BBA 0 CODE 0 text20 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-main@dtt 63 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_set_brightness B1A 0 CODE 0 text10 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_push_ctrl C0A 0 CODE 0 text12 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_I2C1_PutByte D74 0 CODE 0 text20 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+main@dtt AC 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+main@sum A2 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_set_brightness CD4 0 CODE 0 text10 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_push_ctrl DDC 0 CODE 0 text12 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-_ADC_Init B80 0 CODE 0 text28 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_ADC_Init D3A 0 CODE 0 text28 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_digit_hex@segs 21 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_ADC_Read 64C 0 CODE 0 text3 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_ADC_Read 80C 0 CODE 0 text3 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of___aldiv 554 0 CODE 0 text2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of___lldiv 7AE 0 CODE 0 text23 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of___lwdiv 928 0 CODE 0 text9 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of___lwmod 9DE 0 CODE 0 text8 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-tempSit@duty_check 4C 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_ADC_Init BA0 0 CODE 0 text28 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_ADC_Read 708 0 CODE 0 text3 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
+__end_of___aldiv 714 0 CODE 0 text2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of___lldiv 96E 0 CODE 0 text23 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of___lwdiv AE2 0 CODE 0 text9 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of___lwmod B98 0 CODE 0 text8 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@duty_check 4E 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_ADC_Init D5A 0 CODE 0 text28 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_ADC_Read 8C8 0 CODE 0 text3 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
 display_write_digit_raw@segments 79 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lldiv@counter 2C 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ADC_Read@channel 33 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_WPUCbits 1F4F 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 start_initialization 2A 0 CODE 0 cinit dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 I2C1_Write@data 71 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _TRISAbits 12 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
@@ -644,20 +679,22 @@ _RC0PPS 1F20 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.productio
 _RC1PPS 1F21 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _RC1REG 119 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _RC2PPS 1F22 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_RC5PPS 1F25 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-display_write_number@i_654 2E 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_RC4PPS 1F24 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+display_write_number@i_670 2E 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_number@value 22 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+clear_ram0 D74 0 CODE 0 clrtext dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _T0CON0 59E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _T0CON1 59F 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _TX1REG 11A 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_write_digit_hex A90 0 CODE 0 text7 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_write_digit_raw B1A 0 CODE 0 text15 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_write_number 64C 0 CODE 0 text6 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_write_digit_hex AC2 0 CODE 0 text7 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_write_digit_raw B40 0 CODE 0 text15 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_clear_digit C22 0 CODE 0 text14 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
+_display_write_digit_hex C4A 0 CODE 0 text7 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_write_digit_raw CD4 0 CODE 0 text15 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_write_number 80C 0 CODE 0 text6 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_write_digit_hex C7C 0 CODE 0 text7 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_write_digit_raw CFA 0 CODE 0 text15 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_clear_digit DF4 0 CODE 0 text14 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
 display_clear_digit@position 7B 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -669,7 +706,7 @@ __Hbank6 0 0 BANK6 1 bank6 -
 __Hbank7 0 0 BANK7 1 bank7 -
 __Hbank8 0 0 BANK8 1 bank8 -
 __Hbank9 0 0 BANK9 1 bank9 -
-__Hcinit 54 0 CODE 0 cinit -
+__Hcinit 60 0 CODE 0 cinit -
 __Hidloc 10008 0 IDLOC 5 idloc -
 __Hsfr10 0 0 ABS 0 sfr10 -
 __Hsfr11 0 0 ABS 0 sfr11 -
@@ -726,7 +763,7 @@ __Hsfr61 0 0 ABS 0 sfr61 -
 __Hsfr62 0 0 ABS 0 sfr62 -
 __Hsfr63 0 0 ABS 0 sfr63 -
 __Hstack 0 0 STACK 2 stack -
-_main$1585 5D 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_main$1602 A8 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hbank10 0 0 BANK10 1 bank10 -
 __Hbank11 0 0 BANK11 1 bank11 -
@@ -782,10 +819,10 @@ __Hbank60 0 0 BANK60 1 bank60 -
 __Hbank61 0 0 BANK61 1 bank61 -
 __Hbank62 0 0 BANK62 1 bank62 -
 __Hbank63 0 0 BANK63 1 bank63 -
-tempSit@iterm 44 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@iterm 46 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hbigram 0 0 ABS 0 bigram -
 __Hmaintext 0 0 ABS 0 maintext -
-_display_push_ctrl BFE 0 CODE 0 text12 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_push_ctrl DD0 0 CODE 0 text12 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10018 0 CONFIG 4 config -
 UART_Init@spbrg 35 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
@@ -802,9 +839,9 @@ __Lbank8 0 0 BANK8 1 bank8 -
 __Lbank9 0 0 BANK9 1 bank9 -
 __Lcinit 2A 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 5 idloc -
-_display_font B40 0 STRCODE 0 stringtext1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_init BF2 0 CODE 0 text11 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-tempSit@set_now 3C 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_font CFA 0 STRCODE 0 stringtext1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_init DC4 0 CODE 0 text11 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@set_now 3E 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lsfr10 0 0 ABS 0 sfr10 -
 __Lsfr11 0 0 ABS 0 sfr11 -
 __Lsfr12 0 0 ABS 0 sfr12 -
@@ -860,6 +897,7 @@ __Lsfr61 0 0 ABS 0 sfr61 -
 __Lsfr62 0 0 ABS 0 sfr62 -
 __Lsfr63 0 0 ABS 0 sfr63 -
 __Lstack 0 0 STACK 2 stack -
+main@temp_avg_c A0 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _INTCONbits B 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
@@ -891,64 +929,65 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-__pstringtext1 B40 0 STRCODE 0 stringtext1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__pstringtext2 C2C 0 STRCODE 0 stringtext2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__pstringtext1 CFA 0 STRCODE 0 stringtext1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__pstringtext2 DFE 0 STRCODE 0 stringtext2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SSP1CON1 190 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SSP1CON2 191 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___lmul 928 0 CODE 0 text4 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___lmul AE2 0 CODE 0 text4 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 int$flags 7E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _ISR 8 0 CODE 0 intentry dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__S0 61B 0 ABS 0 - -
-__S1 A5 0 ABS 0 - -
+__S0 703 0 ABS 0 - -
+__S1 BD 0 ABS 0 - -
 ?_ADC_Read 2D 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_set_brightness@brightness 7A 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __end_of_ISR 28 0 CODE 0 intentry dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_ADC_Read_i B9 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _PWM3CONbits 316 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-__pdataBANK1 A4 0 BANK1 1 dataBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
-__end_of_PWM_SetDuty A90 0 CODE 0 text26 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_I2C1_WaitIdle BE2 0 CODE 0 text21 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_PWM_SetDuty C4A 0 CODE 0 text26 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_I2C1_WaitIdle DB4 0 CODE 0 text21 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_digit_hex@dot 7C 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lstringtext1 0 0 ABS 0 stringtext1 -
 __Lstringtext2 0 0 ABS 0 stringtext2 -
-__end_of_Timer0_1ms_Init B80 0 CODE 0 text24 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_clear_digit C2C 0 CODE 0 text14 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_Timer0_1ms_Init D3A 0 CODE 0 text24 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_clear_digit DFE 0 CODE 0 text14 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _PIE0bits 716 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 I2C1_WriteByte@data 77 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 PWM_SetDuty@permille 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_font B60 0 STRCODE 0 stringtext1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_init BFE 0 CODE 0 text11 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_font D1A 0 STRCODE 0 stringtext1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_init DD0 0 CODE 0 text11 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 I2C1_Write@i 75 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext10 AF2 0 CODE 0 text10 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext11 BF2 0 CODE 0 text11 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext12 BFE 0 CODE 0 text12 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext13 9DE 0 CODE 0 text13 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext14 C22 0 CODE 0 text14 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext15 B1A 0 CODE 0 text15 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext16 BD2 0 CODE 0 text16 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext17 A20 0 CODE 0 text17 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext18 C0A 0 CODE 0 text18 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext19 C16 0 CODE 0 text19 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext20 BA0 0 CODE 0 text20 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext21 BE2 0 CODE 0 text21 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext22 7AE 0 CODE 0 text22 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext23 708 0 CODE 0 text23 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext24 B60 0 CODE 0 text24 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext25 AC2 0 CODE 0 text25 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext26 A5C 0 CODE 0 text26 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext27 BBA 0 CODE 0 text27 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext28 B80 0 CODE 0 text28 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___aldiv 450 0 CODE 0 text2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-tempSit@temp_now 38 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___lldiv 708 0 CODE 0 text23 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___lwdiv 8C0 0 CODE 0 text9 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___lwmod 986 0 CODE 0 text8 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext10 CAC 0 CODE 0 text10 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext11 DC4 0 CODE 0 text11 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext12 DD0 0 CODE 0 text12 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext13 B98 0 CODE 0 text13 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext14 DF4 0 CODE 0 text14 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext15 CD4 0 CODE 0 text15 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext16 DA4 0 CODE 0 text16 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext17 BDA 0 CODE 0 text17 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext18 DDC 0 CODE 0 text18 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext19 DE8 0 CODE 0 text19 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext20 D5A 0 CODE 0 text20 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext21 DB4 0 CODE 0 text21 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext22 96E 0 CODE 0 text22 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext23 8C8 0 CODE 0 text23 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext24 D1A 0 CODE 0 text24 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext25 C7C 0 CODE 0 text25 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext26 C16 0 CODE 0 text26 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext27 D8C 0 CODE 0 text27 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext28 D3A 0 CODE 0 text28 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___aldiv 610 0 CODE 0 text2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@temp_now 3A 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___lldiv 8C8 0 CODE 0 text23 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___lwdiv A7A 0 CODE 0 text9 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___lwmod B40 0 CODE 0 text8 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -1003,26 +1042,29 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext 296 0 CODE 0 maintext dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__pmaintext 60 0 CODE 0 maintext dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_temp_avg B3 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 ___lmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_tempSit 296 0 CODE 0 text1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_tempSit 610 0 CODE 0 text1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_digit_raw@position 7A 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_pid_en 6D 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_pid_en BB 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-__end_of_I2C1_Init BD2 0 CODE 0 text27 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_I2C1_Stop C16 0 CODE 0 text18 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_I2C1_Init DA4 0 CODE 0 text27 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_I2C1_Stop DE8 0 CODE 0 text18 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_LATCbits 1A 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_number@digits 24 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_digit_addr C34 0 STRCODE 0 stringtext2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_digit_addr E06 0 STRCODE 0 stringtext2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SSP1CLKPPS 1EC5 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SSP1DATPPS 1EC6 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _ADCON0bits 9D 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_I2C1_Init BBA 0 CODE 0 text27 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_I2C1_Init D8C 0 CODE 0 text27 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _ADCON1bits 9E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_I2C1_Stop C0A 0 CODE 0 text18 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_Timer0_1ms_Init B60 0 CODE 0 text24 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_I2C1_Stop DDC 0 CODE 0 text18 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__pbssBIGRAM 208C 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_Timer0_1ms_Init D1A 0 CODE 0 text24 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -1030,13 +1072,15 @@ __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
 display_write_number@isLast 28 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 I2C1_WriteByte@addr7 78 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _PIR0bits 70C 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _PIR1bits 70D 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lend_init 28 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-end_of_initialization 4E 0 CODE 0 cinit dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_tick_1ms 6F 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+end_of_initialization 5A 0 CODE 0 cinit dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_tick_1ms BC 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_tick_pid B5 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _T2CLKCONbits 290 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hintentry 28 0 CODE 0 intentry -
 I2C1_Write@len 72 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
@@ -1048,94 +1092,91 @@ ___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f1522
 ?___lldiv 20 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ?___lwmod 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_display_clear_all A20 0 CODE 0 text13 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_digit_addr C2C 0 STRCODE 0 stringtext2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_display_clear_all BDA 0 CODE 0 text13 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_digit_addr DFE 0 STRCODE 0 stringtext2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hreset_vec 2 0 CODE 0 reset_vec -
 _BAUD1CONbits 11F 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-tempSit@p 48 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@p 4A 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __HbssBANK1 0 0 ABS 0 bssBANK1 -
-__end_of_UART_Init 84A 0 CODE 0 text22 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_s_ctrl_reg 6B 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_I2C1_Start C16 0 CODE 0 text19 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_I2C1_Write A20 0 CODE 0 text17 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext1 54 0 CODE 0 text1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext2 450 0 CODE 0 text2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext3 64C 0 CODE 0 text3 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext4 928 0 CODE 0 text4 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext5 84A 0 CODE 0 text5 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext6 554 0 CODE 0 text6 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext7 A90 0 CODE 0 text7 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext8 986 0 CODE 0 text8 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__ptext9 8C0 0 CODE 0 text9 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_UART_Init A0A 0 CODE 0 text22 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_s_ctrl_reg 66 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_I2C1_Start DE8 0 CODE 0 text19 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_I2C1_Write BDA 0 CODE 0 text17 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext1 3D2 0 CODE 0 text1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext2 610 0 CODE 0 text2 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext3 80C 0 CODE 0 text3 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext4 AE2 0 CODE 0 text4 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext5 A0A 0 CODE 0 text5 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext6 714 0 CODE 0 text6 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext7 C4A 0 CODE 0 text7 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext8 B40 0 CODE 0 text8 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__ptext9 A7A 0 CODE 0 text9 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_number@ok 2C 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___aldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-tempSit@iterm_now 40 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@iterm_now 42 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
-_display_write_number 554 0 CODE 0 text6 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_write_number 714 0 CODE 0 text6 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_number@i 2D 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-main@raw_temp 59 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 display_write_digit_hex@position 20 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-main@srt_temp 61 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+main@srt_temp B1 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hstringtext1 0 0 ABS 0 stringtext1 -
 __Hstringtext2 0 0 ABS 0 stringtext2 -
-_UART_Init 7AE 0 CODE 0 text22 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_clear_all$647 20 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs1b8.\driver_tmp_12.o
-_RC1I2Cbits 10F 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of__initialization 4E 0 CODE 0 cinit dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_UART_Init 96E 0 CODE 0 text22 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_clear_all$663 20 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\siddyq\AppData\Local\Temp\xcAs5po.\driver_tmp_12.o
+__end_of__initialization 5A 0 CODE 0 cinit dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-tempSit@err 54 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__pidataBANK1 C34 0 CODE 0 idataBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@err 56 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SP1BRGH 11C 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SP1BRGL 11B 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_I2C1_WaitIdle BF2 0 CODE 0 text21 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_I2C1_WaitIdle DC4 0 CODE 0 text21 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 _SSP1CON1bits 190 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SSP1CON2bits 191 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lmul@product 78 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+tempSit@tempNa 34 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lmul@multiplicand 74 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_I2C1_WriteByte BD2 0 CODE 0 text16 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_I2C1_WriteByte DA4 0 CODE 0 text16 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 ___lldiv@quotient 28 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_PWM_Init AC2 0 CODE 0 text25 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_PWM_Init C7C 0 CODE 0 text25 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SSP1ADD 18D 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _SSP1BUF 18C 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hend_init 2A 0 CODE 0 end_init -
 ___aldiv@counter 20 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_I2C1_Start C22 0 CODE 0 text19 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_I2C1_Write A5C 0 CODE 0 text17 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_main 450 0 CODE 0 maintext dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_pins 8C0 0 CODE 0 text5 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_I2C1_Start DF4 0 CODE 0 text19 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_I2C1_Write C16 0 CODE 0 text17 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_main 3D2 0 CODE 0 maintext dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_pins A7A 0 CODE 0 text5 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 I2C1_Write@addr7 74 0 COMMON 1 cstackCOMMON dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_RC0I2Cbits 10E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _RXPPS 1ECB 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_SW_Dp 6C 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_SW_Dp BA 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _TMR0H 59D 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _TMR0L 59C 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_PWM_Init AF2 0 CODE 0 text25 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_PWM_Init CAC 0 CODE 0 text25 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_i_PID 67 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_set_brightness AF2 0 CODE 0 text10 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_display_clear_all 9DE 0 CODE 0 text13 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_avr_t 208C 0 ABS 1 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_i_PID 62 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_set_brightness CAC 0 CODE 0 text10 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_display_clear_all B98 0 CODE 0 text13 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__HdataBANK1 0 0 ABS 0 dataBANK1 -
 __initialization 2A 0 CODE 0 cinit dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__pbssBANK0 67 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__pbssBANK0 62 0 BANK0 1 bssBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__pbssBANK1 B3 0 BANK1 1 bssBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _T2CONbits 28E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _PPSLOCK 1E8F 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_ADC_Read$466 2F 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-main@oldsrt_temp 5B 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_ADC_Read$482 2F 0 BANK0 1 cstackBANK0 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+main@oldsrt_temp A6 0 BANK1 1 cstackBANK1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _ANSELAbits 1F38 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 _ANSELCbits 1F4E 0 ABS 0 - dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-_tempSit 54 0 CODE 0 text1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
-__end_of_I2C1_WriteByte BE2 0 CODE 0 text16 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+_tempSit 3D2 0 CODE 0 text1 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
+__end_of_I2C1_WriteByte DB4 0 CODE 0 text16 dist/Config_1/production\st_16f15223_irsegmet.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1152,6 +1193,9 @@ __end_of_I2C1_WriteByte BE2 0 CODE 0 text16 dist/Config_1/production\st_16f15223
 # otherwise name will be "-".  The <space> number is in decimal.
 # <address> and <size> are in byte units as unqaulified hexadecimal
 %DABS
+_avr_t 1 208C 0
+- 1 120 50
+- 1 DC 14
 - 1 7E 2
 # %SEGMENTS Section
 # This sections enumerates the segments of the program.  Each segment
@@ -1161,15 +1205,14 @@ __end_of_I2C1_WriteByte BE2 0 CODE 0 text16 dist/Config_1/production\st_16f15223
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text24 0 5B0 B60 66 2
+text24 0 68D D1A 72 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 50 1
-stringtext1 0 5A0 B40 10 2
-stringtext2 0 616 C2C 4 2
-intentry 0 4 8 59C 2
+cstackBANK0 1 20 20 47 1
+cstackBANK1 1 A0 A0 1D 1
+stringtext1 0 67D CFA 10 2
+stringtext2 0 6FF DFE 4 2
+intentry 0 4 8 679 2
 reset_vec 0 0 0 1 2
-bssBANK1 1 A0 A0 5 1
-idataBANK1 0 61A C34 1 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

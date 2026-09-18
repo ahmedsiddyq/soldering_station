@@ -5426,7 +5426,7 @@ _Bool I2C1_WriteByte(uint8_t addr7, uint8_t data);
 
 _Bool I2C1_Read(uint8_t addr7, uint8_t *data, uint8_t len);
 # 1 "i2c1.c" 2
-# 18 "i2c1.c"
+# 20 "i2c1.c"
 static void I2C1_WaitIdle(void)
 {
 
@@ -5486,7 +5486,7 @@ static uint8_t I2C1_GetByte(_Bool ackIt)
 
 void I2C1_Init(void)
 {
-# 92 "i2c1.c"
+# 94 "i2c1.c"
     SSP1CON1 = 0x00;
     SSP1CON1bits.SSPM = 0b1000;
     SSP1STATbits.SMP = 1;

@@ -607,14 +607,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32
 [; ;timer_1ms.c: 32:         TMR0L = 0x18;
 [e = _TMR0L -> -> 24 `i `uc ]
-"34
-[; ;timer_1ms.c: 34:         tick_1ms = 1;
+"33
+[; ;timer_1ms.c: 33:         tick_1ms = 1;
 [e = _tick_1ms -> -> 1 `i `uc ]
-"36
-[; ;timer_1ms.c: 36:     }
+"35
+[; ;timer_1ms.c: 35:     }
 }
 [e :U 469 ]
-"40
-[; ;timer_1ms.c: 40: }
+"39
+[; ;timer_1ms.c: 39: }
 [e :UE 468 ]
 }

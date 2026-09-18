@@ -1,78 +1,106 @@
-#define I2C1_SCL_TRIS   TRISCbits.TRISC0
+// PIC16F15223T-I/SL pin map (from schematic)
+//
+// RA5 (pin 2)  = TEMP
+// RA4 (pin 3)  = temp_set
+// RA3 (pin 4)  = MCLR/VPP
+// RC5 (pin 5)  = current
+// RC4 (pin 6)  = heater_gate
+// RC3 (pin 7)  = not connected
+// RC2 (pin 8)  = clk  -> I2C SCL
+// RC1 (pin 9)  = dat  -> I2C SDA
+// RC0 (pin 10) = TX
+// RA2 (pin 11) = RX
+// RA1 / RA0    = ICSPCLK / ICSPDAT (leave alone)
+
+#define I2C1_SCL_TRIS   TRISCbits.TRISC2
 #define I2C1_SDA_TRIS   TRISCbits.TRISC1
-#define I2C1_SCL_ANSEL  ANSELCbits.ANSC0
+#define I2C1_SCL_ANSEL  ANSELCbits.ANSC2
 #define I2C1_SDA_ANSEL  ANSELCbits.ANSC1
 
-void pins (){
-TRISAbits.TRISA5 = 1;   // TEMP input
-TRISAbits.TRISA4 = 1;   // temp_set input
-TRISCbits.TRISC5 = 0;   // heater_gate output
-TRISCbits.TRISC3 = 1;   // current input
-//TRISCbits.TRISC1 = 0;   // clk output
-//TRISCbits.TRISC0 = 0;   // dat output
-TRISCbits.TRISC2 = 0;   // UART TX output
-TRISAbits.TRISA2 = 1;   // UART RX input
 
-ANSELCbits.ANSC5 = 0;
-ANSELCbits.ANSC2 = 0;
-ANSELCbits.ANSC0 = 0;
-ANSELCbits.ANSC1 = 0;
-ANSELAbits.ANSA2 = 0;
+void pins(void)
+{
+    // =========================
+    // GPIO direction
+    // =========================
+    TRISAbits.TRISA5 = 1;   // TEMP        = RA5, input
+    TRISAbits.TRISA4 = 1;   // temp_set    = RA4, input
 
+    TRISCbits.TRISC4 = 0;   // heater_gate = RC4, output
+    TRISCbits.TRISC5 = 1;   // current     = RC5, input
+
+    TRISCbits.TRISC0 = 0;   // TX          = RC0, output
+    TRISAbits.TRISA2 = 1;   // RX          = RA2, input
+
+    // RC3 is unconnected: drive it low as an output so it doesn't float
+    LATCbits.LATC3   = 0;
+    TRISCbits.TRISC3 = 0;
+
+
+    // =========================
+    // Analog / Digital
+    // =========================
+ 
+    ANSELAbits.ANSA5 = 1;   // TEMP
+    ANSELAbits.ANSA4 = 1;   // temp_set
+    ANSELAbits.ANSA2 = 0;   // RX
+
+    ANSELCbits.ANSC5 = 1;   // current
+    ANSELCbits.ANSC4 = 0;   // heater_gate
+    ANSELCbits.ANSC3 = 0;   // unused
+    ANSELCbits.ANSC0 = 0;   // TX
+    I2C1_SCL_ANSEL   = 0;   // RC2 (SCL)
+    I2C1_SDA_ANSEL   = 0;   // RC1 (SDA)
+
+
+    // =========================
     // Unlock PPS
+    // =========================
+
     PPSLOCK = 0x55;
     PPSLOCK = 0xAA;
     PPSLOCKbits.PPSLOCKED = 0;
-	
+
+
     // =========================
     // UART1
     // =========================
 
-    // UART TX1 -> RC2
-    RC2PPS = 0x05;
+    // TX1 -> RC0
+    RC0PPS = 0x05;
 
-    // UART RX1 <- RA2
-
-    RXPPS  = 0x02;
-    RC5PPS = 0x03;     
+    // RX1 <- RA2
+    RXPPS = 0x02;
     
-    I2C1_SCL_ANSEL = 0;      // digital, not analog
-    I2C1_SDA_ANSEL = 0;
-    I2C1_SCL_TRIS  = 1;      // start as inputs; MSSP takes over the
-    I2C1_SDA_TRIS  = 1;      // output drive automatically when SSPEN=1
+    
+// PWM3 -> RC4 (heater_gate)
+RC4PPS = 0x03;      // PWM3
 
-    SSP1CLKPPS = 0x10; // RC0 -> SSP1 clock input
-    SSP1DATPPS = 0x11; // RC1 -> SSP1 data input
-    RC0PPS     = 0x07; // RC0 <- SCL1 output
-    RC1PPS     = 0x08; // RC1 <- SDA1 output
-    RC0I2Cbits.PU = 1;       // weak pull-up on SCL1
-    RC1I2Cbits.PU = 1;       // weak pull-up on SDA1
     // =========================
-    // GPIO pins
+    // I2C1
     // =========================
 
-    // RA5 = TEMP
-    // No PPS -> GPIO
+    // Both pins stay inputs; the MSSP drives them open-drain as needed
+    I2C1_SCL_TRIS = 1;
+    I2C1_SDA_TRIS = 1;
 
-    // RA4 = temp_set
-    // No PPS -> GPIO
+    // I2C inputs
+    SSP1CLKPPS = 0x12;      // RC2 -> SCL1 input
+    SSP1DATPPS = 0x11;      // RC1 -> SDA1 input
 
-    // RC5 = heater_gate
-    // No PPS -> GPIO
+    // I2C outputs (must be on the same pins as the inputs)
+    RC2PPS = 0x07;          // SCL1 -> RC2
+    RC1PPS = 0x08;          // SDA1 -> RC1
 
-    // RC3 = current
-    // No PPS -> GPIO
-
-    // RC1 = clk
-    // No PPS -> GPIO
-
-    // RC0 = dat
-    // No PPS -> GPIO
-
-
+    // Weak pull-ups (verify RC2I2C / RC1I2C exist on this device;
+    // otherwise use WPUC, and prefer external resistors for real I2C)
+WPUCbits.WPUC2 = 1;     // SCL (RC2)
+WPUCbits.WPUC1 = 1;     // SDA (RC1)
+    // =========================
     // Lock PPS
+    // =========================
+
     PPSLOCK = 0x55;
     PPSLOCK = 0xAA;
     PPSLOCKbits.PPSLOCKED = 1;
-    
 }
