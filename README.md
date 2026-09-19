@@ -1,4 +1,6 @@
 # Soldering Station
+<img width="1280" height="960" alt="WhatsApp Image 2026-09-19 at 11 39 38 PM" src="https://github.com/user-attachments/assets/f44f72ca-af1d-4e7f-8b26-0f18c6337600" />
+<img width="1280" height="960" alt="WhatsApp Image 2026-09-19 at 11 39 35 PM" src="https://github.com/user-attachments/assets/cf09d23c-faf0-451d-9efd-163cf23b88f6" />
 
 DIY electronic soldering station project containing the hardware design, firmware, simulation files, and mechanical/laser-cut CAD files.
 
