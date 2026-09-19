@@ -1,0 +1,23 @@
+num
+write 18 bit  to shw singl digit 7+onec            
+active out it 
+shift next digt write 18 bit 
+active out it 
+
+
+void display(uint16_t num)
+{
+    uint8_t d[3] = {0};
+
+    for (uint8_t z = 0; z < 3; z++)
+    {
+        d[z] = num % 10;
+        num /= 10;
+    }
+
+    for (uint8_t z = 0; z < 3; z++)
+    {
+        digit(d[z]);
+    }
+}
+123 
